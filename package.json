@@ -1,0 +1,17 @@
+{
+	"name": "Fotorder",
+	"version": "1.0.0",
+	"description": "Sass Sandbox",
+	"main": "Gruntfile.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "VMN",
+	"license": "ISC",
+	"devDependencies": {
+		"grunt": "~0.4.5",
+		"grunt-contrib-watch": "~0.6.1",
+		"grunt-contrib-sass": "~0.8.1",
+		"grunt-autoprefixer": "~1.0.1"
+	}
+}
