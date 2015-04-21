@@ -16,64 +16,84 @@
 <body>
 	
 	<div class="pageTop">
-		
-		<!-- page header -->
-		<header class="pageHeader">
+		<div class="pageWrapper">
+
+			<!-- page header -->
+			<header class="pageHeader">
+				
+				<div class="logo"><a href="/">--- logo goes here ---</a></div>
 			
-			<div class="logo"><a href="/">--- logo goes here ---</a></div>
-		
-			<div class="userMenu">
-				
-				<!-- page navigation -->
-				<div>
-					<nav class="mainNav">
-						<ul class="userNav">
-							<li><a href="/dashboard">Logout</a></li>
-							<li><a href="/profile">Your profile</a></li>
-							<li><a href="/orders">Your orders</a></li>
-						</ul>
-						<ul class="siteNav">
-							<li><a href="/dashboard">Dashboard</a></li>
-							<li><a href="/artists">Artists</a></li>
-							<li><a href="/bookmarks">Bookmarks</a></li>
-						</ul>
-					</nav>
+				<div class="userMenu">
+					
+					<!-- page navigation -->
+					<div>
+						<nav class="mainNav">
+							<ul class="userNav">
+								<li><a href="/dashboard">Logout</a></li>
+								<li><a href="/profile">Your profile</a></li>
+								<li><a href="/orders">Your orders</a></li>
+							</ul>
+							<ul class="siteNav">
+								<li><a href="/dashboard">Dashboard</a></li>
+								<li><a href="/artists">Artists</a></li>
+								<li><a href="/bookmarks">Bookmarks</a></li>
+							</ul>
+						</nav>
+					</div>
+					<!-- END page navigation -->
+
+					<div class="usrPic"><a href="/profile"><img src="/img/dummy_user_male.png" alt=""></a></div>
+					
 				</div>
-				<!-- END page navigation -->
 
-				<div class="usrPic"><img src="/img/dummy_user_pic" alt=""></div>
-				
+			</header> 
+			<!-- END page header -->
+
+
+			<!-- page content -->
+			<div class="pageContent">
+				--- content goes here ---
+
+<div class="grid">
+   <div class="col-1-2">
+     <div class="colContent">
+       <h3>2/3</h3>
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>	
+     </div>
+   </div>
+   <div class="col-1-8">
+     <div class="colContent">
+     	<h3>1/3</h3>
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies</p>	
+     </div>
+   </div>
+</div>
+
+
 			</div>
+			<!-- END page content -->
 
-		</header> 
-		<!-- END page header -->
-
-
-		<!-- page content -->
-		<div class="pageContent">
-			--- content goes here ---
 		</div>
-		<!-- END page content -->
-
 	</div>
 	
-	<!-- page footer -->
-	<footer class="pageBottom pageFooter">
-		<nav class="mainNav">
-			<ul class="siteNav">
-				<li><a href="/dashboard">Dashboard</a></li>
-				<li><a href="/artists">Artists</a></li>
-				<li><a href="/bookmarks">Bookmarks</a></li>
-			</ul>
-			<ul class="footerLinks">
-				<li><a href="">Terms and conditions</a></li>
-				<li><a href="">Support</a></li>
-				<!-- <li><a href="">&copy; Fotorder 2015</a></li> -->
-			</ul>
-		</nv>
-	</footer>
-	<!-- END page footer -->
-
+	<div class="pageBottom">
+		<!-- page footer -->
+		<footer class="pageFooter">
+			<nav class="mainNav">
+				<ul class="siteNav">
+					<li><a href="/dashboard">Dashboard</a></li>
+					<li><a href="/artists">Artists</a></li>
+					<li><a href="/bookmarks">Bookmarks</a></li>
+				</ul>
+				<ul class="footerLinks">
+					<li><a href="">Terms and conditions</a></li>
+					<li><a href="">Support</a></li>
+					<!-- <li><a href="">&copy; Fotorder 2015</a></li> -->
+				</ul>
+			</nav>
+		</footer>
+		<!-- END page footer -->
+	</div>
 
 
 </body>
