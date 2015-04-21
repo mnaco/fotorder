@@ -1,3 +1,23 @@
+.pageHeader {
+  *zoom: 1;
+}
+.pageHeader:before, .pageHeader:after {
+  content: "";
+  display: table;
+}
+.pageHeader:after {
+  clear: both;
+}
+
+.mainNav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mainNav ul li {
+  display: inline-block;
+}
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -393,6 +413,115 @@ th {
   padding: 0;
 }
 
-body {
-  font-size: 10px;
+html {
+  font-size: 12px;
+  color: #444;
+}
+@media only screen and (max-width: 1020px) {
+  html {
+    background: #eee;
+  }
+}
+@media only screen and (max-width: 780px) {
+  html {
+    background: #ddd;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html {
+    background: #999;
+  }
+}
+
+.fLt {
+  float: left;
+}
+
+.fRt {
+  float: right;
+}
+
+a {
+  text-decoration: none;
+  color: #003780;
+}
+a:hover {
+  color: #900;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.pageBottom,
+.pageTop:after {
+  height: 79px;
+}
+
+.pageTop {
+  min-height: 100%;
+  margin-bottom: -80px;
+}
+.pageTop:after {
+  content: "";
+  display: block;
+}
+
+.pageHeader .userMenu {
+  float: right;
+}
+.pageHeader .userMenu > div {
+  vertical-align: top;
+  display: inline-block;
+}
+.pageHeader .mainNav {
+  float: right;
+  text-align: right;
+}
+.pageHeader .userNav {
+  padding-bottom: 10px;
+}
+.pageHeader .userNav a {
+  font-size: .9em;
+}
+.pageHeader .siteNav a {
+  font-size: 1.3em;
+  padding: 0 20px;
+}
+.pageHeader .usrPic {
+  margin-left: 10px;
+}
+
+.mainNav ul {
+  font-size: 0;
+}
+.mainNav li {
+  font-size: 1rem;
+  line-height: 1;
+  border-right: 1px solid #ccc;
+}
+.mainNav li:last-child {
+  border: none;
+}
+.mainNav li:last-child a {
+  padding-right: 0;
+}
+.mainNav li:first-child a {
+  padding-left: 0;
+}
+.mainNav li a {
+  padding: 0 10px;
+  display: block;
+}
+
+.pageFooter {
+  text-align: center;
+  padding: 0;
+  background: #eee;
+}
+.pageFooter nav {
+  padding-top: 20px;
 }

@@ -15,46 +15,66 @@
 </head>
 <body>
 	
-	<div class="bodyWrapper">
+	<div class="pageTop">
 		
 		<!-- page header -->
 		<header class="pageHeader">
+			
 			<div class="logo"><a href="/">--- logo goes here ---</a></div>
+		
+			<div class="userMenu">
+				
+				<!-- page navigation -->
+				<div>
+					<nav class="mainNav">
+						<ul class="userNav">
+							<li><a href="/dashboard">Logout</a></li>
+							<li><a href="/profile">Your profile</a></li>
+							<li><a href="/orders">Your orders</a></li>
+						</ul>
+						<ul class="siteNav">
+							<li><a href="/dashboard">Dashboard</a></li>
+							<li><a href="/artists">Artists</a></li>
+							<li><a href="/bookmarks">Bookmarks</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- END page navigation -->
+
+				<div class="usrPic"><img src="/img/dummy_user_pic" alt=""></div>
+				
+			</div>
+
 		</header> 
 		<!-- END page header -->
 
-		<!-- page navigation -->
-		<nav class="mainNav">
-			<ul>
-				<li><a href="/dashboard">Dashboard</a></li>
-				<li><a href="/">Artists</a></li>
-				<li><a href="">Something</a></li>
-			</ul>
-		</nav>
-		<!-- END page navigation -->
 
 		<!-- page content -->
 		<div class="pageContent">
 			--- content goes here ---
 		</div>
 		<!-- END page content -->
-	
-		<!-- page footer -->
-		<footer class="pageFooter">
-			<nav class="siteNav">
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-			</nav>
-			<nav class="footerLinks">
-				<li><a href="">Terms and conditions</a></li>
-				<li><a href="">Support</a></li>
-				<li><a href="">&copy; Fotorder 2015</a></li>
-			</nav>
-		</footer>
-		<!-- END page footer -->
 
 	</div>
+	
+	<!-- page footer -->
+	<footer class="pageBottom pageFooter">
+		<nav class="mainNav">
+			<ul class="siteNav">
+				<li><a href="/dashboard">Dashboard</a></li>
+				<li><a href="/artists">Artists</a></li>
+				<li><a href="/bookmarks">Bookmarks</a></li>
+			</ul>
+			<ul class="footerLinks">
+				<li><a href="">Terms and conditions</a></li>
+				<li><a href="">Support</a></li>
+				<!-- <li><a href="">&copy; Fotorder 2015</a></li> -->
+			</ul>
+		</nv>
+	</footer>
+	<!-- END page footer -->
+
+
 
 </body>
 </html>
