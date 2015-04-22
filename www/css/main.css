@@ -436,26 +436,35 @@ th {
   padding-right: 0;
 }
 
-.col-2-3 {
-  width: 66.66%;
-}
-
-.col-1-3 {
-  width: 33.33%;
-}
-
-.col-1-2 {
-  width: 50%;
-}
-
-.col-1-4 {
+.col-25 {
   width: 25%;
 }
 
-.col-1-8 {
-  width: 12.5%;
+.col-50 {
+  width: 50%;
 }
 
+.col-75 {
+  width: 75%;
+}
+
+/*
+.col-2-3 {
+	width: 66.66%;
+}
+.col-1-3 {
+	width: 33.33%;
+}
+.col-1-2 {
+	width: 50%;
+}
+.col-1-4 {
+	width: 25%;
+}
+.col-1-8 {
+	width: 12.5%;
+}
+*/
 /* Opt-in outside padding */
 .grid-pad {
   padding: 20px 0 20px 20px;
@@ -487,12 +496,8 @@ html {
   }
 }
 
-.fLt {
-  float: left;
-}
-
-.fRt {
-  float: right;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
 }
 
 a {
@@ -501,6 +506,14 @@ a {
 }
 a:hover {
   color: #900;
+}
+
+.fLt {
+  float: left;
+}
+
+.fRt {
+  float: right;
 }
 
 body, html {
@@ -602,4 +615,32 @@ body, html {
 }
 .pageFooter nav {
   padding-top: 20px;
+}
+
+.btn {
+  line-height: 1;
+  border: 1px solid #003780;
+  padding: .5em 2em;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.pageHome .pageContent {
+  background: #cfd9e9;
+  height: 360px;
+}
+
+.welcomeBox {
+  text-align: center;
+  padding: 40px 0 0;
+}
+.welcomeBox h1 {
+  font-size: 3em;
+  color: #fff;
+}
+.welcomeBox .btn {
+  display: inline-block;
+  margin: 0 40px;
+  font-size: 1.4em;
 }

@@ -1,0 +1,9 @@
+// buttons styles
+// ------------------------------------------------------------
+
+.btn { 
+	line-height: 1;
+	border: 1px solid $blueColor;
+	padding: .5em 2em;
+	&:hover { cursor: pointer; }
+}

@@ -13,9 +13,10 @@
 @import "base/base";
 
 
-// import components (fonts, buttons etc)
+// import components (fonts, ui etc)
 // ----------------------------------------------------------------------
 @import "base/components/fonts";
+@import "base/components/ui";
 
 
 // import modules
@@ -27,4 +28,4 @@
 
 // import pages
 // ----------------------------------------------------------------------
-// @import "base/pages/...";
+@import "pages/home";

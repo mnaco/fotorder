@@ -22,13 +22,14 @@ body {
 }
 
 // common
-.fLt { float: left; }
-.fRt { float: right; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 a { 
 	text-decoration: none;
 	color: $blueColor;
 	&:hover { color: #900; }
 }
+.fLt { float: left; }
+.fRt { float: right; }
 
 
 // sticky footer
