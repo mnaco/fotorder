@@ -3,18 +3,28 @@
 		background: #cfd9e9;
 		height: 360px;
 	}
-}
+	
+	// welcome title including register buttons
+	.welcomeBox {
+		text-align: center;
+		padding: 40px 0 0;
+		h1 {
+			font-size: 3em;
+			color: #fff;
+		}
+		.btn {
+			display: inline-block;
+			margin: 0 40px;
+			font-size: 1.4em;
+		}
+	}
+	
+	// resent users
+	.recentUsersBox {
+		li { 
+			width: 48px;
+			height: 48px;
+		}
+	}
 
-.welcomeBox {
-	text-align: center;
-	padding: 40px 0 0;
-	h1 {
-		font-size: 3em;
-		color: #fff;
-	}
-	.btn {
-		display: inline-block;
-		margin: 0 40px;
-		font-size: 1.4em;
-	}
 }

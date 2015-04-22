@@ -3,10 +3,6 @@
 // https://css-tricks.com/dont-overthink-it-grids/
 
 
-* {
-  @include box-sizing(border-box);
-}
-
 $pad: 20px;
 
 .grid {

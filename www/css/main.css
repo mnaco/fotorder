@@ -9,12 +9,12 @@
   clear: both;
 }
 
-.mainNav ul {
+.mainNav ul, .usersList {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.mainNav ul li {
+.mainNav ul li, .usersList li {
   display: inline-block;
 }
 
@@ -413,10 +413,6 @@ th {
   padding: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .grid {
   background: white;
   margin: 0 0 20px 0;
@@ -486,7 +482,7 @@ th {
 }
 
 html {
-  font-size: 12px;
+  font-size: 14px;
   color: #444;
 }
 @media only screen and (max-width: 1020px) {
@@ -494,6 +490,10 @@ html {
     background: #333;
     font-size: 16px;
   }
+}
+
+* {
+  box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -583,6 +583,18 @@ body, html {
   height: 32px;
 }
 
+.pageBottom {
+  background: #eee;
+}
+
+.pageFooter {
+  text-align: center;
+  padding: 0;
+}
+.pageFooter nav {
+  padding-top: 20px;
+}
+
 .mainNav ul {
   font-size: 0;
 }
@@ -605,16 +617,86 @@ body, html {
   display: block;
 }
 
-.pageBottom {
-  background: #eee;
+.usersList li {
+  position: relative;
+  width: 128px;
+  margin: 0 20px 20px 0;
+}
+.usersList .userThumb {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5px;
+}
+.usersList .userName {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 20px;
+  font-size: 0.8em;
+}
+.usersList .bookmarkUser {
+  float: right;
 }
 
-.pageFooter {
-  text-align: center;
-  padding: 0;
+.pageSidebar {
+  background: #eee;
 }
-.pageFooter nav {
-  padding-top: 20px;
+.pageSidebar > h2 {
+  padding: 15px 10px;
+  margin: 0 0 15px;
+  border-bottom: 1px solid #fff;
+}
+.pageSidebar section {
+  padding: 0 0 10px 10px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+}
+.pageSidebar section > h4 {
+  margin: 0 0 1em;
+}
+
+.checkboxLabel {
+  position: relative;
+}
+.checkboxLabel input {
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+}
+.checkboxLabel input + label {
+  position: relative;
+  z-index: 1;
+  background: #ccc;
+  margin: 0 3px 5px 0 !important;
+  padding: 0.1em 0.5em;
+  line-height: 1;
+}
+.checkboxLabel input:checked + label {
+  background: #003780;
+  color: #fff;
+}
+
+.pageArtists .artistsFilter label {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  font-size: 0.9em;
+}
+.pageArtists .artistsFilter label input {
+  margin-right: 5px;
+}
+.pageArtists .artistsFilter h1, .pageArtists .artistsFilter h3 {
+  margin-top: 0;
+}
+.pageArtists .searchArtist {
+  margin-bottom: 20px;
+}
+.pageArtists .searchArtist input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2em;
 }
 
 .btn {
@@ -630,17 +712,20 @@ body, html {
   background: #cfd9e9;
   height: 360px;
 }
-
-.welcomeBox {
+.pageHome .welcomeBox {
   text-align: center;
   padding: 40px 0 0;
 }
-.welcomeBox h1 {
+.pageHome .welcomeBox h1 {
   font-size: 3em;
   color: #fff;
 }
-.welcomeBox .btn {
+.pageHome .welcomeBox .btn {
   display: inline-block;
   margin: 0 40px;
   font-size: 1.4em;
+}
+.pageHome .recentUsersBox li {
+  width: 48px;
+  height: 48px;
 }
