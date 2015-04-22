@@ -547,7 +547,9 @@ body, html {
 }
 
 .pageHeader {
-  padding: 20px 0;
+  padding: 20px 0 10px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #999;
 }
 .pageHeader .logo {
   float: left;
@@ -566,12 +568,8 @@ body, html {
 .pageHeader .userNav {
   padding-bottom: 10px;
 }
-.pageHeader .userNav a {
-  font-size: .9em;
-}
 .pageHeader .siteNav a {
-  font-size: 1.3em;
-  padding: 0 20px;
+  font-size: 1.2em;
 }
 .pageHeader .usrPic {
   margin-left: 10px;
@@ -599,22 +597,25 @@ body, html {
   font-size: 0;
 }
 .mainNav li {
-  font-size: 1rem;
+  font-size: .9rem;
   line-height: 1;
+  padding: 0 10px;
   border-right: 1px solid #ccc;
 }
 .mainNav li:last-child {
   border: none;
-}
-.mainNav li:last-child a {
   padding-right: 0;
 }
-.mainNav li:first-child a {
+.mainNav li:first-child {
   padding-left: 0;
 }
 .mainNav li a {
-  padding: 0 10px;
   display: block;
+  text-transform: uppercase;
+}
+.mainNav li.active a {
+  color: #000 !important;
+  cursor: default;
 }
 
 .usersList li {
