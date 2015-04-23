@@ -1,19 +1,24 @@
-.pageHeader, .pageDashboard .listPendingOrders, .orderStatusBox {
+/* line 10, ../../scss/helpers/mixins/_clearfix.scss */
+.pageHeader, .pageDashboard .listPendingOrders, .biddingContainer {
   *zoom: 1;
 }
-.pageHeader:before, .pageDashboard .listPendingOrders:before, .orderStatusBox:before, .pageHeader:after, .pageDashboard .listPendingOrders:after, .orderStatusBox:after {
+/* line 13, ../../scss/helpers/mixins/_clearfix.scss */
+.pageHeader:before, .pageDashboard .listPendingOrders:before, .biddingContainer:before, .pageHeader:after, .pageDashboard .listPendingOrders:after, .biddingContainer:after {
   content: "";
   display: table;
 }
-.pageHeader:after, .pageDashboard .listPendingOrders:after, .orderStatusBox:after {
+/* line 18, ../../scss/helpers/mixins/_clearfix.scss */
+.pageHeader:after, .pageDashboard .listPendingOrders:after, .biddingContainer:after {
   clear: both;
 }
 
+/* line 13, ../../scss/helpers/_extends.scss */
 .mainNav ul, .usersList {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+/* line 17, ../../scss/helpers/_extends.scss */
 .mainNav ul li, .usersList li {
   display: inline-block;
 }
@@ -24,6 +29,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
+/* line 9, ../../scss/helpers/_normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -36,6 +42,7 @@ html {
 /**
  * Remove default margin.
  */
+/* line 19, ../../scss/helpers/_normalize.scss */
 body {
   margin: 0;
 }
@@ -48,6 +55,7 @@ body {
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
+/* line 33, ../../scss/helpers/_normalize.scss */
 article,
 aside,
 details,
@@ -68,6 +76,7 @@ summary {
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
+/* line 54, ../../scss/helpers/_normalize.scss */
 audio,
 canvas,
 progress,
@@ -82,6 +91,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
+/* line 67, ../../scss/helpers/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -91,6 +101,7 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
  */
+/* line 77, ../../scss/helpers/_normalize.scss */
 [hidden],
 template {
   display: none;
@@ -101,6 +112,7 @@ template {
 /**
  * Remove the gray background color from active links in IE 10.
  */
+/* line 89, ../../scss/helpers/_normalize.scss */
 a {
   background-color: transparent;
 }
@@ -109,6 +121,7 @@ a {
  * Improve readability of focused elements when they are also in an
  * active/hover state.
  */
+/* line 98, ../../scss/helpers/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -119,6 +132,7 @@ a:hover {
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
+/* line 110, ../../scss/helpers/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -126,6 +140,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
+/* line 118, ../../scss/helpers/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -134,6 +149,7 @@ strong {
 /**
  * Address styling not present in Safari and Chrome.
  */
+/* line 127, ../../scss/helpers/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -142,6 +158,7 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
+/* line 136, ../../scss/helpers/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -150,6 +167,7 @@ h1 {
 /**
  * Address styling not present in IE 8/9.
  */
+/* line 145, ../../scss/helpers/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -158,6 +176,7 @@ mark {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
+/* line 154, ../../scss/helpers/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -165,6 +184,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
+/* line 162, ../../scss/helpers/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -173,10 +193,12 @@ sup {
   vertical-align: baseline;
 }
 
+/* line 170, ../../scss/helpers/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
+/* line 174, ../../scss/helpers/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -186,6 +208,7 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9/10.
  */
+/* line 185, ../../scss/helpers/_normalize.scss */
 img {
   border: 0;
 }
@@ -193,6 +216,7 @@ img {
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
+/* line 193, ../../scss/helpers/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -202,6 +226,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari.
  */
+/* line 204, ../../scss/helpers/_normalize.scss */
 figure {
   margin: 1em 40px;
 }
@@ -209,6 +234,7 @@ figure {
 /**
  * Address differences between Firefox and other browsers.
  */
+/* line 212, ../../scss/helpers/_normalize.scss */
 hr {
   box-sizing: content-box;
   height: 0;
@@ -217,6 +243,7 @@ hr {
 /**
  * Contain overflow in all browsers.
  */
+/* line 221, ../../scss/helpers/_normalize.scss */
 pre {
   overflow: auto;
 }
@@ -224,6 +251,7 @@ pre {
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
+/* line 229, ../../scss/helpers/_normalize.scss */
 code,
 kbd,
 pre,
@@ -244,6 +272,7 @@ samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
+/* line 252, ../../scss/helpers/_normalize.scss */
 button,
 input,
 optgroup,
@@ -260,6 +289,7 @@ textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
+/* line 266, ../../scss/helpers/_normalize.scss */
 button {
   overflow: visible;
 }
@@ -270,6 +300,7 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
+/* line 277, ../../scss/helpers/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -282,6 +313,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
+/* line 290, ../../scss/helpers/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -295,6 +327,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
+/* line 302, ../../scss/helpers/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -303,6 +336,7 @@ html input[disabled] {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
+/* line 311, ../../scss/helpers/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -313,6 +347,7 @@ input::-moz-focus-inner {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
+/* line 322, ../../scss/helpers/_normalize.scss */
 input {
   line-height: normal;
 }
@@ -324,6 +359,7 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
+/* line 334, ../../scss/helpers/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -337,6 +373,7 @@ input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
+/* line 346, ../../scss/helpers/_normalize.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -346,6 +383,7 @@ input[type="number"]::-webkit-outer-spin-button {
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
  */
+/* line 356, ../../scss/helpers/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -358,6 +396,7 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
+/* line 367, ../../scss/helpers/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -366,6 +405,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Define consistent border, margin, and padding.
  */
+/* line 376, ../../scss/helpers/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -376,6 +416,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
+/* line 387, ../../scss/helpers/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -386,6 +427,7 @@ legend {
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
+/* line 396, ../../scss/helpers/_normalize.scss */
 textarea {
   overflow: auto;
 }
@@ -394,6 +436,7 @@ textarea {
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
+/* line 405, ../../scss/helpers/_normalize.scss */
 optgroup {
   font-weight: bold;
 }
@@ -403,20 +446,24 @@ optgroup {
 /**
  * Remove most spacing between table cells.
  */
+/* line 416, ../../scss/helpers/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+/* line 421, ../../scss/helpers/_normalize.scss */
 td,
 th {
   padding: 0;
 }
 
+/* line 8, ../../scss/helpers/_grids.scss */
 .grid {
   background: white;
   margin: 0 0 20px 0;
 }
+/* line 12, ../../scss/helpers/_grids.scss */
 .grid:after {
   /* Or @extend clearfix */
   content: "";
@@ -424,22 +471,27 @@ th {
   clear: both;
 }
 
+/* line 20, ../../scss/helpers/_grids.scss */
 [class*='col-'] {
   float: left;
   padding-right: 20px;
 }
+/* line 23, ../../scss/helpers/_grids.scss */
 .grid [class*='col-']:last-of-type {
   padding-right: 0;
 }
 
+/* line 28, ../../scss/helpers/_grids.scss */
 .col-25 {
   width: 25%;
 }
 
+/* line 29, ../../scss/helpers/_grids.scss */
 .col-50 {
   width: 50%;
 }
 
+/* line 30, ../../scss/helpers/_grids.scss */
 .col-75 {
   width: 75%;
 }
@@ -462,172 +514,211 @@ th {
 }
 */
 /* Opt-in outside padding */
+/* line 52, ../../scss/helpers/_grids.scss */
 .grid-pad {
   padding: 20px 0 20px 20px;
 }
+/* line 54, ../../scss/helpers/_grids.scss */
 .grid-pad [class*='col-']:last-of-type {
   padding-right: 20px;
 }
 
+/* line 59, ../../scss/helpers/_grids.scss */
 .colContent {
   padding: 20px;
   background: #eee;
 }
 
 @media only screen and (max-width: 1020px) {
+  /* line 64, ../../scss/helpers/_grids.scss */
   [class*='col-'] {
     width: 100%;
     padding-right: 0;
   }
 }
 
+/* line 7, ../../scss/base/_base.scss */
 html {
   font-size: 14px;
   color: #777;
 }
 @media only screen and (max-width: 1020px) {
+  /* line 7, ../../scss/base/_base.scss */
   html {
     background: #333;
     font-size: 16px;
   }
 }
 
+/* line 24, ../../scss/base/_base.scss */
 * {
   box-sizing: border-box;
 }
 
+/* line 31, ../../scss/base/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+/* line 32, ../../scss/base/_base.scss */
 a {
   text-decoration: none;
   color: #3161a1;
 }
+/* line 35, ../../scss/base/_base.scss */
 a:hover {
   color: #ff4e00;
 }
 
+/* line 37, ../../scss/base/_base.scss */
 .fLt {
   float: left;
 }
 
+/* line 38, ../../scss/base/_base.scss */
 .fRt {
   float: right;
 }
 
+/* line 41, ../../scss/base/_base.scss */
 * {
   line-height: 1.3;
 }
 
+/* line 43, ../../scss/base/_base.scss */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* line 51, ../../scss/base/_base.scss */
 body, html {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
+/* line 56, ../../scss/base/_base.scss */
 .pageBottom,
 .pageTop:after {
   height: 79px;
 }
 
+/* line 60, ../../scss/base/_base.scss */
 .pageTop {
   min-height: 100%;
   margin-bottom: -80px;
 }
+/* line 63, ../../scss/base/_base.scss */
 .pageTop:after {
   content: "";
   display: block;
 }
 
+/* line 72, ../../scss/base/_base.scss */
 .pageWrapper {
   width: 1000px;
   margin: 0 auto;
   padding: 0 10px;
 }
 @media only screen and (max-width: 1020px) {
+  /* line 72, ../../scss/base/_base.scss */
   .pageWrapper {
     width: 100%;
   }
 }
 
+/* line 84, ../../scss/base/_base.scss */
 .pageHeader {
   padding: 20px 0 10px;
   margin-bottom: 40px;
   border-bottom: 1px solid #ccc;
 }
+/* line 92, ../../scss/base/_base.scss */
 .pageHeader .logo {
   float: left;
 }
+/* line 94, ../../scss/base/_base.scss */
 .pageHeader .userMenu {
   float: right;
 }
+/* line 96, ../../scss/base/_base.scss */
 .pageHeader .userMenu > div {
   vertical-align: top;
   display: inline-block;
 }
+/* line 103, ../../scss/base/_base.scss */
 .pageHeader .mainNav {
   float: right;
   text-align: right;
 }
+/* line 107, ../../scss/base/_base.scss */
 .pageHeader .userNav {
   padding-bottom: 10px;
 }
+/* line 111, ../../scss/base/_base.scss */
 .pageHeader .siteNav a {
   font-size: 1.2em;
 }
+/* line 115, ../../scss/base/_base.scss */
 .pageHeader .usrPic {
   margin-left: 10px;
   border: 1px solid #ccc;
   padding: 2px;
 }
+/* line 119, ../../scss/base/_base.scss */
 .pageHeader .usrPic img {
   width: 32px;
   height: 32px;
 }
 
+/* line 129, ../../scss/base/_base.scss */
 .pageBottom {
   background: #eee;
 }
 
+/* line 130, ../../scss/base/_base.scss */
 .pageFooter {
   text-align: center;
   padding: 0;
 }
+/* line 133, ../../scss/base/_base.scss */
 .pageFooter nav {
   padding-top: 20px;
 }
 
+/* line 141, ../../scss/base/_base.scss */
 .mainNav ul {
   font-size: 0;
 }
+/* line 146, ../../scss/base/_base.scss */
 .mainNav li {
   font-size: .9rem;
   line-height: 1;
   padding: 0 10px;
   border-right: 1px solid #ccc;
 }
+/* line 152, ../../scss/base/_base.scss */
 .mainNav li:last-child {
   border: none;
   padding-right: 0;
 }
+/* line 156, ../../scss/base/_base.scss */
 .mainNav li:first-child {
   padding-left: 0;
 }
+/* line 159, ../../scss/base/_base.scss */
 .mainNav li a {
   display: block;
   text-transform: uppercase;
 }
+/* line 165, ../../scss/base/_base.scss */
 .mainNav li.active a {
   color: #000 !important;
   cursor: default;
 }
 
+/* line 177, ../../scss/base/_base.scss */
 .userThumb img {
   box-sizing: border-box;
   display: block;
@@ -636,18 +727,22 @@ body, html {
   border: 1px solid #ccc;
 }
 
+/* line 189, ../../scss/base/_base.scss */
 .timeStamp {
   color: #999;
 }
 
+/* line 197, ../../scss/base/_base.scss */
 .usersList li {
   position: relative;
   width: 128px;
   margin: 0 20px 20px 0;
 }
+/* line 203, ../../scss/base/_base.scss */
 .usersList .userThumb {
   margin-bottom: 5px;
 }
+/* line 206, ../../scss/base/_base.scss */
 .usersList .userName {
   display: block;
   overflow: hidden;
@@ -656,35 +751,43 @@ body, html {
   margin-right: 20px;
   font-size: 0.8em;
 }
+/* line 214, ../../scss/base/_base.scss */
 .usersList .bookmarkUser {
   float: right;
 }
 
+/* line 222, ../../scss/base/_base.scss */
 .pageSidebar {
   background: #eee;
 }
+/* line 224, ../../scss/base/_base.scss */
 .pageSidebar > h2 {
   padding: 15px 10px;
   margin: 0 0 15px;
   border-bottom: 1px solid #fff;
 }
+/* line 229, ../../scss/base/_base.scss */
 .pageSidebar section {
   padding: 0 0 10px 10px;
   border-bottom: 1px solid #fff;
   margin-bottom: 20px;
 }
+/* line 233, ../../scss/base/_base.scss */
 .pageSidebar section > h4 {
   margin: 0 0 1em;
 }
 
+/* line 242, ../../scss/base/_base.scss */
 .checkboxLabel {
   position: relative;
 }
+/* line 244, ../../scss/base/_base.scss */
 .checkboxLabel input {
   position: absolute;
   z-index: 0;
   opacity: 0;
 }
+/* line 248, ../../scss/base/_base.scss */
 .checkboxLabel input + label {
   position: relative;
   z-index: 1;
@@ -693,11 +796,13 @@ body, html {
   padding: 0.1em 0.5em;
   line-height: 1;
 }
+/* line 257, ../../scss/base/_base.scss */
 .checkboxLabel input:checked + label {
   background: #003780;
   color: #fff;
 }
 
+/* line 268, ../../scss/base/_base.scss */
 .statusLabel {
   background: #999;
   padding: 0.1em 0.5em;
@@ -707,10 +812,12 @@ body, html {
   border-radius: 3px;
   text-transform: uppercase;
 }
+/* line 276, ../../scss/base/_base.scss */
 .statusLabel.new {
   background: #ff4e00;
 }
 
+/* line 286, ../../scss/base/_base.scss */
 .listMessages dl {
   box-sizing: border-box;
   min-height: 58px;
@@ -718,66 +825,81 @@ body, html {
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
+/* line 293, ../../scss/base/_base.scss */
 .listMessages dt, .listMessages dd {
   margin: 0;
   padding: 0;
 }
+/* line 297, ../../scss/base/_base.scss */
 .listMessages dt {
   float: left;
   width: 48px;
   height: 48px;
 }
+/* line 301, ../../scss/base/_base.scss */
 .listMessages dt img {
   width: 100%;
   height: 100%;
 }
+/* line 306, ../../scss/base/_base.scss */
 .listMessages dd {
   margin-left: 58px;
   display: block;
   padding-bottom: .5em;
 }
+/* line 311, ../../scss/base/_base.scss */
 .listMessages .message {
   display: block;
   font-size: 1em;
 }
+/* line 315, ../../scss/base/_base.scss */
 .listMessages .messageDetails {
   font-size: 0.9em;
 }
+/* line 317, ../../scss/base/_base.scss */
 .listMessages .messageDetails > span {
   display: inline-block;
   margin-right: 5px;
   padding-right: 10px;
   border-right: 1px solid #ccc;
 }
+/* line 322, ../../scss/base/_base.scss */
 .listMessages .messageDetails > span:last-child {
   border: 0;
 }
 
+/* line 333, ../../scss/base/_base.scss */
 .pageArtists .artistsFilter label {
   position: relative;
   display: inline-block;
   margin: 0 10px 10px 0;
   font-size: 0.9em;
 }
+/* line 338, ../../scss/base/_base.scss */
 .pageArtists .artistsFilter label input {
   margin-right: 5px;
 }
+/* line 340, ../../scss/base/_base.scss */
 .pageArtists .artistsFilter h1, .pageArtists .artistsFilter h3 {
   margin-top: 0;
 }
+/* line 344, ../../scss/base/_base.scss */
 .pageArtists .searchArtist {
   margin-bottom: 20px;
 }
+/* line 346, ../../scss/base/_base.scss */
 .pageArtists .searchArtist input[type="text"] {
   width: 100%;
   padding: 10px;
   font-size: 1.2em;
 }
 
+/* line 359, ../../scss/base/_base.scss */
 .pageDashboard .listPendingOrders {
   margin-bottom: 60px;
 }
 
+/* line 366, ../../scss/base/_base.scss */
 .pendingOrder {
   box-sizing: border-box;
   min-height: 84px;
@@ -788,18 +910,22 @@ body, html {
   float: left;
   margin: 0 2% 20px 0;
 }
+/* line 376, ../../scss/base/_base.scss */
 .pendingOrder:nth-of-type(even) {
   margin-right: 0;
 }
+/* line 377, ../../scss/base/_base.scss */
 .pendingOrder .userThumb {
   float: left;
   width: 64px;
   height: 64px;
 }
+/* line 382, ../../scss/base/_base.scss */
 .pendingOrder .orderDetails {
   font-size: 0.8em;
   margin-left: 74px;
 }
+/* line 386, ../../scss/base/_base.scss */
 .pendingOrder .recentUpdate {
   display: inline-block;
   font-size: 1.1rem;
@@ -808,61 +934,151 @@ body, html {
   margin-left: 5px;
 }
 @media only screen and (max-width: 1020px) {
+  /* line 366, ../../scss/base/_base.scss */
   .pendingOrder {
     float: none;
     width: 100%;
   }
 }
 
-.orderStatusBox {
+/* line 403, ../../scss/base/_base.scss */
+.biddingContainer {
   box-sizing: border-box;
   padding: 10px;
   background: #efefef;
   border: 1px solid #ccc;
 }
-.orderStatusBox .userThumb {
+/* line 413, ../../scss/base/_base.scss */
+.biddingContainer .userThumb {
   float: left;
   width: 64px;
   height: 64px;
 }
-.orderStatusBox dl {
-  display: block;
-  width: 100%;
+/* line 10, ../../scss/helpers/mixins/_clearfix.scss */
+.biddingContainer .biddingOverview {
+  *zoom: 1;
 }
-.orderStatusBox dt, .orderStatusBox dd {
-  display: block;
-  width: 50%;
+/* line 13, ../../scss/helpers/mixins/_clearfix.scss */
+.biddingContainer .biddingOverview:before, .biddingContainer .biddingOverview:after {
+  content: "";
+  display: table;
+}
+/* line 18, ../../scss/helpers/mixins/_clearfix.scss */
+.biddingContainer .biddingOverview:after {
+  clear: both;
+}
+/* line 423, ../../scss/base/_base.scss */
+.biddingContainer .biddingOverview > div {
   float: left;
+  width: 48%;
+  min-height: 84px;
+}
+/* line 427, ../../scss/base/_base.scss */
+.biddingContainer .biddingOverview > div:first-child {
+  margin-right: 2%;
+}
+/* line 432, ../../scss/base/_base.scss */
+.biddingContainer .biddingOverview dl {
   margin: 0;
   padding: 0;
 }
+/* line 10, ../../scss/helpers/mixins/_clearfix.scss */
+.biddingContainer .biddingOverview dl {
+  *zoom: 1;
+}
+/* line 13, ../../scss/helpers/mixins/_clearfix.scss */
+.biddingContainer .biddingOverview dl:before, .biddingContainer .biddingOverview dl:after {
+  content: "";
+  display: table;
+}
+/* line 18, ../../scss/helpers/mixins/_clearfix.scss */
+.biddingContainer .biddingOverview dl:after {
+  clear: both;
+}
+/* line 437, ../../scss/base/_base.scss */
+.biddingContainer .biddingOverview dt, .biddingContainer .biddingOverview dd {
+  margin: 0;
+  padding: 0;
+}
+/* line 441, ../../scss/base/_base.scss */
+.biddingContainer .biddingOverview dt {
+  float: left;
+}
+/* line 442, ../../scss/base/_base.scss */
+.biddingContainer .biddingOverview dd {
+  margin-left: 74px;
+  display: block;
+  font-size: 0.9em;
+}
+/* line 447, ../../scss/base/_base.scss */
+.biddingContainer .biddingOverview .btn {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+  padding: 0.5em 0.3em;
+  font-size: 1.5em;
+}
+/* line 454, ../../scss/base/_base.scss */
+.biddingContainer .biddingOverview .btn.btnAgree {
+  background: #ff4e00;
+}
+/* line 459, ../../scss/base/_base.scss */
+.biddingContainer .biddingOverview input[type="text"] {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  border: 0;
+  padding: 0.5em 0;
+  margin-top: 5px;
+}
+/* line 466, ../../scss/base/_base.scss */
+.biddingContainer .biddingOverview input[type="text"]:disabled {
+  background: #ddd;
+}
+/* line 472, ../../scss/base/_base.scss */
+.biddingContainer .biddingOverview .youno input {
+  font-size: 1.7em;
+  padding: 0.4em 0;
+  color: #000;
+}
 
+/* line 4, ../../scss/base/components/_ui.scss */
 .btn {
   line-height: 1;
-  border: 1px solid #003780;
-  padding: .5em 2em;
+  padding: .3em .5em;
+  background: #999;
+  color: #fff;
+  border-radius: 3px;
 }
+/* line 10, ../../scss/base/components/_ui.scss */
 .btn:hover {
   cursor: pointer;
+  color: #fff;
 }
 
+/* line 2, ../../scss/pages/_home.scss */
 .pageHome .pageContent {
   background: #cfd9e9;
   height: 360px;
 }
+/* line 8, ../../scss/pages/_home.scss */
 .pageHome .welcomeBox {
   text-align: center;
   padding: 40px 0 0;
 }
+/* line 11, ../../scss/pages/_home.scss */
 .pageHome .welcomeBox h1 {
   font-size: 3em;
   color: #fff;
 }
+/* line 15, ../../scss/pages/_home.scss */
 .pageHome .welcomeBox .btn {
   display: inline-block;
   margin: 0 40px;
   font-size: 1.4em;
 }
+/* line 24, ../../scss/pages/_home.scss */
 .pageHome .recentUsersBox li {
   width: 48px;
   height: 48px;

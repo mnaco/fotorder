@@ -15,7 +15,7 @@
 	<script src=""></script>
 
 </head>
-<body class="pageOrder">
+<body class="pageBidding">
 	
 	<div class="pageTop">
 		
@@ -63,22 +63,34 @@
 					
 					<div class="col-50">
 						<h2 class="subTitle">Status</h2>
-						<div class="orderStatusBox">
+						<div class="biddingContainer">
 							
-							<dl class="orderStatus">
-								<dt>
-									<a href="/" class="userThumb"><img src="/img/dummy_user_female.png" alt=""></a>
-									Your price:
-									<div class="statusPrice"><input type="text" ></div>
+
+							<div class="biddingOverview">
+								<div class="you">
+									<dl>
+										<dt><a href="/" class="userThumb"><img src="/img/dummy_user_male.png" alt=""></a></dt>
+										<dd>Your price</dd>
+										<dd class="bidPrice"><input type="text" name="yourprice" value="$10.00"></dd>
+									</dl>
 									<a class="btn btnUpdate">Update price</a>
-								</dt>
-								<dd>
-									<a href="/" class="userThumb"><img src="/img/dummy_user_female.png" alt=""></a>
-									<a href="/" class="userName">user</a> price:
-									<div class="statusPrice"><input type="text" ></div>
+								</div>
+								<div class="youno">
+									<dl>
+										<dt><a href="/" class="userThumb"><img src="/img/dummy_user_female.png" alt=""></a></dt>
+										<dd>Recent bid</dd>
+										<dd class="bidPrice"><input type="text" name="" disabled value="$15.00"></dd>
+									</dl>
 									<a class="btn btnAgree">Agree</a>
-								</dd>
-							</dl>
+								</div>
+							</div>
+
+							<div class="biddinHistory">
+								<ul>
+									<li class=""></li>
+								</ul>
+							</div>
+
 						</div>
 					</div>
 

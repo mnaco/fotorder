@@ -398,9 +398,9 @@ body, html {
 }
 
 
-// page > ORDERS
+// page > BIDDING
 // -----------------------------------------------------------
-.orderStatusBox {
+.biddingContainer {
 
 	$thumbSize: $thumbSizeXL;
 	@extend %clearFix;
@@ -416,22 +416,64 @@ body, html {
 		height: $thumbSize;
 	}
 	
-	dl { 
-		display: block;
-		width: 100%; 
+	.biddingOverview {
+
+		@include clearfix();
+
+		> div {
+			float: left;
+			width: 48%;
+			min-height: $thumbSize + 20;
+			&:first-child {
+				margin-right: 2%;
+			}
+		}
+
+		dl {
+			@include clearfix();
+			margin: 0;
+			padding: 0;
+		}
+		dt, dd {
+			margin: 0;
+			padding: 0;
+		}
+		dt { float:  left; }
+		dd {
+			margin-left: $thumbSize + 10;
+			display: block;
+			font-size: 0.9em;
+		}
+		.btn {
+			display: block;
+			width: 100%;
+			margin-top: 10px; 
+			text-align: center; 
+			padding: 0.5em 0.3em;
+			font-size: 1.5em;
+			&.btnAgree {
+				background: $orangeColor;
+			}
+
+		}
+		input[type="text"] {
+			width: 100%;
+			text-align: center;
+			font-size: 1.5em;
+			border: 0;
+			padding: 0.5em 0;
+			margin-top: 5px;
+			&:disabled {
+				background: #ddd;
+			}
+		}
+
+		.youno {
+			input {
+				font-size: 1.7em;
+				padding: 0.4em 0;
+				color: #000;
+			}
+		}
 	}
-	dt, dd 
-	{
-		display: block;
-		width: 50%;
-		float: left;
-		margin: 0;
-		padding: 0;
-	}
-
-	.orderStatus {
-
-	}
-
-
 }
