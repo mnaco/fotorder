@@ -5,9 +5,26 @@ $screenSizeP: 320;
 
 
 // colors
-$textColor: #444;
+$textColor: #777;
+$textGrey: #999;
+$linkColor: #3161a1;
+$borderColor: #ccc;
+$greyColor:	#999;
+$lightGreyColor: #efefef;
 $blueColor: #003780;
 $orangeColor: #ff4e00;
 
+
 // configs
 $footerHeight: 80px;
+
+// thumbSizes
+$thumbSizeS: 24px;
+$thumbSizeM: 32px;
+$thumbSizeL: 48px;
+$thumbSizeXL: 64px;
+$thumbSizeXXL: 112px;
+$thumbSizeXXXL: 178px;
+
+// sizes
+$borderRadius: 3px;

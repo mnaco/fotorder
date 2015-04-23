@@ -31,11 +31,19 @@ body {
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 a { 
 	text-decoration: none;
-	color: $blueColor;
-	&:hover { color: #900; }
+	color: $linkColor;
+	&:hover { color: $orangeColor; }
 }
 .fLt { float: left; }
 .fRt { float: right; }
+
+// fonts
+* { line-height: 1.3; }
+// fix fonts render issue in FF and Chrome
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
 
 
 // sticky footer
@@ -62,8 +70,9 @@ body, html {
 // page wrapper
 // -----------------------------------------------------------
 .pageWrapper {
-	width: $screenSizeD + px;
+	width: ($screenSizeD - 20) + px;
 	margin: 0 auto;
+	padding: 0 10px;
 	@include breakpoint($screenSizeD) {
 		width: 100%;
 	}
@@ -78,7 +87,7 @@ body, html {
 
 	padding: 20px 0 10px;
 	margin-bottom: 40px;
-	border-bottom: 1px solid #999;
+	border-bottom: 1px solid $borderColor;
 	
 	.logo { float: left; }
 
@@ -105,7 +114,7 @@ body, html {
 	// user pic
 	.usrPic { 
 		margin-left: 10px;
-		border: 1px solid #ccc;
+		border: 1px solid $borderColor;
 		padding: 2px;
 		img {
 			width: 32px;
@@ -138,7 +147,7 @@ body, html {
 		font-size: .9rem;
 		line-height: 1;
 		padding: 0 10px;
-		border-right: 1px solid #ccc;
+		border-right: 1px solid $borderColor;
 	
 		&:last-child { 
 			border: none;
@@ -162,6 +171,24 @@ body, html {
 }
 
 
+// userThumb
+// -----------------------------------------------------------
+.userThumb { 
+	img {
+		@include box-sizing(border-box);
+		display: block;
+		width: 100%;
+		height: 100%;
+		border: 1px solid $borderColor; 
+	}
+}
+
+
+// timeStamp
+// -----------------------------------------------------------
+.timeStamp { color: $textGrey; }
+
+
 // usersList 
 // users thumbs size needs to be adgusted to parent container
 // -----------------------------------------------------------
@@ -174,9 +201,6 @@ body, html {
 		margin: 0 20px 20px 0;
 	}
 	.userThumb {
-		display: block;
-		width: 100%;
-		height: 100%;
 		margin-bottom: 5px;
 	}
 	.userName {
@@ -239,9 +263,69 @@ body, html {
 }
 
 
+// status labels
+// -----------------------------------------------------------
+.statusLabel {
+	background: $greyColor;
+	padding: 0.1em 0.5em;
+	font-size: 0.8em;
+	color: #fff;
+	line-height: 1em;
+	border-radius: $borderRadius;
+	text-transform: uppercase;
+	&.new {
+		background: $orangeColor;
+	}
+}
 
 
-// page > artists
+// user messages
+// -----------------------------------------------------------
+.listMessages {
+	$thumbSize: $thumbSizeL;
+	dl {
+		@include box-sizing(border-box);
+		min-height: $thumbSize + 10;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid $borderColor;
+	}
+	dt,dd {
+		margin: 0;
+		padding: 0;
+	}
+	dt {
+		float: left;
+		width: $thumbSize;
+		height: $thumbSize;
+		img { 
+			width: 100%;
+			height: 100%;
+		}
+	}
+	dd {
+		margin-left: $thumbSize + 10;
+		display: block;
+		padding-bottom: .5em;
+	}
+	.message {
+		display: block;
+		font-size: 1em;
+	}
+	.messageDetails {
+		font-size: 0.9em;
+		> span {
+			display: inline-block;
+			margin-right: 5px;
+			padding-right: 10px;
+			border-right: 1px solid $borderColor;
+			&:last-child { border: 0 }
+		}
+	}
+}
+
+
+// page > ARTISTS
 // -----------------------------------------------------------
 .pageArtists {
 	
@@ -267,3 +351,87 @@ body, html {
 	}
 }
 
+
+// page > DASHBOARD
+// -----------------------------------------------------------
+.pageDashboard {
+
+	.listPendingOrders {
+		@extend %clearFix;
+		margin-bottom: 60px;
+	}
+}
+
+// pending orders
+.pendingOrder {
+	@include box-sizing(border-box);
+	$thumbSize: $thumbSizeXL;
+	min-height: $thumbSize + 20;
+	background: $lightGreyColor;
+	border: 1px solid $borderColor;
+	width: 49%;
+	padding: 10px; 
+	float: left;
+	margin: 0 2% 20px 0;
+	&:nth-of-type(even) { margin-right: 0; }
+	.userThumb {
+		float: left;
+		width: $thumbSize;
+		height: $thumbSize;
+	}
+	.orderDetails {
+		font-size: 0.8em;
+		margin-left: $thumbSize + 10;
+	}
+	.recentUpdate {
+		display: inline-block;
+		font-size: 1.1rem;
+		padding-left: 10px;
+		border-left: 1px solid $borderColor;
+		margin-left: 5px;
+	}
+
+	@include breakpoint($screenSizeD) {
+		float: none;
+		width: 100%;
+	}
+}
+
+
+// page > ORDERS
+// -----------------------------------------------------------
+.orderStatusBox {
+
+	$thumbSize: $thumbSizeXL;
+	@extend %clearFix;
+	@include box-sizing(border-box);
+
+	padding: 10px;
+	background: $lightGreyColor;
+	border: 1px solid $borderColor;
+
+	.userThumb {
+		float: left;
+		width: $thumbSize;
+		height: $thumbSize;
+	}
+	
+	dl { 
+		display: block;
+		width: 100%; 
+	}
+	dt, dd 
+	{
+		display: block;
+		width: 50%;
+		float: left;
+		margin: 0;
+		padding: 0;
+	}
+
+	.orderStatus {
+
+	}
+
+
+}

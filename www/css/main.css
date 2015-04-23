@@ -1,11 +1,11 @@
-.pageHeader {
+.pageHeader, .pageDashboard .listPendingOrders, .orderStatusBox {
   *zoom: 1;
 }
-.pageHeader:before, .pageHeader:after {
+.pageHeader:before, .pageDashboard .listPendingOrders:before, .orderStatusBox:before, .pageHeader:after, .pageDashboard .listPendingOrders:after, .orderStatusBox:after {
   content: "";
   display: table;
 }
-.pageHeader:after {
+.pageHeader:after, .pageDashboard .listPendingOrders:after, .orderStatusBox:after {
   clear: both;
 }
 
@@ -483,7 +483,7 @@ th {
 
 html {
   font-size: 14px;
-  color: #444;
+  color: #777;
 }
 @media only screen and (max-width: 1020px) {
   html {
@@ -502,10 +502,10 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
-  color: #003780;
+  color: #3161a1;
 }
 a:hover {
-  color: #900;
+  color: #ff4e00;
 }
 
 .fLt {
@@ -514,6 +514,15 @@ a:hover {
 
 .fRt {
   float: right;
+}
+
+* {
+  line-height: 1.3;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body, html {
@@ -537,8 +546,9 @@ body, html {
 }
 
 .pageWrapper {
-  width: 1020px;
+  width: 1000px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 @media only screen and (max-width: 1020px) {
   .pageWrapper {
@@ -549,7 +559,7 @@ body, html {
 .pageHeader {
   padding: 20px 0 10px;
   margin-bottom: 40px;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #ccc;
 }
 .pageHeader .logo {
   float: left;
@@ -618,15 +628,24 @@ body, html {
   cursor: default;
 }
 
+.userThumb img {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+}
+
+.timeStamp {
+  color: #999;
+}
+
 .usersList li {
   position: relative;
   width: 128px;
   margin: 0 20px 20px 0;
 }
 .usersList .userThumb {
-  display: block;
-  width: 100%;
-  height: 100%;
   margin-bottom: 5px;
 }
 .usersList .userName {
@@ -679,6 +698,61 @@ body, html {
   color: #fff;
 }
 
+.statusLabel {
+  background: #999;
+  padding: 0.1em 0.5em;
+  font-size: 0.8em;
+  color: #fff;
+  line-height: 1em;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.statusLabel.new {
+  background: #ff4e00;
+}
+
+.listMessages dl {
+  box-sizing: border-box;
+  min-height: 58px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.listMessages dt, .listMessages dd {
+  margin: 0;
+  padding: 0;
+}
+.listMessages dt {
+  float: left;
+  width: 48px;
+  height: 48px;
+}
+.listMessages dt img {
+  width: 100%;
+  height: 100%;
+}
+.listMessages dd {
+  margin-left: 58px;
+  display: block;
+  padding-bottom: .5em;
+}
+.listMessages .message {
+  display: block;
+  font-size: 1em;
+}
+.listMessages .messageDetails {
+  font-size: 0.9em;
+}
+.listMessages .messageDetails > span {
+  display: inline-block;
+  margin-right: 5px;
+  padding-right: 10px;
+  border-right: 1px solid #ccc;
+}
+.listMessages .messageDetails > span:last-child {
+  border: 0;
+}
+
 .pageArtists .artistsFilter label {
   position: relative;
   display: inline-block;
@@ -698,6 +772,69 @@ body, html {
   width: 100%;
   padding: 10px;
   font-size: 1.2em;
+}
+
+.pageDashboard .listPendingOrders {
+  margin-bottom: 60px;
+}
+
+.pendingOrder {
+  box-sizing: border-box;
+  min-height: 84px;
+  background: #efefef;
+  border: 1px solid #ccc;
+  width: 49%;
+  padding: 10px;
+  float: left;
+  margin: 0 2% 20px 0;
+}
+.pendingOrder:nth-of-type(even) {
+  margin-right: 0;
+}
+.pendingOrder .userThumb {
+  float: left;
+  width: 64px;
+  height: 64px;
+}
+.pendingOrder .orderDetails {
+  font-size: 0.8em;
+  margin-left: 74px;
+}
+.pendingOrder .recentUpdate {
+  display: inline-block;
+  font-size: 1.1rem;
+  padding-left: 10px;
+  border-left: 1px solid #ccc;
+  margin-left: 5px;
+}
+@media only screen and (max-width: 1020px) {
+  .pendingOrder {
+    float: none;
+    width: 100%;
+  }
+}
+
+.orderStatusBox {
+  box-sizing: border-box;
+  padding: 10px;
+  background: #efefef;
+  border: 1px solid #ccc;
+}
+.orderStatusBox .userThumb {
+  float: left;
+  width: 64px;
+  height: 64px;
+}
+.orderStatusBox dl {
+  display: block;
+  width: 100%;
+}
+.orderStatusBox dt, .orderStatusBox dd {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 0;
+  padding: 0;
 }
 
 .btn {
