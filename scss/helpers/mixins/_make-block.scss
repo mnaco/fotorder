@@ -7,7 +7,7 @@
 
 // example @include create-block(10px,20px)
 
-@mixin create-block($width, $height) {
+@mixin make-block($width, $height) {
 	position: absolute;
 	display: block;
 	content: "\0020";

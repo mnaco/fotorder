@@ -406,7 +406,6 @@ body, html {
 	@extend %clearFix;
 	@include box-sizing(border-box);
 
-	padding: 10px;
 	background: $lightGreyColor;
 	border: 1px solid $borderColor;
 
@@ -416,16 +415,19 @@ body, html {
 		height: $thumbSize;
 	}
 	
+	// bidding overview container
 	.biddingOverview {
 
 		@include clearfix();
+
+		padding: 10px;
 
 		> div {
 			float: left;
 			width: 48%;
 			min-height: $thumbSize + 20;
-			&:first-child {
-				margin-right: 2%;
+			&:nth-of-type(even) {
+				float: right;
 			}
 		}
 
@@ -475,5 +477,79 @@ body, html {
 				color: #000;
 			}
 		}
+	}
+
+
+	// bidding history
+	.biddinHistory {
+		margin: 20px 0;
+		
+		> h4 {
+			position: relative;
+			text-align: center;
+			line-height: 1em;
+			font-size: 0.7em;
+			text-transform: uppercase;
+			> span { 
+				position: relative;
+				z-index: 1;
+				padding: 0 20px;
+				background: $lightGreyColor;
+			}
+			&:before {
+				@include make-block(100%,1px);
+				top: 50%;
+				background: $borderColor;
+			}
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		li {
+			position: relative;
+			display: block;
+			margin: 0;
+			padding: 0;
+			padding-right: 50%;
+			font-size: 0.8em;
+			> div {
+				padding: 10px;
+			}
+			&:before {
+				@include make-block(1px,100%);
+				top: 0;
+				right: 50%;
+				background: $borderColor;
+			}
+			&:after {
+				@include make-block(4%,1px);
+				top: 15px;
+				right: 50%;
+				background: $borderColor;
+			}
+			&.youno {
+				text-align: right;
+				padding-right: 0;
+				padding-left: 50%;
+				&:after {
+					right: 46%;
+				}
+			}
+			.recentUpdate {
+				font-size: 1.1em;
+				display: block;
+				margin-top: 3px;
+				img {
+					display: block;
+					border: 1px solid $borderColor;
+					width: 100%;
+					margin: 5px 0;
+				}
+			}
+		}
+		
 	}
 }
