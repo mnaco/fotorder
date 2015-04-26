@@ -186,7 +186,10 @@ body, html {
 
 // timeStamp
 // -----------------------------------------------------------
-.timeStamp { color: $textGrey; }
+.timeStamp { 
+	color: $textGrey; 
+	font-size: 0.8em;
+}
 
 
 // usersList 
@@ -588,5 +591,51 @@ body, html {
 		span {
 			position: relative;
 		}
+	}
+}
+
+
+
+// chat
+// -----------------------------------------------------------
+.chatContainer {
+	
+	$thumbSize: $thumbSizeS;
+
+	.userThumb {
+		float: left;
+		width: $thumbSize;
+		height: $thumbSize;
+	}
+
+	dl {
+		@include clearfix();
+		margin: 0 0 7px;
+		padding: 0;
+	}
+	dt, dd {
+		@include box-sizing(border-box);
+		margin: 0;
+		padding: 0;
+	}
+	dt { float:  left; }
+	dd {
+		margin-left: $thumbSize + 10;
+		margin-right: 10px;
+		display: block;
+		font-size: 0.9em;
+		background: $lightGreyColor;
+		padding: 3px 5px;
+		margin-bottom: 3px;
+	}
+	dl.you {
+		dt { float: right; }
+		dd {
+			margin-right: $thumbSize + 10;
+			margin-left: 10px;
+		}
+	}
+	.timeStamp {
+		display: block;
 	}
 }

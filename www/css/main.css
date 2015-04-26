@@ -730,19 +730,20 @@ body, html {
 /* line 189, ../../scss/base/_base.scss */
 .timeStamp {
   color: #999;
+  font-size: 0.8em;
 }
 
-/* line 197, ../../scss/base/_base.scss */
+/* line 200, ../../scss/base/_base.scss */
 .usersList li {
   position: relative;
   width: 128px;
   margin: 0 20px 20px 0;
 }
-/* line 203, ../../scss/base/_base.scss */
+/* line 206, ../../scss/base/_base.scss */
 .usersList .userThumb {
   margin-bottom: 5px;
 }
-/* line 206, ../../scss/base/_base.scss */
+/* line 209, ../../scss/base/_base.scss */
 .usersList .userName {
   display: block;
   overflow: hidden;
@@ -751,43 +752,43 @@ body, html {
   margin-right: 20px;
   font-size: 0.8em;
 }
-/* line 214, ../../scss/base/_base.scss */
+/* line 217, ../../scss/base/_base.scss */
 .usersList .bookmarkUser {
   float: right;
 }
 
-/* line 222, ../../scss/base/_base.scss */
+/* line 225, ../../scss/base/_base.scss */
 .pageSidebar {
   background: #eee;
 }
-/* line 224, ../../scss/base/_base.scss */
+/* line 227, ../../scss/base/_base.scss */
 .pageSidebar > h2 {
   padding: 15px 10px;
   margin: 0 0 15px;
   border-bottom: 1px solid #fff;
 }
-/* line 229, ../../scss/base/_base.scss */
+/* line 232, ../../scss/base/_base.scss */
 .pageSidebar section {
   padding: 0 0 10px 10px;
   border-bottom: 1px solid #fff;
   margin-bottom: 20px;
 }
-/* line 233, ../../scss/base/_base.scss */
+/* line 236, ../../scss/base/_base.scss */
 .pageSidebar section > h4 {
   margin: 0 0 1em;
 }
 
-/* line 242, ../../scss/base/_base.scss */
+/* line 245, ../../scss/base/_base.scss */
 .checkboxLabel {
   position: relative;
 }
-/* line 244, ../../scss/base/_base.scss */
+/* line 247, ../../scss/base/_base.scss */
 .checkboxLabel input {
   position: absolute;
   z-index: 0;
   opacity: 0;
 }
-/* line 248, ../../scss/base/_base.scss */
+/* line 251, ../../scss/base/_base.scss */
 .checkboxLabel input + label {
   position: relative;
   z-index: 1;
@@ -796,13 +797,13 @@ body, html {
   padding: 0.1em 0.5em;
   line-height: 1;
 }
-/* line 257, ../../scss/base/_base.scss */
+/* line 260, ../../scss/base/_base.scss */
 .checkboxLabel input:checked + label {
   background: #003780;
   color: #fff;
 }
 
-/* line 268, ../../scss/base/_base.scss */
+/* line 271, ../../scss/base/_base.scss */
 .statusLabel {
   background: #999;
   padding: 0.1em 0.5em;
@@ -812,12 +813,12 @@ body, html {
   border-radius: 3px;
   text-transform: uppercase;
 }
-/* line 276, ../../scss/base/_base.scss */
+/* line 279, ../../scss/base/_base.scss */
 .statusLabel.new {
   background: #ff4e00;
 }
 
-/* line 286, ../../scss/base/_base.scss */
+/* line 289, ../../scss/base/_base.scss */
 .listMessages dl {
   box-sizing: border-box;
   min-height: 58px;
@@ -825,81 +826,81 @@ body, html {
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
-/* line 293, ../../scss/base/_base.scss */
+/* line 296, ../../scss/base/_base.scss */
 .listMessages dt, .listMessages dd {
   margin: 0;
   padding: 0;
 }
-/* line 297, ../../scss/base/_base.scss */
+/* line 300, ../../scss/base/_base.scss */
 .listMessages dt {
   float: left;
   width: 48px;
   height: 48px;
 }
-/* line 301, ../../scss/base/_base.scss */
+/* line 304, ../../scss/base/_base.scss */
 .listMessages dt img {
   width: 100%;
   height: 100%;
 }
-/* line 306, ../../scss/base/_base.scss */
+/* line 309, ../../scss/base/_base.scss */
 .listMessages dd {
   margin-left: 58px;
   display: block;
   padding-bottom: .5em;
 }
-/* line 311, ../../scss/base/_base.scss */
+/* line 314, ../../scss/base/_base.scss */
 .listMessages .message {
   display: block;
   font-size: 1em;
 }
-/* line 315, ../../scss/base/_base.scss */
+/* line 318, ../../scss/base/_base.scss */
 .listMessages .messageDetails {
   font-size: 0.9em;
 }
-/* line 317, ../../scss/base/_base.scss */
+/* line 320, ../../scss/base/_base.scss */
 .listMessages .messageDetails > span {
   display: inline-block;
   margin-right: 5px;
   padding-right: 10px;
   border-right: 1px solid #ccc;
 }
-/* line 322, ../../scss/base/_base.scss */
+/* line 325, ../../scss/base/_base.scss */
 .listMessages .messageDetails > span:last-child {
   border: 0;
 }
 
-/* line 333, ../../scss/base/_base.scss */
+/* line 336, ../../scss/base/_base.scss */
 .pageArtists .artistsFilter label {
   position: relative;
   display: inline-block;
   margin: 0 10px 10px 0;
   font-size: 0.9em;
 }
-/* line 338, ../../scss/base/_base.scss */
+/* line 341, ../../scss/base/_base.scss */
 .pageArtists .artistsFilter label input {
   margin-right: 5px;
 }
-/* line 340, ../../scss/base/_base.scss */
+/* line 343, ../../scss/base/_base.scss */
 .pageArtists .artistsFilter h1, .pageArtists .artistsFilter h3 {
   margin-top: 0;
 }
-/* line 344, ../../scss/base/_base.scss */
+/* line 347, ../../scss/base/_base.scss */
 .pageArtists .searchArtist {
   margin-bottom: 20px;
 }
-/* line 346, ../../scss/base/_base.scss */
+/* line 349, ../../scss/base/_base.scss */
 .pageArtists .searchArtist input[type="text"] {
   width: 100%;
   padding: 10px;
   font-size: 1.2em;
 }
 
-/* line 359, ../../scss/base/_base.scss */
+/* line 362, ../../scss/base/_base.scss */
 .pageDashboard .listPendingOrders {
   margin-bottom: 60px;
 }
 
-/* line 366, ../../scss/base/_base.scss */
+/* line 369, ../../scss/base/_base.scss */
 .pendingOrder {
   box-sizing: border-box;
   min-height: 84px;
@@ -910,22 +911,22 @@ body, html {
   float: left;
   margin: 0 2% 20px 0;
 }
-/* line 376, ../../scss/base/_base.scss */
+/* line 379, ../../scss/base/_base.scss */
 .pendingOrder:nth-of-type(even) {
   margin-right: 0;
 }
-/* line 377, ../../scss/base/_base.scss */
+/* line 380, ../../scss/base/_base.scss */
 .pendingOrder .userThumb {
   float: left;
   width: 64px;
   height: 64px;
 }
-/* line 382, ../../scss/base/_base.scss */
+/* line 385, ../../scss/base/_base.scss */
 .pendingOrder .orderDetails {
   font-size: 0.8em;
   margin-left: 74px;
 }
-/* line 386, ../../scss/base/_base.scss */
+/* line 389, ../../scss/base/_base.scss */
 .pendingOrder .recentUpdate {
   display: inline-block;
   font-size: 1.1rem;
@@ -934,26 +935,26 @@ body, html {
   margin-left: 5px;
 }
 @media only screen and (max-width: 1020px) {
-  /* line 366, ../../scss/base/_base.scss */
+  /* line 369, ../../scss/base/_base.scss */
   .pendingOrder {
     float: none;
     width: 100%;
   }
 }
 
-/* line 403, ../../scss/base/_base.scss */
+/* line 406, ../../scss/base/_base.scss */
 .biddingContainer {
   box-sizing: border-box;
   background: #efefef;
   border: 1px solid #ccc;
 }
-/* line 412, ../../scss/base/_base.scss */
+/* line 415, ../../scss/base/_base.scss */
 .biddingContainer .userThumb {
   float: left;
   width: 64px;
   height: 64px;
 }
-/* line 419, ../../scss/base/_base.scss */
+/* line 422, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview {
   padding: 10px;
 }
@@ -970,17 +971,17 @@ body, html {
 .biddingContainer .biddingOverview:after {
   clear: both;
 }
-/* line 425, ../../scss/base/_base.scss */
+/* line 428, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview > div {
   float: left;
   width: 48%;
   min-height: 84px;
 }
-/* line 429, ../../scss/base/_base.scss */
+/* line 432, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview > div:nth-of-type(even) {
   float: right;
 }
-/* line 434, ../../scss/base/_base.scss */
+/* line 437, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview dl {
   margin: 0;
   padding: 0;
@@ -998,22 +999,22 @@ body, html {
 .biddingContainer .biddingOverview dl:after {
   clear: both;
 }
-/* line 439, ../../scss/base/_base.scss */
+/* line 442, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview dt, .biddingContainer .biddingOverview dd {
   margin: 0;
   padding: 0;
 }
-/* line 443, ../../scss/base/_base.scss */
+/* line 446, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview dt {
   float: left;
 }
-/* line 444, ../../scss/base/_base.scss */
+/* line 447, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview dd {
   margin-left: 74px;
   display: block;
   font-size: 0.9em;
 }
-/* line 449, ../../scss/base/_base.scss */
+/* line 452, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview .btn {
   display: block;
   width: 100%;
@@ -1022,11 +1023,11 @@ body, html {
   padding: 0.5em 0.3em;
   font-size: 1.5em;
 }
-/* line 456, ../../scss/base/_base.scss */
+/* line 459, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview .btn.btnAgree {
   background: #ff4e00;
 }
-/* line 461, ../../scss/base/_base.scss */
+/* line 464, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview input[type="text"] {
   width: 100%;
   text-align: center;
@@ -1035,22 +1036,22 @@ body, html {
   padding: 0.5em 0;
   margin-top: 5px;
 }
-/* line 468, ../../scss/base/_base.scss */
+/* line 471, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview input[type="text"]:disabled {
   background: #ddd;
 }
-/* line 474, ../../scss/base/_base.scss */
+/* line 477, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview .youno input {
   font-size: 1.7em;
   padding: 0.4em 0;
   color: #000;
 }
-/* line 484, ../../scss/base/_base.scss */
+/* line 487, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory {
   position: relative;
   margin: 20px 0;
 }
-/* line 489, ../../scss/base/_base.scss */
+/* line 492, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory > h4 {
   position: relative;
   text-align: center;
@@ -1058,14 +1059,14 @@ body, html {
   font-size: 0.7em;
   text-transform: uppercase;
 }
-/* line 495, ../../scss/base/_base.scss */
+/* line 498, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory > h4 > span {
   position: relative;
   z-index: 1;
   padding: 0 20px;
   background: #efefef;
 }
-/* line 501, ../../scss/base/_base.scss */
+/* line 504, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory > h4:before {
   position: absolute;
   display: block;
@@ -1075,13 +1076,13 @@ body, html {
   top: 50%;
   background: #ccc;
 }
-/* line 508, ../../scss/base/_base.scss */
+/* line 511, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 513, ../../scss/base/_base.scss */
+/* line 516, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li {
   position: relative;
   display: block;
@@ -1090,11 +1091,11 @@ body, html {
   padding-right: 50%;
   font-size: 0.8em;
 }
-/* line 520, ../../scss/base/_base.scss */
+/* line 523, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li > div {
   padding: 10px;
 }
-/* line 523, ../../scss/base/_base.scss */
+/* line 526, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li:before {
   position: absolute;
   display: block;
@@ -1105,7 +1106,7 @@ body, html {
   right: 50%;
   background: #ccc;
 }
-/* line 529, ../../scss/base/_base.scss */
+/* line 532, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li:after {
   position: absolute;
   display: block;
@@ -1116,34 +1117,34 @@ body, html {
   right: 50%;
   background: #ccc;
 }
-/* line 535, ../../scss/base/_base.scss */
+/* line 538, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li.youno {
   text-align: right;
   padding-right: 0;
   padding-left: 50%;
 }
-/* line 539, ../../scss/base/_base.scss */
+/* line 542, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li.youno:after {
   right: 47%;
 }
-/* line 543, ../../scss/base/_base.scss */
+/* line 546, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li .recentUpdate {
   font-size: 1.1em;
   display: block;
   margin-top: 3px;
 }
-/* line 547, ../../scss/base/_base.scss */
+/* line 550, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li .recentUpdate img {
   display: block;
   border: 1px solid #ccc;
   width: 100%;
   margin: 5px 0;
 }
-/* line 557, ../../scss/base/_base.scss */
+/* line 560, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory:not(.expand) ul:not(first-child) {
   display: none;
 }
-/* line 560, ../../scss/base/_base.scss */
+/* line 563, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory:not(.expand) .expandHistory span {
   width: 0;
   height: 0;
@@ -1155,7 +1156,7 @@ body, html {
   border-top: 0.5rem solid #ccc;
   top: 10px;
 }
-/* line 566, ../../scss/base/_base.scss */
+/* line 569, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory.expand .expandHistory span {
   width: 0;
   height: 0;
@@ -1167,7 +1168,7 @@ body, html {
   border-bottom: 0.5rem solid #ccc;
   bottom: 10px;
 }
-/* line 574, ../../scss/base/_base.scss */
+/* line 577, ../../scss/base/_base.scss */
 .biddingContainer .expandHistory {
   position: absolute;
   cursor: pointer;
@@ -1183,9 +1184,67 @@ body, html {
   border-top: 0;
   text-align: center;
 }
-/* line 588, ../../scss/base/_base.scss */
+/* line 591, ../../scss/base/_base.scss */
 .biddingContainer .expandHistory span {
   position: relative;
+}
+
+/* line 605, ../../scss/base/_base.scss */
+.chatContainer .userThumb {
+  float: left;
+  width: 24px;
+  height: 24px;
+}
+/* line 611, ../../scss/base/_base.scss */
+.chatContainer dl {
+  margin: 0 0 7px;
+  padding: 0;
+}
+/* line 10, ../../scss/helpers/mixins/_clearfix.scss */
+.chatContainer dl {
+  *zoom: 1;
+}
+/* line 13, ../../scss/helpers/mixins/_clearfix.scss */
+.chatContainer dl:before, .chatContainer dl:after {
+  content: "";
+  display: table;
+}
+/* line 18, ../../scss/helpers/mixins/_clearfix.scss */
+.chatContainer dl:after {
+  clear: both;
+}
+/* line 616, ../../scss/base/_base.scss */
+.chatContainer dt, .chatContainer dd {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* line 621, ../../scss/base/_base.scss */
+.chatContainer dt {
+  float: left;
+}
+/* line 622, ../../scss/base/_base.scss */
+.chatContainer dd {
+  margin-left: 34px;
+  margin-right: 10px;
+  display: block;
+  font-size: 0.9em;
+  background: #efefef;
+  padding: 3px 5px;
+  margin-bottom: 3px;
+}
+/* line 632, ../../scss/base/_base.scss */
+.chatContainer dl.you dt {
+  float: right;
+}
+/* line 633, ../../scss/base/_base.scss */
+.chatContainer dl.you dd {
+  margin-right: 34px;
+  margin-left: 10px;
+}
+/* line 638, ../../scss/base/_base.scss */
+.chatContainer .timeStamp {
+  display: block;
 }
 
 /* line 4, ../../scss/base/components/_ui.scss */
