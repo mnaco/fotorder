@@ -173,7 +173,8 @@ body, html {
 
 // userThumb
 // -----------------------------------------------------------
-.userThumb { 
+.userThumb,
+.photoThumb { 
 	img {
 		@include box-sizing(border-box);
 		display: block;
@@ -592,6 +593,43 @@ body, html {
 			position: relative;
 		}
 	}
+
+}
+
+// accept order
+.acceptOrder {
+
+	margin-bottom: 40px;
+	text-align: center;
+
+	.photoToAccept {
+		border: 1px solid $borderColor;
+		text-align: center;
+		img { max-height: 300px; }
+	}
+
+	.otherPhotos {
+		@include inline-list();
+		$thumbSize: $thumbSizeXL;
+		text-align: left;
+		li { margin-top: 5px; }
+		.photoThumb img {
+			width: auto; 
+			height: $thumbSize;
+		}
+	}
+
+	.acceptPrice {
+		margin: 40px 0 20px 0;
+	}
+	.btn {
+		font-size: 1.6em;
+		padding-left: 2em;
+		padding-right: 2em; 
+		background: $orangeColor;
+		margin: 20px 0;
+	}
+
 }
 
 
@@ -606,6 +644,21 @@ body, html {
 		float: left;
 		width: $thumbSize;
 		height: $thumbSize;
+	}
+
+	.sendMessage {
+		text-align: right;
+		margin-bottom: 30px;
+		textarea {
+			display: block;
+			width: 100% !important;
+			min-height: 100px;
+			margin-bottom: 10px;
+		}
+		.btn {
+			background: $orangeColor;
+			padding: 5px 20px;
+		}
 	}
 
 	dl {

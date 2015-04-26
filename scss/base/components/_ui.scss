@@ -13,3 +13,9 @@
 		// background: $blueColor !important;
 	}
 }
+
+input type[text],
+textarea 
+{
+	border-color: $borderColor;
+}

@@ -18,7 +18,7 @@
   padding: 0;
   margin: 0;
 }
-/* line 17, ../../scss/helpers/_extends.scss */
+/* line 11, ../../scss/helpers/mixins/_inline-list.scss */
 .mainNav ul li, .usersList li {
   display: inline-block;
 }
@@ -718,8 +718,9 @@ body, html {
   cursor: default;
 }
 
-/* line 177, ../../scss/base/_base.scss */
-.userThumb img {
+/* line 178, ../../scss/base/_base.scss */
+.userThumb img,
+.photoThumb img {
   box-sizing: border-box;
   display: block;
   width: 100%;
@@ -727,23 +728,23 @@ body, html {
   border: 1px solid #ccc;
 }
 
-/* line 189, ../../scss/base/_base.scss */
+/* line 190, ../../scss/base/_base.scss */
 .timeStamp {
   color: #999;
   font-size: 0.8em;
 }
 
-/* line 200, ../../scss/base/_base.scss */
+/* line 201, ../../scss/base/_base.scss */
 .usersList li {
   position: relative;
   width: 128px;
   margin: 0 20px 20px 0;
 }
-/* line 206, ../../scss/base/_base.scss */
+/* line 207, ../../scss/base/_base.scss */
 .usersList .userThumb {
   margin-bottom: 5px;
 }
-/* line 209, ../../scss/base/_base.scss */
+/* line 210, ../../scss/base/_base.scss */
 .usersList .userName {
   display: block;
   overflow: hidden;
@@ -752,43 +753,43 @@ body, html {
   margin-right: 20px;
   font-size: 0.8em;
 }
-/* line 217, ../../scss/base/_base.scss */
+/* line 218, ../../scss/base/_base.scss */
 .usersList .bookmarkUser {
   float: right;
 }
 
-/* line 225, ../../scss/base/_base.scss */
+/* line 226, ../../scss/base/_base.scss */
 .pageSidebar {
   background: #eee;
 }
-/* line 227, ../../scss/base/_base.scss */
+/* line 228, ../../scss/base/_base.scss */
 .pageSidebar > h2 {
   padding: 15px 10px;
   margin: 0 0 15px;
   border-bottom: 1px solid #fff;
 }
-/* line 232, ../../scss/base/_base.scss */
+/* line 233, ../../scss/base/_base.scss */
 .pageSidebar section {
   padding: 0 0 10px 10px;
   border-bottom: 1px solid #fff;
   margin-bottom: 20px;
 }
-/* line 236, ../../scss/base/_base.scss */
+/* line 237, ../../scss/base/_base.scss */
 .pageSidebar section > h4 {
   margin: 0 0 1em;
 }
 
-/* line 245, ../../scss/base/_base.scss */
+/* line 246, ../../scss/base/_base.scss */
 .checkboxLabel {
   position: relative;
 }
-/* line 247, ../../scss/base/_base.scss */
+/* line 248, ../../scss/base/_base.scss */
 .checkboxLabel input {
   position: absolute;
   z-index: 0;
   opacity: 0;
 }
-/* line 251, ../../scss/base/_base.scss */
+/* line 252, ../../scss/base/_base.scss */
 .checkboxLabel input + label {
   position: relative;
   z-index: 1;
@@ -797,13 +798,13 @@ body, html {
   padding: 0.1em 0.5em;
   line-height: 1;
 }
-/* line 260, ../../scss/base/_base.scss */
+/* line 261, ../../scss/base/_base.scss */
 .checkboxLabel input:checked + label {
   background: #003780;
   color: #fff;
 }
 
-/* line 271, ../../scss/base/_base.scss */
+/* line 272, ../../scss/base/_base.scss */
 .statusLabel {
   background: #999;
   padding: 0.1em 0.5em;
@@ -813,12 +814,12 @@ body, html {
   border-radius: 3px;
   text-transform: uppercase;
 }
-/* line 279, ../../scss/base/_base.scss */
+/* line 280, ../../scss/base/_base.scss */
 .statusLabel.new {
   background: #ff4e00;
 }
 
-/* line 289, ../../scss/base/_base.scss */
+/* line 290, ../../scss/base/_base.scss */
 .listMessages dl {
   box-sizing: border-box;
   min-height: 58px;
@@ -826,81 +827,81 @@ body, html {
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
-/* line 296, ../../scss/base/_base.scss */
+/* line 297, ../../scss/base/_base.scss */
 .listMessages dt, .listMessages dd {
   margin: 0;
   padding: 0;
 }
-/* line 300, ../../scss/base/_base.scss */
+/* line 301, ../../scss/base/_base.scss */
 .listMessages dt {
   float: left;
   width: 48px;
   height: 48px;
 }
-/* line 304, ../../scss/base/_base.scss */
+/* line 305, ../../scss/base/_base.scss */
 .listMessages dt img {
   width: 100%;
   height: 100%;
 }
-/* line 309, ../../scss/base/_base.scss */
+/* line 310, ../../scss/base/_base.scss */
 .listMessages dd {
   margin-left: 58px;
   display: block;
   padding-bottom: .5em;
 }
-/* line 314, ../../scss/base/_base.scss */
+/* line 315, ../../scss/base/_base.scss */
 .listMessages .message {
   display: block;
   font-size: 1em;
 }
-/* line 318, ../../scss/base/_base.scss */
+/* line 319, ../../scss/base/_base.scss */
 .listMessages .messageDetails {
   font-size: 0.9em;
 }
-/* line 320, ../../scss/base/_base.scss */
+/* line 321, ../../scss/base/_base.scss */
 .listMessages .messageDetails > span {
   display: inline-block;
   margin-right: 5px;
   padding-right: 10px;
   border-right: 1px solid #ccc;
 }
-/* line 325, ../../scss/base/_base.scss */
+/* line 326, ../../scss/base/_base.scss */
 .listMessages .messageDetails > span:last-child {
   border: 0;
 }
 
-/* line 336, ../../scss/base/_base.scss */
+/* line 337, ../../scss/base/_base.scss */
 .pageArtists .artistsFilter label {
   position: relative;
   display: inline-block;
   margin: 0 10px 10px 0;
   font-size: 0.9em;
 }
-/* line 341, ../../scss/base/_base.scss */
+/* line 342, ../../scss/base/_base.scss */
 .pageArtists .artistsFilter label input {
   margin-right: 5px;
 }
-/* line 343, ../../scss/base/_base.scss */
+/* line 344, ../../scss/base/_base.scss */
 .pageArtists .artistsFilter h1, .pageArtists .artistsFilter h3 {
   margin-top: 0;
 }
-/* line 347, ../../scss/base/_base.scss */
+/* line 348, ../../scss/base/_base.scss */
 .pageArtists .searchArtist {
   margin-bottom: 20px;
 }
-/* line 349, ../../scss/base/_base.scss */
+/* line 350, ../../scss/base/_base.scss */
 .pageArtists .searchArtist input[type="text"] {
   width: 100%;
   padding: 10px;
   font-size: 1.2em;
 }
 
-/* line 362, ../../scss/base/_base.scss */
+/* line 363, ../../scss/base/_base.scss */
 .pageDashboard .listPendingOrders {
   margin-bottom: 60px;
 }
 
-/* line 369, ../../scss/base/_base.scss */
+/* line 370, ../../scss/base/_base.scss */
 .pendingOrder {
   box-sizing: border-box;
   min-height: 84px;
@@ -911,22 +912,22 @@ body, html {
   float: left;
   margin: 0 2% 20px 0;
 }
-/* line 379, ../../scss/base/_base.scss */
+/* line 380, ../../scss/base/_base.scss */
 .pendingOrder:nth-of-type(even) {
   margin-right: 0;
 }
-/* line 380, ../../scss/base/_base.scss */
+/* line 381, ../../scss/base/_base.scss */
 .pendingOrder .userThumb {
   float: left;
   width: 64px;
   height: 64px;
 }
-/* line 385, ../../scss/base/_base.scss */
+/* line 386, ../../scss/base/_base.scss */
 .pendingOrder .orderDetails {
   font-size: 0.8em;
   margin-left: 74px;
 }
-/* line 389, ../../scss/base/_base.scss */
+/* line 390, ../../scss/base/_base.scss */
 .pendingOrder .recentUpdate {
   display: inline-block;
   font-size: 1.1rem;
@@ -935,26 +936,26 @@ body, html {
   margin-left: 5px;
 }
 @media only screen and (max-width: 1020px) {
-  /* line 369, ../../scss/base/_base.scss */
+  /* line 370, ../../scss/base/_base.scss */
   .pendingOrder {
     float: none;
     width: 100%;
   }
 }
 
-/* line 406, ../../scss/base/_base.scss */
+/* line 407, ../../scss/base/_base.scss */
 .biddingContainer {
   box-sizing: border-box;
   background: #efefef;
   border: 1px solid #ccc;
 }
-/* line 415, ../../scss/base/_base.scss */
+/* line 416, ../../scss/base/_base.scss */
 .biddingContainer .userThumb {
   float: left;
   width: 64px;
   height: 64px;
 }
-/* line 422, ../../scss/base/_base.scss */
+/* line 423, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview {
   padding: 10px;
 }
@@ -971,17 +972,17 @@ body, html {
 .biddingContainer .biddingOverview:after {
   clear: both;
 }
-/* line 428, ../../scss/base/_base.scss */
+/* line 429, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview > div {
   float: left;
   width: 48%;
   min-height: 84px;
 }
-/* line 432, ../../scss/base/_base.scss */
+/* line 433, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview > div:nth-of-type(even) {
   float: right;
 }
-/* line 437, ../../scss/base/_base.scss */
+/* line 438, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview dl {
   margin: 0;
   padding: 0;
@@ -999,22 +1000,22 @@ body, html {
 .biddingContainer .biddingOverview dl:after {
   clear: both;
 }
-/* line 442, ../../scss/base/_base.scss */
+/* line 443, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview dt, .biddingContainer .biddingOverview dd {
   margin: 0;
   padding: 0;
 }
-/* line 446, ../../scss/base/_base.scss */
+/* line 447, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview dt {
   float: left;
 }
-/* line 447, ../../scss/base/_base.scss */
+/* line 448, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview dd {
   margin-left: 74px;
   display: block;
   font-size: 0.9em;
 }
-/* line 452, ../../scss/base/_base.scss */
+/* line 453, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview .btn {
   display: block;
   width: 100%;
@@ -1023,11 +1024,11 @@ body, html {
   padding: 0.5em 0.3em;
   font-size: 1.5em;
 }
-/* line 459, ../../scss/base/_base.scss */
+/* line 460, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview .btn.btnAgree {
   background: #ff4e00;
 }
-/* line 464, ../../scss/base/_base.scss */
+/* line 465, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview input[type="text"] {
   width: 100%;
   text-align: center;
@@ -1036,22 +1037,22 @@ body, html {
   padding: 0.5em 0;
   margin-top: 5px;
 }
-/* line 471, ../../scss/base/_base.scss */
+/* line 472, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview input[type="text"]:disabled {
   background: #ddd;
 }
-/* line 477, ../../scss/base/_base.scss */
+/* line 478, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview .youno input {
   font-size: 1.7em;
   padding: 0.4em 0;
   color: #000;
 }
-/* line 487, ../../scss/base/_base.scss */
+/* line 488, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory {
   position: relative;
   margin: 20px 0;
 }
-/* line 492, ../../scss/base/_base.scss */
+/* line 493, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory > h4 {
   position: relative;
   text-align: center;
@@ -1059,14 +1060,14 @@ body, html {
   font-size: 0.7em;
   text-transform: uppercase;
 }
-/* line 498, ../../scss/base/_base.scss */
+/* line 499, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory > h4 > span {
   position: relative;
   z-index: 1;
   padding: 0 20px;
   background: #efefef;
 }
-/* line 504, ../../scss/base/_base.scss */
+/* line 505, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory > h4:before {
   position: absolute;
   display: block;
@@ -1076,13 +1077,13 @@ body, html {
   top: 50%;
   background: #ccc;
 }
-/* line 511, ../../scss/base/_base.scss */
+/* line 512, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 516, ../../scss/base/_base.scss */
+/* line 517, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li {
   position: relative;
   display: block;
@@ -1091,11 +1092,11 @@ body, html {
   padding-right: 50%;
   font-size: 0.8em;
 }
-/* line 523, ../../scss/base/_base.scss */
+/* line 524, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li > div {
   padding: 10px;
 }
-/* line 526, ../../scss/base/_base.scss */
+/* line 527, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li:before {
   position: absolute;
   display: block;
@@ -1106,7 +1107,7 @@ body, html {
   right: 50%;
   background: #ccc;
 }
-/* line 532, ../../scss/base/_base.scss */
+/* line 533, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li:after {
   position: absolute;
   display: block;
@@ -1117,34 +1118,34 @@ body, html {
   right: 50%;
   background: #ccc;
 }
-/* line 538, ../../scss/base/_base.scss */
+/* line 539, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li.youno {
   text-align: right;
   padding-right: 0;
   padding-left: 50%;
 }
-/* line 542, ../../scss/base/_base.scss */
+/* line 543, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li.youno:after {
   right: 47%;
 }
-/* line 546, ../../scss/base/_base.scss */
+/* line 547, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li .recentUpdate {
   font-size: 1.1em;
   display: block;
   margin-top: 3px;
 }
-/* line 550, ../../scss/base/_base.scss */
+/* line 551, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li .recentUpdate img {
   display: block;
   border: 1px solid #ccc;
   width: 100%;
   margin: 5px 0;
 }
-/* line 560, ../../scss/base/_base.scss */
+/* line 561, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory:not(.expand) ul:not(first-child) {
   display: none;
 }
-/* line 563, ../../scss/base/_base.scss */
+/* line 564, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory:not(.expand) .expandHistory span {
   width: 0;
   height: 0;
@@ -1156,7 +1157,7 @@ body, html {
   border-top: 0.5rem solid #ccc;
   top: 10px;
 }
-/* line 569, ../../scss/base/_base.scss */
+/* line 570, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory.expand .expandHistory span {
   width: 0;
   height: 0;
@@ -1168,7 +1169,7 @@ body, html {
   border-bottom: 0.5rem solid #ccc;
   bottom: 10px;
 }
-/* line 577, ../../scss/base/_base.scss */
+/* line 578, ../../scss/base/_base.scss */
 .biddingContainer .expandHistory {
   position: absolute;
   cursor: pointer;
@@ -1184,18 +1185,82 @@ body, html {
   border-top: 0;
   text-align: center;
 }
-/* line 591, ../../scss/base/_base.scss */
+/* line 592, ../../scss/base/_base.scss */
 .biddingContainer .expandHistory span {
   position: relative;
 }
 
+/* line 600, ../../scss/base/_base.scss */
+.acceptOrder {
+  margin-bottom: 40px;
+  text-align: center;
+}
 /* line 605, ../../scss/base/_base.scss */
+.acceptOrder .photoToAccept {
+  border: 1px solid #ccc;
+  text-align: center;
+}
+/* line 608, ../../scss/base/_base.scss */
+.acceptOrder .photoToAccept img {
+  max-height: 300px;
+}
+/* line 611, ../../scss/base/_base.scss */
+.acceptOrder .otherPhotos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+/* line 11, ../../scss/helpers/mixins/_inline-list.scss */
+.acceptOrder .otherPhotos li {
+  display: inline-block;
+}
+/* line 615, ../../scss/base/_base.scss */
+.acceptOrder .otherPhotos li {
+  margin-top: 5px;
+}
+/* line 616, ../../scss/base/_base.scss */
+.acceptOrder .otherPhotos .photoThumb img {
+  width: auto;
+  height: 64px;
+}
+/* line 622, ../../scss/base/_base.scss */
+.acceptOrder .acceptPrice {
+  margin: 40px 0 20px 0;
+}
+/* line 625, ../../scss/base/_base.scss */
+.acceptOrder .btn {
+  font-size: 1.6em;
+  padding-left: 2em;
+  padding-right: 2em;
+  background: #ff4e00;
+  margin: 20px 0;
+}
+
+/* line 643, ../../scss/base/_base.scss */
 .chatContainer .userThumb {
   float: left;
   width: 24px;
   height: 24px;
 }
-/* line 611, ../../scss/base/_base.scss */
+/* line 649, ../../scss/base/_base.scss */
+.chatContainer .sendMessage {
+  text-align: right;
+  margin-bottom: 30px;
+}
+/* line 652, ../../scss/base/_base.scss */
+.chatContainer .sendMessage textarea {
+  display: block;
+  width: 100% !important;
+  min-height: 100px;
+  margin-bottom: 10px;
+}
+/* line 658, ../../scss/base/_base.scss */
+.chatContainer .sendMessage .btn {
+  background: #ff4e00;
+  padding: 5px 20px;
+}
+/* line 664, ../../scss/base/_base.scss */
 .chatContainer dl {
   margin: 0 0 7px;
   padding: 0;
@@ -1213,17 +1278,17 @@ body, html {
 .chatContainer dl:after {
   clear: both;
 }
-/* line 616, ../../scss/base/_base.scss */
+/* line 669, ../../scss/base/_base.scss */
 .chatContainer dt, .chatContainer dd {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-/* line 621, ../../scss/base/_base.scss */
+/* line 674, ../../scss/base/_base.scss */
 .chatContainer dt {
   float: left;
 }
-/* line 622, ../../scss/base/_base.scss */
+/* line 675, ../../scss/base/_base.scss */
 .chatContainer dd {
   margin-left: 34px;
   margin-right: 10px;
@@ -1233,16 +1298,16 @@ body, html {
   padding: 3px 5px;
   margin-bottom: 3px;
 }
-/* line 632, ../../scss/base/_base.scss */
+/* line 685, ../../scss/base/_base.scss */
 .chatContainer dl.you dt {
   float: right;
 }
-/* line 633, ../../scss/base/_base.scss */
+/* line 686, ../../scss/base/_base.scss */
 .chatContainer dl.you dd {
   margin-right: 34px;
   margin-left: 10px;
 }
-/* line 638, ../../scss/base/_base.scss */
+/* line 691, ../../scss/base/_base.scss */
 .chatContainer .timeStamp {
   display: block;
 }
@@ -1259,6 +1324,12 @@ body, html {
 .btn:hover {
   cursor: pointer;
   color: #fff;
+}
+
+/* line 17, ../../scss/base/components/_ui.scss */
+input type[text],
+textarea {
+  border-color: #ccc;
 }
 
 /* line 2, ../../scss/pages/_home.scss */
