@@ -692,3 +692,121 @@ body, html {
 		display: block;
 	}
 }
+
+
+// page > PROFILE
+// -----------------------------------------------------------
+
+
+// user details
+.userDetails {
+
+	 @include clearfix();
+
+	> .fLt { width: 50%; }
+	> .fRt {
+		width: 40%;
+		.btn {
+			display: block;
+			margin-bottom: 10px;
+			width: 100%;
+			text-align: center;
+			padding: 0.5em 5px;
+			font-size: 1.1em;
+			&.btnSendRequest {
+				background: $orangeColor;
+				font-size: 1.4em;
+			}
+		}
+	}
+
+	.userSlogan {
+		font-style: italic;
+		font-size: 0.9em;
+	}
+
+	$thumbSize: $thumbSizeL;
+
+	.userThumb {
+		float: left;
+		width: $thumbSize;
+		height: $thumbSize;
+	}
+
+	dl {
+		@include clearfix();
+		margin: 0 0 7px;
+		padding: 0;
+	}
+	dt, dd {
+		@include box-sizing(border-box);
+		margin: 0;
+		padding: 0;
+	}
+	dt { float:  left; }
+	dd {
+		margin-left: $thumbSize + 10;
+		margin-right: 10px;
+		display: block;
+		font-size: 0.9em;
+	}
+}
+
+
+// artistProfile
+.artistPrefs {
+
+	@include clearfix();
+
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid $borderColor;
+
+	> ul {
+		float: left;
+		display: block;
+		@include box-sizing(border-box);
+		width: 50%;
+		margin: 0;
+		padding: 0;
+		&:nth-of-type(even) {
+			float: right;
+		}
+		li {
+			margin: 0;
+			padding: 0 0 3px;
+			list-style-position: inside;
+		}
+	}
+	.prefTitle {
+		list-style: none;
+		font-size: 1.1em;
+		margin-bottom: 10px;
+	}
+
+}
+
+
+// artist porfolio (photos)
+.artistPorfolio {
+
+	margin-bottom: 40px;
+	text-align: center;
+
+	.userPhoto {
+		border: 1px solid $borderColor;
+		text-align: center;
+		img { max-height: 300px; }
+	}
+
+	.otherPhotos {
+		@include inline-list();
+		$thumbSize: $thumbSizeXL;
+		text-align: left;
+		li { margin-top: 5px; }
+		.photoThumb img {
+			width: auto; 
+			height: $thumbSize;
+		}
+	}
+}

@@ -1312,6 +1312,168 @@ body, html {
   display: block;
 }
 
+/* line 10, ../../scss/helpers/mixins/_clearfix.scss */
+.userDetails {
+  *zoom: 1;
+}
+/* line 13, ../../scss/helpers/mixins/_clearfix.scss */
+.userDetails:before, .userDetails:after {
+  content: "";
+  display: table;
+}
+/* line 18, ../../scss/helpers/mixins/_clearfix.scss */
+.userDetails:after {
+  clear: both;
+}
+/* line 706, ../../scss/base/_base.scss */
+.userDetails > .fLt {
+  width: 50%;
+}
+/* line 707, ../../scss/base/_base.scss */
+.userDetails > .fRt {
+  width: 40%;
+}
+/* line 709, ../../scss/base/_base.scss */
+.userDetails > .fRt .btn {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  padding: 0.5em 5px;
+  font-size: 1.1em;
+}
+/* line 716, ../../scss/base/_base.scss */
+.userDetails > .fRt .btn.btnSendRequest {
+  background: #ff4e00;
+  font-size: 1.4em;
+}
+/* line 723, ../../scss/base/_base.scss */
+.userDetails .userSlogan {
+  font-style: italic;
+  font-size: 0.9em;
+}
+/* line 730, ../../scss/base/_base.scss */
+.userDetails .userThumb {
+  float: left;
+  width: 48px;
+  height: 48px;
+}
+/* line 736, ../../scss/base/_base.scss */
+.userDetails dl {
+  margin: 0 0 7px;
+  padding: 0;
+}
+/* line 10, ../../scss/helpers/mixins/_clearfix.scss */
+.userDetails dl {
+  *zoom: 1;
+}
+/* line 13, ../../scss/helpers/mixins/_clearfix.scss */
+.userDetails dl:before, .userDetails dl:after {
+  content: "";
+  display: table;
+}
+/* line 18, ../../scss/helpers/mixins/_clearfix.scss */
+.userDetails dl:after {
+  clear: both;
+}
+/* line 741, ../../scss/base/_base.scss */
+.userDetails dt, .userDetails dd {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* line 746, ../../scss/base/_base.scss */
+.userDetails dt {
+  float: left;
+}
+/* line 747, ../../scss/base/_base.scss */
+.userDetails dd {
+  margin-left: 58px;
+  margin-right: 10px;
+  display: block;
+  font-size: 0.9em;
+}
+
+/* line 757, ../../scss/base/_base.scss */
+.artistPrefs {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+/* line 10, ../../scss/helpers/mixins/_clearfix.scss */
+.artistPrefs {
+  *zoom: 1;
+}
+/* line 13, ../../scss/helpers/mixins/_clearfix.scss */
+.artistPrefs:before, .artistPrefs:after {
+  content: "";
+  display: table;
+}
+/* line 18, ../../scss/helpers/mixins/_clearfix.scss */
+.artistPrefs:after {
+  clear: both;
+}
+/* line 765, ../../scss/base/_base.scss */
+.artistPrefs > ul {
+  float: left;
+  display: block;
+  box-sizing: border-box;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+/* line 772, ../../scss/base/_base.scss */
+.artistPrefs > ul:nth-of-type(even) {
+  float: right;
+}
+/* line 775, ../../scss/base/_base.scss */
+.artistPrefs > ul li {
+  margin: 0;
+  padding: 0 0 3px;
+  list-style-position: inside;
+}
+/* line 781, ../../scss/base/_base.scss */
+.artistPrefs .prefTitle {
+  list-style: none;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+/* line 791, ../../scss/base/_base.scss */
+.artistPorfolio {
+  margin-bottom: 40px;
+  text-align: center;
+}
+/* line 796, ../../scss/base/_base.scss */
+.artistPorfolio .userPhoto {
+  border: 1px solid #ccc;
+  text-align: center;
+}
+/* line 799, ../../scss/base/_base.scss */
+.artistPorfolio .userPhoto img {
+  max-height: 300px;
+}
+/* line 802, ../../scss/base/_base.scss */
+.artistPorfolio .otherPhotos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+/* line 11, ../../scss/helpers/mixins/_inline-list.scss */
+.artistPorfolio .otherPhotos li {
+  display: inline-block;
+}
+/* line 806, ../../scss/base/_base.scss */
+.artistPorfolio .otherPhotos li {
+  margin-top: 5px;
+}
+/* line 807, ../../scss/base/_base.scss */
+.artistPorfolio .otherPhotos .photoThumb img {
+  width: auto;
+  height: 64px;
+}
+
 /* line 4, ../../scss/base/components/_ui.scss */
 .btn {
   line-height: 1;
