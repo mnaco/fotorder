@@ -1327,11 +1327,11 @@ body, html {
 }
 /* line 706, ../../scss/base/_base.scss */
 .userDetails > .fLt {
-  width: 50%;
+  width: 60%;
 }
 /* line 707, ../../scss/base/_base.scss */
 .userDetails > .fRt {
-  width: 40%;
+  width: 36%;
 }
 /* line 709, ../../scss/base/_base.scss */
 .userDetails > .fRt .btn {
