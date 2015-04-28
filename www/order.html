@@ -15,7 +15,7 @@
 	<script src="/js/jquery-2.1.3.min.js"></script><script src="/js/fotorder.js"></script>
 
 </head>
-<body class="pageProfile">
+<body class="pageOrder">
 	
 	<div class="pageTop">
 		
@@ -24,7 +24,7 @@
 		<header class="pageHeader">
 			<div class="pageWrapper">
 			
-				<div class="logo"><a href="/"><img src="/img/fotorder_logo.png" alt="Fotorder logo" ></a></div>
+				<div class="logo"><a href="/">--- logo goes here ---</a></div>
 			
 				<div class="userMenu">
 					
@@ -62,60 +62,28 @@
 				<div class="grid">
 					
 					<div class="col-50">
-						
-						<!-- artist portfolio -->
-						<div class="artistPorfolio">
-							<div class="userPhoto">
-								<img src="/img/dummy_user_female.png" alt="">
-							</div>
-							<ul class="otherPhotos">
-								<li><a href="/" class="photoThumb"><img src="/img/dummy_user_female.png" alt=""></a></li>
-								<li><a href="/" class="photoThumb"><img src="/img/dummy_user_female.png" alt=""></a></li>
-								<li><a href="/" class="photoThumb"><img src="/img/dummy_user_female.png" alt=""></a></li>
-							</ul>
+						<h2 class="subTitle">Status</h2>
+						<div class="orderStatusBox">
+							
+							<dl class="orderStatus">
+								<dt>
+									<a href="/" class="userThumb"><img src="/img/dummy_user_female.png" alt=""></a>
+									Your price:
+									<div class="statusPrice"><input type="text" ></div>
+									<a class="btn btnUpdate">Update price</a>
+								</dt>
+								<dd>
+									<a href="/" class="userThumb"><img src="/img/dummy_user_female.png" alt=""></a>
+									<a href="/" class="userName">user</a> price:
+									<div class="statusPrice"><input type="text" ></div>
+									<a class="btn btnAgree">Agree</a>
+								</dd>
+							</dl>
 						</div>
-						<!-- END artist portfolio -->
-
 					</div>
 
 					<div class="col-50">
-		
-						<!-- user details -->
-						<div class="userDetails">
-							<div class="fRt">
-								<span class="btn btnSendRequest">Send a request</span>
-								<span class="btn">Send a message</span>
-							</div>
-							<div class="fLt">
-								<dl>
-									<dt><span class="userThumb"><img src="/img/dummy_user_female.png" alt=""></span></dt>
-									<dd class="messageDetails">
-										<span class="userName"><a href="/">userNameWithLongNameForTesting</a></span>
-										<span class="userRating" data-user-rating="25">25%</span>
-									</dd>
-								</dl>
-								<div class="userSlogan">
-									Evil doesn’t happen in a vacuum but rather incubates amid the silence of bystanders. As Edmund Burke famously said, “The only thing necessary for the triumph of evil is for good men to do nothing.” 
-								</div>
-							</div>
-						</div>
-						<!-- END user details -->
-
-						<!-- user preferences -->
-						<div class="artistPrefs">
-							<ul>
-								<li class="prefTitle">Ready for photos</li>
-								<li>topless</li>
-								<li>studio</li>
-								<li>professional</li>
-								<li>sexy</li>
-							</ul>
-							<ul>
-								<li class="prefTitle">Exclude:</li>
-								<li>face</li>
-							</ul>
-						</div>
-						<!-- END user preferences -->
+						<h2 class="subTitle">Messageboard</h2>
 					</div>
 
 				</div>
@@ -138,7 +106,7 @@
 				<ul class="footerLinks">
 					<li><a href="">Terms and conditions</a></li>
 					<li><a href="">Support</a></li>
-					<li><a href="">&copy; Fotorder 2015</a></li>
+					<!-- <li><a href="">&copy; Fotorder 2015</a></li> -->
 				</ul>
 			</nav>
 		</footer>
