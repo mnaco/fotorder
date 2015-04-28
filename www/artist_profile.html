@@ -38,8 +38,8 @@
 								<li><a href="/">Logout</a></li>
 							</ul>
 							<ul class="siteNav">
-								<li><a href="/dashboard">Dashboard</a></li>
-								<li><a href="/artists">Artists</a></li>
+								<li><a href="/dashboard.html">Dashboard</a></li>
+								<li><a href="/artists.html">Artists</a></li>
 								<li><a href="/bookmarks">Bookmarks</a></li>
 							</ul>
 						</nav>
@@ -83,8 +83,8 @@
 						<!-- user details -->
 						<div class="userDetails">
 							<div class="fRt">
-								<span class="btn btnSendRequest">Send a request</span>
-								<span class="btn">Send a message</span>
+								<a href="#modal-send-request" class="btn btnSendRequest">Send a request</a>
+								<a href="/" class="btn">Send a message</a>
 							</div>
 							<div class="fLt">
 								<dl>
@@ -131,8 +131,8 @@
 		<footer class="pageFooter">
 			<nav class="mainNav">
 				<ul class="siteNav">
-					<li><a href="/dashboard">Dashboard</a></li>
-					<li><a href="/artists">Artists</a></li>
+					<li><a href="/dashboard.html">Dashboard</a></li>
+					<li><a href="/artists.html">Artists</a></li>
 					<li><a href="/bookmarks">Bookmarks</a></li>
 				</ul>
 				<ul class="footerLinks">
@@ -145,6 +145,28 @@
 		<!-- END page footer -->
 	</div>
 
+
+
+	<!-- send reqiest modal -->
+	<div class="modalDialog modalSendRequest" id="modal-send-request">
+		<div class="modalInsider">
+			<a href="#close" class="modalBtnClose" aria-hidden="true">×</a>
+				<div class="modalHeader">
+					<h2>Send a photo request to</h2>
+					<div class="userThumb"><img src="/img/dummy_user_female.png" alt=""></div>
+					<div>username</div>
+				</div>
+				<div class="modalBody">
+					<form>
+						<textarea placeholder="Type your message here"></textarea>
+						<div class="smallText">By clicking 'Register' you agree with our <a href="/">terms and conditions</a> ...</div>
+						<span class="btn btnAction">Send a photo request</span>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END send reqiest modal -->
 
 </body>
 </html>

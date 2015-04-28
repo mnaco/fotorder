@@ -65,6 +65,25 @@
 					<div class="col-50">
 						<h2 class="subTitle">Status</h2>
 
+
+						<!-- accept order -->
+						<div class="acceptOrder">
+							<div class="photoToAccept">
+								<img src="/img/dummy_user_female.png" alt="">
+							</div>
+							<ul class="otherPhotos">
+								<li><a href="/" class="photoThumb"><img src="/img/dummy_user_female.png" alt=""></a></li>
+								<li><a href="/" class="photoThumb"><img src="/img/dummy_user_female.png" alt=""></a></li>
+								<li><a href="/" class="photoThumb"><img src="/img/dummy_user_female.png" alt=""></a></li>
+							</ul>
+							<div class="acceptPrice">
+								<span class="btn">Pay $15.00</span>
+							</div>
+							<a href="/bidding.html">Don't like the photo(s). Click here to send it back and request another one.</a>
+						</div>
+						<!-- END accept order-->
+
+
 						<!-- bidding -->
 						<div class="biddingContainer">
 
@@ -74,9 +93,8 @@
 									<dl>
 										<dt><a href="/" class="userThumb"><img src="/img/dummy_user_male.png" alt=""></a></dt>
 										<dd>Your price</dd>
-										<dd class="bidPrice"><input type="text" name="yourprice" value="$10.00"></dd>
+										<dd class="bidPrice"><input type="text" name="yourprice" disabled value="$15.00"></dd>
 									</dl>
-									<a class="btn btnUpdate">Update price</a>
 								</div>
 								<div class="youno">
 									<dl>
@@ -84,7 +102,6 @@
 										<dd>Recent bid</dd>
 										<dd class="bidPrice"><input type="text" name="" disabled value="$15.00"></dd>
 									</dl>
-									<a href="/pay.html" class="btn btnAgree">Agree</a>
 								</div>
 							</div>
 							<!-- END bidding overview -->

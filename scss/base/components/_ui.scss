@@ -2,6 +2,7 @@
 // ------------------------------------------------------------
 
 .btn { 
+	display: inline-block;
 	line-height: 1;
 	padding: .3em .5em;
 	background: $greyColor;
@@ -11,6 +12,11 @@
 		cursor: pointer; 
 		color: #fff;
 		// background: $blueColor !important;
+	}
+	&.btnAction {
+		font-size: 1.5em;
+		background: $orangeColor;
+		padding: 0.5em 1.5em;
 	}
 }
 

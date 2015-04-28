@@ -732,7 +732,34 @@ body, html {
   cursor: default;
 }
 
-/* line 192, ../../scss/base/_base.scss */
+/* line 191, ../../scss/base/_base.scss */
+.stripeTitle {
+  display: block;
+  position: relative;
+  text-align: center;
+  line-height: 1em;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+/* line 198, ../../scss/base/_base.scss */
+.stripeTitle > span {
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
+  background: #fff;
+}
+/* line 204, ../../scss/base/_base.scss */
+.stripeTitle:before {
+  position: absolute;
+  display: block;
+  content: "\0020";
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  background: #ccc;
+}
+
+/* line 216, ../../scss/base/_base.scss */
 .userThumb img,
 .photoThumb img {
   box-sizing: border-box;
@@ -742,44 +769,49 @@ body, html {
   border: 1px solid #ccc;
 }
 
-/* line 204, ../../scss/base/_base.scss */
+/* line 228, ../../scss/base/_base.scss */
 .timeStamp {
   color: #999;
   font-size: 0.8em;
 }
 
-/* line 212, ../../scss/base/_base.scss */
+/* line 236, ../../scss/base/_base.scss */
+.smallText {
+  font-size: 0.8em;
+}
+
+/* line 242, ../../scss/base/_base.scss */
 .pageSidebar {
   background: #eee;
 }
-/* line 214, ../../scss/base/_base.scss */
+/* line 244, ../../scss/base/_base.scss */
 .pageSidebar > h2 {
   padding: 15px 10px;
   margin: 0 0 15px;
   border-bottom: 1px solid #fff;
 }
-/* line 219, ../../scss/base/_base.scss */
+/* line 249, ../../scss/base/_base.scss */
 .pageSidebar section {
   padding: 0 0 10px 10px;
   border-bottom: 1px solid #fff;
   margin-bottom: 20px;
 }
-/* line 223, ../../scss/base/_base.scss */
+/* line 253, ../../scss/base/_base.scss */
 .pageSidebar section > h4 {
   margin: 0 0 1em;
 }
 
-/* line 232, ../../scss/base/_base.scss */
+/* line 262, ../../scss/base/_base.scss */
 .checkboxLabel {
   position: relative;
 }
-/* line 234, ../../scss/base/_base.scss */
+/* line 264, ../../scss/base/_base.scss */
 .checkboxLabel input {
   position: absolute;
   z-index: 0;
   opacity: 0;
 }
-/* line 238, ../../scss/base/_base.scss */
+/* line 268, ../../scss/base/_base.scss */
 .checkboxLabel input + label {
   position: relative;
   z-index: 1;
@@ -788,13 +820,13 @@ body, html {
   padding: 0.1em 0.5em;
   line-height: 1;
 }
-/* line 247, ../../scss/base/_base.scss */
+/* line 277, ../../scss/base/_base.scss */
 .checkboxLabel input:checked + label {
   background: #003780;
   color: #fff;
 }
 
-/* line 258, ../../scss/base/_base.scss */
+/* line 288, ../../scss/base/_base.scss */
 .statusLabel {
   background: #999;
   padding: 0.1em 0.5em;
@@ -804,12 +836,12 @@ body, html {
   border-radius: 3px;
   text-transform: uppercase;
 }
-/* line 266, ../../scss/base/_base.scss */
+/* line 296, ../../scss/base/_base.scss */
 .statusLabel.new {
   background: #ff4e00;
 }
 
-/* line 276, ../../scss/base/_base.scss */
+/* line 306, ../../scss/base/_base.scss */
 .listMessages dl {
   box-sizing: border-box;
   min-height: 58px;
@@ -817,86 +849,86 @@ body, html {
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
-/* line 283, ../../scss/base/_base.scss */
+/* line 313, ../../scss/base/_base.scss */
 .listMessages dt, .listMessages dd {
   margin: 0;
   padding: 0;
 }
-/* line 287, ../../scss/base/_base.scss */
+/* line 317, ../../scss/base/_base.scss */
 .listMessages dt {
   float: left;
   width: 48px;
   height: 48px;
 }
-/* line 291, ../../scss/base/_base.scss */
+/* line 321, ../../scss/base/_base.scss */
 .listMessages dt img {
   width: 100%;
   height: 100%;
 }
-/* line 296, ../../scss/base/_base.scss */
+/* line 326, ../../scss/base/_base.scss */
 .listMessages dd {
   margin-left: 58px;
   display: block;
   padding-bottom: .5em;
 }
-/* line 301, ../../scss/base/_base.scss */
+/* line 331, ../../scss/base/_base.scss */
 .listMessages .message {
   display: block;
   font-size: 1em;
 }
-/* line 305, ../../scss/base/_base.scss */
+/* line 335, ../../scss/base/_base.scss */
 .listMessages .messageDetails {
   font-size: 0.9em;
 }
-/* line 307, ../../scss/base/_base.scss */
+/* line 337, ../../scss/base/_base.scss */
 .listMessages .messageDetails > span {
   display: inline-block;
   margin-right: 5px;
   padding-right: 10px;
   border-right: 1px solid #ccc;
 }
-/* line 312, ../../scss/base/_base.scss */
+/* line 342, ../../scss/base/_base.scss */
 .listMessages .messageDetails > span:last-child {
   border: 0;
 }
 
-/* line 323, ../../scss/base/_base.scss */
+/* line 353, ../../scss/base/_base.scss */
 .pageArtists .artistsFilter label {
   position: relative;
   display: inline-block;
   margin: 0 10px 10px 0;
   font-size: 0.9em;
 }
-/* line 328, ../../scss/base/_base.scss */
+/* line 358, ../../scss/base/_base.scss */
 .pageArtists .artistsFilter label input {
   margin-right: 5px;
 }
-/* line 330, ../../scss/base/_base.scss */
+/* line 360, ../../scss/base/_base.scss */
 .pageArtists .artistsFilter h1, .pageArtists .artistsFilter h3 {
   margin-top: 0;
 }
-/* line 334, ../../scss/base/_base.scss */
+/* line 364, ../../scss/base/_base.scss */
 .pageArtists .searchArtist {
   margin-bottom: 20px;
 }
-/* line 336, ../../scss/base/_base.scss */
+/* line 366, ../../scss/base/_base.scss */
 .pageArtists .searchArtist input[type="text"] {
   width: 100%;
   padding: 10px;
   font-size: 1.2em;
 }
-/* line 346, ../../scss/base/_base.scss */
+/* line 376, ../../scss/base/_base.scss */
 .pageArtists .usersList li {
   position: relative;
   width: 128px;
   margin: 0 20px 20px 0;
 }
-/* line 352, ../../scss/base/_base.scss */
+/* line 382, ../../scss/base/_base.scss */
 .pageArtists .usersList .userThumb {
   display: block;
   margin-bottom: 4px;
 }
-/* line 356, ../../scss/base/_base.scss */
+/* line 386, ../../scss/base/_base.scss */
 .pageArtists .usersList .userName {
   display: block;
   overflow: hidden;
@@ -905,7 +937,7 @@ body, html {
   margin-right: 20px;
   font-size: 0.8em;
 }
-/* line 364, ../../scss/base/_base.scss */
+/* line 394, ../../scss/base/_base.scss */
 .pageArtists .usersList .bookmarkUser {
   position: relative;
   float: right;
@@ -913,7 +945,7 @@ body, html {
   height: 15px;
   font-size: 0;
 }
-/* line 370, ../../scss/base/_base.scss */
+/* line 400, ../../scss/base/_base.scss */
 .pageArtists .usersList .bookmarkUser:before {
   position: absolute;
   display: block;
@@ -924,17 +956,17 @@ body, html {
   left: 0;
   background: url("/img/sprite.png") -127px -40px;
 }
-/* line 376, ../../scss/base/_base.scss */
+/* line 406, ../../scss/base/_base.scss */
 .pageArtists .usersList .bookmarkUser.bookmarked:before {
   background-position: -127px -88px;
 }
 
-/* line 390, ../../scss/base/_base.scss */
+/* line 420, ../../scss/base/_base.scss */
 .pageDashboard .listPendingOrders {
   margin-bottom: 60px;
 }
 
-/* line 397, ../../scss/base/_base.scss */
+/* line 427, ../../scss/base/_base.scss */
 .pendingOrder {
   box-sizing: border-box;
   min-height: 84px;
@@ -945,22 +977,22 @@ body, html {
   float: left;
   margin: 0 2% 20px 0;
 }
-/* line 407, ../../scss/base/_base.scss */
+/* line 437, ../../scss/base/_base.scss */
 .pendingOrder:nth-of-type(even) {
   margin-right: 0;
 }
-/* line 408, ../../scss/base/_base.scss */
+/* line 438, ../../scss/base/_base.scss */
 .pendingOrder .userThumb {
   float: left;
   width: 64px;
   height: 64px;
 }
-/* line 413, ../../scss/base/_base.scss */
+/* line 443, ../../scss/base/_base.scss */
 .pendingOrder .orderDetails {
   font-size: 0.8em;
   margin-left: 74px;
 }
-/* line 417, ../../scss/base/_base.scss */
+/* line 447, ../../scss/base/_base.scss */
 .pendingOrder .recentUpdate {
   display: inline-block;
   font-size: 1.1rem;
@@ -969,26 +1001,26 @@ body, html {
   margin-left: 5px;
 }
 @media only screen and (max-width: 1020px) {
-  /* line 397, ../../scss/base/_base.scss */
+  /* line 427, ../../scss/base/_base.scss */
   .pendingOrder {
     float: none;
     width: 100%;
   }
 }
 
-/* line 436, ../../scss/base/_base.scss */
+/* line 466, ../../scss/base/_base.scss */
 .biddingContainer {
   box-sizing: border-box;
   background: #efefef;
   border: 1px solid #ccc;
 }
-/* line 445, ../../scss/base/_base.scss */
+/* line 475, ../../scss/base/_base.scss */
 .biddingContainer .userThumb {
   float: left;
   width: 64px;
   height: 64px;
 }
-/* line 452, ../../scss/base/_base.scss */
+/* line 482, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview {
   padding: 10px;
 }
@@ -1005,17 +1037,17 @@ body, html {
 .biddingContainer .biddingOverview:after {
   clear: both;
 }
-/* line 458, ../../scss/base/_base.scss */
+/* line 488, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview > div {
   float: left;
   width: 48%;
   min-height: 84px;
 }
-/* line 462, ../../scss/base/_base.scss */
+/* line 492, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview > div:nth-of-type(even) {
   float: right;
 }
-/* line 467, ../../scss/base/_base.scss */
+/* line 497, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview dl {
   margin: 0;
   padding: 0;
@@ -1033,22 +1065,22 @@ body, html {
 .biddingContainer .biddingOverview dl:after {
   clear: both;
 }
-/* line 472, ../../scss/base/_base.scss */
+/* line 502, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview dt, .biddingContainer .biddingOverview dd {
   margin: 0;
   padding: 0;
 }
-/* line 476, ../../scss/base/_base.scss */
+/* line 506, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview dt {
   float: left;
 }
-/* line 477, ../../scss/base/_base.scss */
+/* line 507, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview dd {
   margin-left: 74px;
   display: block;
   font-size: 0.9em;
 }
-/* line 482, ../../scss/base/_base.scss */
+/* line 512, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview .btn {
   display: block;
   width: 100%;
@@ -1057,11 +1089,11 @@ body, html {
   padding: 0.5em 0.3em;
   font-size: 1.5em;
 }
-/* line 489, ../../scss/base/_base.scss */
+/* line 519, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview .btn.btnAgree {
   background: #ff4e00;
 }
-/* line 494, ../../scss/base/_base.scss */
+/* line 524, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview input[type="text"] {
   width: 100%;
   text-align: center;
@@ -1070,53 +1102,32 @@ body, html {
   padding: 0.5em 0;
   margin-top: 5px;
 }
-/* line 501, ../../scss/base/_base.scss */
+/* line 531, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview input[type="text"]:disabled {
   background: #ddd;
 }
-/* line 507, ../../scss/base/_base.scss */
+/* line 537, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview .youno input {
   font-size: 1.7em;
   padding: 0.4em 0;
   color: #000;
 }
-/* line 516, ../../scss/base/_base.scss */
+/* line 546, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory {
   position: relative;
   margin: 20px 0;
 }
-/* line 521, ../../scss/base/_base.scss */
-.biddingContainer .biddinHistory > h4 {
-  position: relative;
-  text-align: center;
-  line-height: 1em;
-  font-size: 0.7em;
-  text-transform: uppercase;
-}
-/* line 527, ../../scss/base/_base.scss */
-.biddingContainer .biddinHistory > h4 > span {
-  position: relative;
-  z-index: 1;
-  padding: 0 20px;
+/* line 552, ../../scss/base/_base.scss */
+.biddingContainer .biddinHistory .stripeTitle > span {
   background: #efefef;
 }
-/* line 533, ../../scss/base/_base.scss */
-.biddingContainer .biddinHistory > h4:before {
-  position: absolute;
-  display: block;
-  content: "\0020";
-  width: 100%;
-  height: 1px;
-  top: 50%;
-  background: #ccc;
-}
-/* line 540, ../../scss/base/_base.scss */
+/* line 555, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 545, ../../scss/base/_base.scss */
+/* line 560, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li {
   position: relative;
   display: block;
@@ -1125,11 +1136,11 @@ body, html {
   padding-right: 50%;
   font-size: 0.8em;
 }
-/* line 552, ../../scss/base/_base.scss */
+/* line 567, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li > div {
   padding: 10px;
 }
-/* line 555, ../../scss/base/_base.scss */
+/* line 570, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li:before {
   position: absolute;
   display: block;
@@ -1140,7 +1151,7 @@ body, html {
   right: 50%;
   background: #ccc;
 }
-/* line 561, ../../scss/base/_base.scss */
+/* line 576, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li:after {
   position: absolute;
   display: block;
@@ -1151,34 +1162,34 @@ body, html {
   right: 50%;
   background: #ccc;
 }
-/* line 567, ../../scss/base/_base.scss */
+/* line 582, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li.youno {
   text-align: right;
   padding-right: 0;
   padding-left: 50%;
 }
-/* line 571, ../../scss/base/_base.scss */
+/* line 586, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li.youno:after {
   right: 47%;
 }
-/* line 575, ../../scss/base/_base.scss */
+/* line 590, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li .recentUpdate {
   font-size: 1.1em;
   display: block;
   margin-top: 3px;
 }
-/* line 579, ../../scss/base/_base.scss */
+/* line 594, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li .recentUpdate img {
   display: block;
   border: 1px solid #ccc;
   width: 100%;
   margin: 5px 0;
 }
-/* line 589, ../../scss/base/_base.scss */
+/* line 604, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory:not(.expand) ul:not(first-child) {
   display: none;
 }
-/* line 592, ../../scss/base/_base.scss */
+/* line 607, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory:not(.expand) .expandHistory span {
   width: 0;
   height: 0;
@@ -1190,7 +1201,7 @@ body, html {
   border-top: 0.5rem solid #ccc;
   top: 10px;
 }
-/* line 598, ../../scss/base/_base.scss */
+/* line 613, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory.expand .expandHistory span {
   width: 0;
   height: 0;
@@ -1202,7 +1213,7 @@ body, html {
   border-bottom: 0.5rem solid #ccc;
   bottom: 10px;
 }
-/* line 606, ../../scss/base/_base.scss */
+/* line 621, ../../scss/base/_base.scss */
 .biddingContainer .expandHistory {
   position: absolute;
   cursor: pointer;
@@ -1218,82 +1229,82 @@ body, html {
   border-top: 0;
   text-align: center;
 }
-/* line 620, ../../scss/base/_base.scss */
+/* line 635, ../../scss/base/_base.scss */
 .biddingContainer .expandHistory span {
   position: relative;
 }
 
-/* line 627, ../../scss/base/_base.scss */
+/* line 642, ../../scss/base/_base.scss */
 .acceptOrder {
   margin-bottom: 40px;
   text-align: center;
 }
-/* line 632, ../../scss/base/_base.scss */
+/* line 647, ../../scss/base/_base.scss */
 .acceptOrder .photoToAccept {
   border: 1px solid #ccc;
   text-align: center;
 }
-/* line 635, ../../scss/base/_base.scss */
+/* line 650, ../../scss/base/_base.scss */
 .acceptOrder .photoToAccept img {
   max-height: 300px;
 }
-/* line 638, ../../scss/base/_base.scss */
+/* line 653, ../../scss/base/_base.scss */
 .acceptOrder .otherPhotos {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: left;
+  text-align: center;
 }
 /* line 11, ../../scss/helpers/mixins/_inline-list.scss */
 .acceptOrder .otherPhotos li {
   display: inline-block;
 }
-/* line 642, ../../scss/base/_base.scss */
+/* line 657, ../../scss/base/_base.scss */
 .acceptOrder .otherPhotos li {
   margin-top: 5px;
 }
-/* line 643, ../../scss/base/_base.scss */
+/* line 658, ../../scss/base/_base.scss */
 .acceptOrder .otherPhotos .photoThumb img {
   width: auto;
   height: 64px;
 }
-/* line 649, ../../scss/base/_base.scss */
+/* line 664, ../../scss/base/_base.scss */
 .acceptOrder .acceptPrice {
-  margin: 40px 0 20px 0;
+  margin: 10px 0 0;
 }
-/* line 652, ../../scss/base/_base.scss */
+/* line 667, ../../scss/base/_base.scss */
 .acceptOrder .btn {
-  font-size: 1.6em;
+  font-size: 2em;
   padding-left: 2em;
   padding-right: 2em;
   background: #ff4e00;
   margin: 20px 0;
 }
 
-/* line 672, ../../scss/base/_base.scss */
+/* line 687, ../../scss/base/_base.scss */
 .chatContainer .userThumb {
   float: left;
   width: 24px;
   height: 24px;
 }
-/* line 678, ../../scss/base/_base.scss */
+/* line 693, ../../scss/base/_base.scss */
 .chatContainer .sendMessage {
   text-align: right;
   margin-bottom: 30px;
 }
-/* line 681, ../../scss/base/_base.scss */
+/* line 696, ../../scss/base/_base.scss */
 .chatContainer .sendMessage textarea {
   display: block;
   width: 100% !important;
   min-height: 100px;
   margin-bottom: 10px;
 }
-/* line 687, ../../scss/base/_base.scss */
+/* line 702, ../../scss/base/_base.scss */
 .chatContainer .sendMessage .btn {
   background: #ff4e00;
   padding: 5px 20px;
 }
-/* line 693, ../../scss/base/_base.scss */
+/* line 708, ../../scss/base/_base.scss */
 .chatContainer dl {
   margin: 0 0 7px;
   padding: 0;
@@ -1311,17 +1322,17 @@ body, html {
 .chatContainer dl:after {
   clear: both;
 }
-/* line 698, ../../scss/base/_base.scss */
+/* line 713, ../../scss/base/_base.scss */
 .chatContainer dt, .chatContainer dd {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-/* line 703, ../../scss/base/_base.scss */
+/* line 718, ../../scss/base/_base.scss */
 .chatContainer dt {
   float: left;
 }
-/* line 704, ../../scss/base/_base.scss */
+/* line 719, ../../scss/base/_base.scss */
 .chatContainer dd {
   margin-left: 34px;
   margin-right: 10px;
@@ -1331,16 +1342,16 @@ body, html {
   padding: 3px 5px;
   margin-bottom: 3px;
 }
-/* line 714, ../../scss/base/_base.scss */
+/* line 729, ../../scss/base/_base.scss */
 .chatContainer dl.you dt {
   float: right;
 }
-/* line 715, ../../scss/base/_base.scss */
+/* line 730, ../../scss/base/_base.scss */
 .chatContainer dl.you dd {
   margin-right: 34px;
   margin-left: 10px;
 }
-/* line 720, ../../scss/base/_base.scss */
+/* line 735, ../../scss/base/_base.scss */
 .chatContainer .timeStamp {
   display: block;
 }
@@ -1358,15 +1369,15 @@ body, html {
 .userDetails:after {
   clear: both;
 }
-/* line 738, ../../scss/base/_base.scss */
+/* line 753, ../../scss/base/_base.scss */
 .userDetails > .fLt {
   width: 60%;
 }
-/* line 739, ../../scss/base/_base.scss */
+/* line 754, ../../scss/base/_base.scss */
 .userDetails > .fRt {
   width: 36%;
 }
-/* line 741, ../../scss/base/_base.scss */
+/* line 756, ../../scss/base/_base.scss */
 .userDetails > .fRt .btn {
   display: block;
   margin-bottom: 10px;
@@ -1375,23 +1386,23 @@ body, html {
   padding: 0.5em 5px;
   font-size: 1.1em;
 }
-/* line 748, ../../scss/base/_base.scss */
+/* line 763, ../../scss/base/_base.scss */
 .userDetails > .fRt .btn.btnSendRequest {
   background: #ff4e00;
   font-size: 1.4em;
 }
-/* line 755, ../../scss/base/_base.scss */
+/* line 770, ../../scss/base/_base.scss */
 .userDetails .userSlogan {
   font-style: italic;
   font-size: 0.9em;
 }
-/* line 762, ../../scss/base/_base.scss */
+/* line 777, ../../scss/base/_base.scss */
 .userDetails .userThumb {
   float: left;
   width: 48px;
   height: 48px;
 }
-/* line 768, ../../scss/base/_base.scss */
+/* line 783, ../../scss/base/_base.scss */
 .userDetails dl {
   margin: 0 0 7px;
   padding: 0;
@@ -1409,17 +1420,17 @@ body, html {
 .userDetails dl:after {
   clear: both;
 }
-/* line 773, ../../scss/base/_base.scss */
+/* line 788, ../../scss/base/_base.scss */
 .userDetails dt, .userDetails dd {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-/* line 778, ../../scss/base/_base.scss */
+/* line 793, ../../scss/base/_base.scss */
 .userDetails dt {
   float: left;
 }
-/* line 779, ../../scss/base/_base.scss */
+/* line 794, ../../scss/base/_base.scss */
 .userDetails dd {
   margin-left: 58px;
   margin-right: 10px;
@@ -1427,7 +1438,7 @@ body, html {
   font-size: 0.9em;
 }
 
-/* line 789, ../../scss/base/_base.scss */
+/* line 806, ../../scss/base/_base.scss */
 .artistPrefs {
   margin-top: 20px;
   padding-top: 20px;
@@ -1446,7 +1457,7 @@ body, html {
 .artistPrefs:after {
   clear: both;
 }
-/* line 797, ../../scss/base/_base.scss */
+/* line 814, ../../scss/base/_base.scss */
 .artistPrefs > ul {
   float: left;
   display: block;
@@ -1455,59 +1466,82 @@ body, html {
   margin: 0;
   padding: 0;
 }
-/* line 804, ../../scss/base/_base.scss */
+/* line 821, ../../scss/base/_base.scss */
 .artistPrefs > ul:nth-of-type(even) {
   float: right;
 }
-/* line 807, ../../scss/base/_base.scss */
+/* line 824, ../../scss/base/_base.scss */
 .artistPrefs > ul li {
   margin: 0;
   padding: 0 0 3px;
   list-style-position: inside;
 }
-/* line 813, ../../scss/base/_base.scss */
+/* line 830, ../../scss/base/_base.scss */
 .artistPrefs .prefTitle {
   list-style: none;
   font-size: 1.1em;
   margin-bottom: 10px;
 }
 
-/* line 822, ../../scss/base/_base.scss */
+/* line 839, ../../scss/base/_base.scss */
 .artistPorfolio {
   margin-bottom: 40px;
   text-align: center;
 }
-/* line 827, ../../scss/base/_base.scss */
+/* line 844, ../../scss/base/_base.scss */
 .artistPorfolio .userPhoto {
   border: 1px solid #ccc;
   text-align: center;
 }
-/* line 830, ../../scss/base/_base.scss */
+/* line 847, ../../scss/base/_base.scss */
 .artistPorfolio .userPhoto img {
   max-height: 300px;
 }
-/* line 833, ../../scss/base/_base.scss */
+/* line 850, ../../scss/base/_base.scss */
 .artistPorfolio .otherPhotos {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: left;
+  text-align: center;
 }
 /* line 11, ../../scss/helpers/mixins/_inline-list.scss */
 .artistPorfolio .otherPhotos li {
   display: inline-block;
 }
-/* line 837, ../../scss/base/_base.scss */
+/* line 854, ../../scss/base/_base.scss */
 .artistPorfolio .otherPhotos li {
   margin-top: 5px;
 }
-/* line 838, ../../scss/base/_base.scss */
+/* line 855, ../../scss/base/_base.scss */
 .artistPorfolio .otherPhotos .photoThumb img {
   width: auto;
   height: 64px;
 }
 
-/* line 856, ../../scss/base/_base.scss */
+/* line 863, ../../scss/base/_base.scss */
+.modalSendRequest {
+  text-align: center;
+}
+/* line 865, ../../scss/base/_base.scss */
+.modalSendRequest textarea {
+  display: inline-block;
+  width: 100%;
+  min-height: 140px;
+  margin-bottom: 20px;
+}
+/* line 871, ../../scss/base/_base.scss */
+.modalSendRequest .userThumb {
+  display: inline-block;
+  margin: 0;
+  width: 64px;
+  height: 64px;
+}
+/* line 877, ../../scss/base/_base.scss */
+.modalSendRequest .btnAction {
+  margin-top: 10px;
+}
+
+/* line 891, ../../scss/base/_base.scss */
 .modalDialog:before {
   content: "";
   display: none;
@@ -1519,16 +1553,16 @@ body, html {
   bottom: 0;
   z-index: 10;
 }
-/* line 867, ../../scss/base/_base.scss */
+/* line 902, ../../scss/base/_base.scss */
 .modalDialog:target:before {
   display: block;
 }
-/* line 870, ../../scss/base/_base.scss */
+/* line 905, ../../scss/base/_base.scss */
 .modalDialog:target .modalInsider {
   top: 20%;
 }
 
-/* line 879, ../../scss/base/_base.scss */
+/* line 914, ../../scss/base/_base.scss */
 .modalInsider {
   background: #efefef;
   border: #ccc solid 1px;
@@ -1540,25 +1574,25 @@ body, html {
   z-index: 11;
   width: 360px;
 }
-/* line 895, ../../scss/base/_base.scss */
+/* line 930, ../../scss/base/_base.scss */
 .modalInsider .modalBody {
   padding: 20px;
 }
-/* line 899, ../../scss/base/_base.scss */
+/* line 934, ../../scss/base/_base.scss */
 .modalInsider .modalHeader,
 .modalInsider .modalFooter {
   padding: 10px 20px;
 }
-/* line 904, ../../scss/base/_base.scss */
+/* line 939, ../../scss/base/_base.scss */
 .modalInsider .modalHeader {
   border-bottom: #999 solid 1px;
 }
-/* line 909, ../../scss/base/_base.scss */
+/* line 944, ../../scss/base/_base.scss */
 .modalInsider .modalFooter {
   border-top: #999 solid 1px;
   text-align: right;
 }
-/* line 914, ../../scss/base/_base.scss */
+/* line 949, ../../scss/base/_base.scss */
 .modalInsider .modalBtnClose {
   position: absolute;
   display: block;
@@ -1579,23 +1613,23 @@ body, html {
   padding: 0;
   font-size: 24px;
 }
-/* line 929, ../../scss/base/_base.scss */
+/* line 964, ../../scss/base/_base.scss */
 .modalInsider .modalBtnClose:hover {
   background: #003780;
 }
 
-/* line 948, ../../scss/base/_base.scss */
+/* line 983, ../../scss/base/_base.scss */
 .modalRegisterLogin .modalInsider {
   width: 400px;
   margin-left: -200px;
   padding-bottom: 60px;
 }
-/* line 954, ../../scss/base/_base.scss */
+/* line 989, ../../scss/base/_base.scss */
 .modalRegisterLogin .radioTabs {
   position: relative;
   top: 60px;
   box-sizing: border-box;
-  height: 300px;
+  height: 400px;
   width: 100%;
   border-radius: 5px;
 }
@@ -1612,11 +1646,11 @@ body, html {
 .modalRegisterLogin .radioTabs:after {
   clear: both;
 }
-/* line 964, ../../scss/base/_base.scss */
+/* line 999, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabContainer {
   float: left;
 }
-/* line 968, ../../scss/base/_base.scss */
+/* line 1003, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabContainer label {
   box-sizing: border-box;
   position: relative;
@@ -1634,19 +1668,19 @@ body, html {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 985, ../../scss/base/_base.scss */
+/* line 1020, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabContainer:first-of-type label {
   border-top-left-radius: 5px;
 }
-/* line 986, ../../scss/base/_base.scss */
+/* line 1021, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabContainer:last-of-type label {
   border-top-right-radius: 5px;
 }
-/* line 988, ../../scss/base/_base.scss */
+/* line 1023, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabContainer > [type=radio] {
   display: none;
 }
-/* line 993, ../../scss/base/_base.scss */
+/* line 1028, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabContainer > [type=radio]:checked ~ label {
   background: #fff;
   z-index: 2;
@@ -1654,11 +1688,11 @@ body, html {
   font-style: normal;
   cursor: default;
 }
-/* line 999, ../../scss/base/_base.scss */
+/* line 1034, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabContainer > [type=radio]:checked ~ label ~ .tabContent {
   z-index: 1;
 }
-/* line 1005, ../../scss/base/_base.scss */
+/* line 1040, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabContainer .tabContent {
   position: absolute;
   top: 0;
@@ -1669,58 +1703,65 @@ body, html {
   border-radius: 0 0 5px 5px;
   text-align: center;
 }
-/* line 1014, ../../scss/base/_base.scss */
+/* line 1049, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabContainer .tabContent .wrapper {
   padding: 0 20px;
 }
-/* line 1020, ../../scss/base/_base.scss */
-.modalRegisterLogin h4 {
-  position: relative;
-  text-align: center;
-  line-height: 1em;
-  font-size: 0.7em;
-  text-transform: uppercase;
+/* line 1055, ../../scss/base/_base.scss */
+.modalRegisterLogin .loginWithFacebook {
+  padding: 30px 0 0;
 }
-/* line 1026, ../../scss/base/_base.scss */
-.modalRegisterLogin h4 > span {
-  position: relative;
-  z-index: 1;
-  padding: 0 20px;
+/* line 1059, ../../scss/base/_base.scss */
+.modalRegisterLogin .stripeTitle {
+  margin: 10px 0 20px;
+}
+/* line 1061, ../../scss/base/_base.scss */
+.modalRegisterLogin .stripeTitle > span {
   background: #fff;
 }
-/* line 1032, ../../scss/base/_base.scss */
-.modalRegisterLogin h4:before {
-  position: absolute;
-  display: block;
-  content: "\0020";
-  width: 100%;
-  height: 1px;
-  top: 50%;
-  background: #ccc;
-}
-/* line 1039, ../../scss/base/_base.scss */
+/* line 1064, ../../scss/base/_base.scss */
 .modalRegisterLogin input[type="text"] {
   display: block;
   width: 100%;
-  padding: 0.5em 0.2em;
+  font-size: .9em;
+  padding: 1em 0.5em;
   margin-bottom: 10px;
+}
+/* line 1070, ../../scss/base/_base.scss */
+.modalRegisterLogin input[type="text"]:last-of-type {
+  margin-bottom: 40px;
+}
+/* line 1073, ../../scss/base/_base.scss */
+.modalRegisterLogin .tc {
+  font-size: 0.8em;
+}
+/* line 1077, ../../scss/base/_base.scss */
+.modalRegisterLogin .btnAction {
+  margin: 10px 0;
 }
 
 /* line 4, ../../scss/base/components/_ui.scss */
 .btn {
+  display: inline-block;
   line-height: 1;
   padding: .3em .5em;
   background: #999;
   color: #fff;
   border-radius: 3px;
 }
-/* line 10, ../../scss/base/components/_ui.scss */
+/* line 11, ../../scss/base/components/_ui.scss */
 .btn:hover {
   cursor: pointer;
   color: #fff;
 }
+/* line 16, ../../scss/base/components/_ui.scss */
+.btn.btnAction {
+  font-size: 1.5em;
+  background: #ff4e00;
+  padding: 0.5em 1.5em;
+}
 
-/* line 17, ../../scss/base/components/_ui.scss */
+/* line 23, ../../scss/base/components/_ui.scss */
 input type[text],
 textarea {
   border-color: #ccc;
