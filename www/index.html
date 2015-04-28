@@ -105,19 +105,65 @@
 	</div>
 
 
+	
+	<!-- login/register modal -->
+	<div class="modalDialog modalRegisterLogin" id="modal-login-register">
+		<div class="modalInsider">
+			<a href="#close" class="modalBtnClose" aria-hidden="true">×</a>
+	
+
+				
+				<div class="radioTabs">
+
+					<div class="tabContainer tabRegister">
+						<input type="radio" id="TabRegister" name="reglog" checked>
+						<label for="TabRegister">Register</label>
+						<div class="tabContent register">
+
+							<a href="/">Login with Facebook</a>
+							<h4><span>or</span></h4>
+							<div class="wrapper">
+								<form>
+									<input type="text" placeholder="Email">
+									<input type="text" placeholder="User name">
+									<input type="text" placeholder="Password">
+									<div class="tc">terms and conditions ...</div>
+									<span class="btn">Register your account</span>
+								</form>
+							</div>
+						</div> 
+					</div>
+
+					<div class="tabContainer tabLogin">
+						<input type="radio" id="TabLogin" name="reglog">
+						<label for="TabLogin">Login</label>
+						<div class="tabContent login">
+							here goes content for notation
+						</div> 
+					</div>
+
+				</div>
+
+
+		</div>
+	</div>
+	<!-- END login/register modal -->
+
 
 	<!-- simple modal sample -->
-	<div class="modalDialog" id="modal-login-register" aria-hidden="true">
+	<!-- to use as a template -->
+	<div class="modalDialog" id="modal-simple-sample" aria-hidden="true">
 		<div class="modalInsider">
 			<div class="modalHeader">
-				<h2>Modal in CSS?</h2>
+				<h2>---header---</h2>
 				<a href="#close" class="modalBtnClose" aria-hidden="true">×</a> <!--CHANGED TO "#close"-->
-		</div>
-		<div class="modalBody">
-			<p>One modal example here! :D</p>
-		</div>
-		<div class="modalFooter">
-			<a href="#close" class="btn">Nice!</a>  <!--CHANGED TO "#close"-->
+			</div>
+			<div class="modalBody">
+				--- content ---
+			</div>
+			<div class="modalFooter">
+				--- foooter ---  <!--CHANGED TO "#close"-->
+			</div>
 		</div>
 	</div>
 	<!-- END simple modal sample -->
