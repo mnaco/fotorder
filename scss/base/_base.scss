@@ -10,9 +10,9 @@ html {
 	color: $textColor;
 
 	// @include breakpoint(1020) { background: #eee; }
-	@include breakpoint($screenSizeD) { 
-		background: #333; 
-		font-size: 16px; 
+	@include breakpoint($screenSizeL) { 
+		// background: #333; 
+		// font-size: 16px; 
 	}
 	// @include breakpoint(480) { background: #999; }
 }
@@ -70,10 +70,10 @@ body, html {
 // page wrapper
 // -----------------------------------------------------------
 .pageWrapper {
-	width: ($screenSizeD - 20) + px;
+	width: ($screenSizeL - 20) + px;
 	margin: 0 auto;
 	padding: 0 10px;
-	@include breakpoint($screenSizeD) {
+	@include breakpoint($screenSizeL) {
 		width: 100%;
 	}
 }
@@ -223,6 +223,28 @@ body, html {
 }
 
 
+// rating
+// -----------------------------------------------------------
+.hRating,
+.hRating:after {
+	display: inline-block;
+	font-size: 0;
+	@include make-block(97px, 16px);
+	background: url('/img/sprite.png') -151px -40px;
+}
+.hRating {
+	&:after { 
+		width: 0;
+		background-position: -151px -59px;
+	}
+	&.rating1:after { width: 20%; }
+	&.rating2:after { width: 40%; }
+	&.rating3:after { width: 60%; }
+	&.rating4:after { width: 80%; }
+	&.rating5:after { width: 100%; }
+}
+
+
 // timeStamp
 // -----------------------------------------------------------
 .timeStamp { 
@@ -231,7 +253,7 @@ body, html {
 }
 
 
-// timeStamp
+// small text
 // -----------------------------------------------------------
 .smallText {
 	font-size: 0.8em;
@@ -401,10 +423,10 @@ body, html {
 				@include make-block(100%, 100%);
 				top: 0;
 				left: 0;
-				background: url('/img/sprite.png') -127px -40px;
+				background: url('/img/sprite.png') -120px -40px;
 			}
 			&.bookmarked:before {
-				background-position: -127px -88px;
+				background-position: -120px -88px;
 			}
 		}
 	}
@@ -452,7 +474,7 @@ body, html {
 		margin-left: 5px;
 	}
 
-	@include breakpoint($screenSizeD) {
+	@include breakpoint($screenSizeL) {
 		float: none;
 		width: 100%;
 	}
@@ -977,7 +999,7 @@ body, html {
 	
 	// tabs 
 	$tabContentWidth: 400px;
-	$tabContentHeight: 400px;
+	$tabContentHeight: 420px;
 	$topOuter: 60px;
 
 	.modalInsider {
@@ -1053,7 +1075,7 @@ body, html {
 	}
 
 	.loginWithFacebook {
-		padding: 30px 0 0;
+		padding: 30px 0 10px;
 	}
 
 	.stripeTitle {
@@ -1067,15 +1089,22 @@ body, html {
 		font-size: .9em;
 		padding: 1em 0.5em;
 		margin-bottom: 10px;
-		&:last-of-type { margin-bottom: 40px; }
+		&:last-of-type { margin-bottom: 20px; }
 	}
 
 	.tc {
-		font-size: 0.8em;
+		font-size: 0.7em;
+		padding: 0 20px;
 	}
 
 	.btnAction {
 		margin: 10px 0;
+	}
+	
+	// login tab
+	.tabLogin {
+		.stripeTitle { margin-bottom: 40px; }
+		.tc { margin-top: 40px; }
 	}
 
 }

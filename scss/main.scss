@@ -8,9 +8,10 @@
 @import "helpers/grids";
 
 
-// import base
+// import base and media queris
 // ----------------------------------------------------------------------
 @import "base/base";
+@import "base/media_queries";
 
 
 // import components (fonts, ui etc)

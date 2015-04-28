@@ -62,7 +62,7 @@ $pad: 20px;
 }
 
 [class*='col-'] {
-@include breakpoint($screenSizeD) {
+@include breakpoint($screenSizeL) {
     width: 100%;
     padding-right: 0;
   }
