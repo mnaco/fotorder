@@ -13,13 +13,13 @@
 }
 
 /* line 13, ../../scss/helpers/_extends.scss */
-.mainNav ul, .usersList {
+.mainNav ul, .pageArtists .usersList {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 /* line 11, ../../scss/helpers/mixins/_inline-list.scss */
-.mainNav ul li, .usersList li {
+.mainNav ul li, .pageArtists .usersList li {
   display: inline-block;
 }
 
@@ -638,87 +638,101 @@ body, html {
 .pageHeader .logo {
   float: left;
 }
-/* line 94, ../../scss/base/_base.scss */
+/* line 97, ../../scss/base/_base.scss */
 .pageHeader .userMenu {
   float: right;
 }
-/* line 96, ../../scss/base/_base.scss */
+/* line 99, ../../scss/base/_base.scss */
 .pageHeader .userMenu > div {
   vertical-align: top;
   display: inline-block;
 }
-/* line 103, ../../scss/base/_base.scss */
+/* line 106, ../../scss/base/_base.scss */
 .pageHeader .mainNav {
   float: right;
   text-align: right;
 }
-/* line 107, ../../scss/base/_base.scss */
+/* line 110, ../../scss/base/_base.scss */
 .pageHeader .userNav {
   padding-bottom: 10px;
 }
-/* line 111, ../../scss/base/_base.scss */
+/* line 114, ../../scss/base/_base.scss */
 .pageHeader .siteNav a {
   font-size: 1.2em;
 }
-/* line 115, ../../scss/base/_base.scss */
+/* line 118, ../../scss/base/_base.scss */
 .pageHeader .usrPic {
   margin-left: 10px;
   border: 1px solid #ccc;
   padding: 2px;
 }
-/* line 119, ../../scss/base/_base.scss */
+/* line 122, ../../scss/base/_base.scss */
 .pageHeader .usrPic img {
   width: 32px;
   height: 32px;
 }
 
-/* line 129, ../../scss/base/_base.scss */
+/* line 132, ../../scss/base/_base.scss */
 .pageBottom {
-  background: #eee;
+  background: #687990;
 }
 
-/* line 130, ../../scss/base/_base.scss */
+/* line 133, ../../scss/base/_base.scss */
 .pageFooter {
+  font-size: 0.7em;
   text-align: center;
   padding: 0;
 }
-/* line 133, ../../scss/base/_base.scss */
-.pageFooter nav {
-  padding-top: 20px;
+/* line 137, ../../scss/base/_base.scss */
+.pageFooter .mainNav {
+  padding-top: 25px;
+}
+/* line 139, ../../scss/base/_base.scss */
+.pageFooter .mainNav li {
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+}
+/* line 144, ../../scss/base/_base.scss */
+.pageFooter a {
+  color: #d8d8d8;
+}
+/* line 146, ../../scss/base/_base.scss */
+.pageFooter a:hover {
+  color: #fff;
 }
 
-/* line 141, ../../scss/base/_base.scss */
+/* line 155, ../../scss/base/_base.scss */
 .mainNav ul {
   font-size: 0;
 }
-/* line 146, ../../scss/base/_base.scss */
+/* line 160, ../../scss/base/_base.scss */
 .mainNav li {
   font-size: .9rem;
   line-height: 1;
   padding: 0 10px;
   border-right: 1px solid #ccc;
 }
-/* line 152, ../../scss/base/_base.scss */
+/* line 166, ../../scss/base/_base.scss */
 .mainNav li:last-child {
   border: none;
   padding-right: 0;
 }
-/* line 156, ../../scss/base/_base.scss */
+/* line 170, ../../scss/base/_base.scss */
 .mainNav li:first-child {
   padding-left: 0;
 }
-/* line 159, ../../scss/base/_base.scss */
+/* line 173, ../../scss/base/_base.scss */
 .mainNav li a {
   display: block;
   text-transform: uppercase;
 }
-/* line 165, ../../scss/base/_base.scss */
+/* line 179, ../../scss/base/_base.scss */
 .mainNav li.active a {
   color: #000 !important;
   cursor: default;
 }
 
-/* line 178, ../../scss/base/_base.scss */
+/* line 192, ../../scss/base/_base.scss */
 .userThumb img,
 .photoThumb img {
   box-sizing: border-box;
@@ -728,68 +742,44 @@ body, html {
   border: 1px solid #ccc;
 }
 
-/* line 190, ../../scss/base/_base.scss */
+/* line 204, ../../scss/base/_base.scss */
 .timeStamp {
   color: #999;
   font-size: 0.8em;
 }
 
-/* line 201, ../../scss/base/_base.scss */
-.usersList li {
-  position: relative;
-  width: 128px;
-  margin: 0 20px 20px 0;
-}
-/* line 207, ../../scss/base/_base.scss */
-.usersList .userThumb {
-  margin-bottom: 5px;
-}
-/* line 210, ../../scss/base/_base.scss */
-.usersList .userName {
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  margin-right: 20px;
-  font-size: 0.8em;
-}
-/* line 218, ../../scss/base/_base.scss */
-.usersList .bookmarkUser {
-  float: right;
-}
-
-/* line 226, ../../scss/base/_base.scss */
+/* line 212, ../../scss/base/_base.scss */
 .pageSidebar {
   background: #eee;
 }
-/* line 228, ../../scss/base/_base.scss */
+/* line 214, ../../scss/base/_base.scss */
 .pageSidebar > h2 {
   padding: 15px 10px;
   margin: 0 0 15px;
   border-bottom: 1px solid #fff;
 }
-/* line 233, ../../scss/base/_base.scss */
+/* line 219, ../../scss/base/_base.scss */
 .pageSidebar section {
   padding: 0 0 10px 10px;
   border-bottom: 1px solid #fff;
   margin-bottom: 20px;
 }
-/* line 237, ../../scss/base/_base.scss */
+/* line 223, ../../scss/base/_base.scss */
 .pageSidebar section > h4 {
   margin: 0 0 1em;
 }
 
-/* line 246, ../../scss/base/_base.scss */
+/* line 232, ../../scss/base/_base.scss */
 .checkboxLabel {
   position: relative;
 }
-/* line 248, ../../scss/base/_base.scss */
+/* line 234, ../../scss/base/_base.scss */
 .checkboxLabel input {
   position: absolute;
   z-index: 0;
   opacity: 0;
 }
-/* line 252, ../../scss/base/_base.scss */
+/* line 238, ../../scss/base/_base.scss */
 .checkboxLabel input + label {
   position: relative;
   z-index: 1;
@@ -798,13 +788,13 @@ body, html {
   padding: 0.1em 0.5em;
   line-height: 1;
 }
-/* line 261, ../../scss/base/_base.scss */
+/* line 247, ../../scss/base/_base.scss */
 .checkboxLabel input:checked + label {
   background: #003780;
   color: #fff;
 }
 
-/* line 272, ../../scss/base/_base.scss */
+/* line 258, ../../scss/base/_base.scss */
 .statusLabel {
   background: #999;
   padding: 0.1em 0.5em;
@@ -814,12 +804,12 @@ body, html {
   border-radius: 3px;
   text-transform: uppercase;
 }
-/* line 280, ../../scss/base/_base.scss */
+/* line 266, ../../scss/base/_base.scss */
 .statusLabel.new {
   background: #ff4e00;
 }
 
-/* line 290, ../../scss/base/_base.scss */
+/* line 276, ../../scss/base/_base.scss */
 .listMessages dl {
   box-sizing: border-box;
   min-height: 58px;
@@ -827,81 +817,124 @@ body, html {
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
-/* line 297, ../../scss/base/_base.scss */
+/* line 283, ../../scss/base/_base.scss */
 .listMessages dt, .listMessages dd {
   margin: 0;
   padding: 0;
 }
-/* line 301, ../../scss/base/_base.scss */
+/* line 287, ../../scss/base/_base.scss */
 .listMessages dt {
   float: left;
   width: 48px;
   height: 48px;
 }
-/* line 305, ../../scss/base/_base.scss */
+/* line 291, ../../scss/base/_base.scss */
 .listMessages dt img {
   width: 100%;
   height: 100%;
 }
-/* line 310, ../../scss/base/_base.scss */
+/* line 296, ../../scss/base/_base.scss */
 .listMessages dd {
   margin-left: 58px;
   display: block;
   padding-bottom: .5em;
 }
-/* line 315, ../../scss/base/_base.scss */
+/* line 301, ../../scss/base/_base.scss */
 .listMessages .message {
   display: block;
   font-size: 1em;
 }
-/* line 319, ../../scss/base/_base.scss */
+/* line 305, ../../scss/base/_base.scss */
 .listMessages .messageDetails {
   font-size: 0.9em;
 }
-/* line 321, ../../scss/base/_base.scss */
+/* line 307, ../../scss/base/_base.scss */
 .listMessages .messageDetails > span {
   display: inline-block;
   margin-right: 5px;
   padding-right: 10px;
   border-right: 1px solid #ccc;
 }
-/* line 326, ../../scss/base/_base.scss */
+/* line 312, ../../scss/base/_base.scss */
 .listMessages .messageDetails > span:last-child {
   border: 0;
 }
 
-/* line 337, ../../scss/base/_base.scss */
+/* line 323, ../../scss/base/_base.scss */
 .pageArtists .artistsFilter label {
   position: relative;
   display: inline-block;
   margin: 0 10px 10px 0;
   font-size: 0.9em;
 }
-/* line 342, ../../scss/base/_base.scss */
+/* line 328, ../../scss/base/_base.scss */
 .pageArtists .artistsFilter label input {
   margin-right: 5px;
 }
-/* line 344, ../../scss/base/_base.scss */
+/* line 330, ../../scss/base/_base.scss */
 .pageArtists .artistsFilter h1, .pageArtists .artistsFilter h3 {
   margin-top: 0;
 }
-/* line 348, ../../scss/base/_base.scss */
+/* line 334, ../../scss/base/_base.scss */
 .pageArtists .searchArtist {
   margin-bottom: 20px;
 }
-/* line 350, ../../scss/base/_base.scss */
+/* line 336, ../../scss/base/_base.scss */
 .pageArtists .searchArtist input[type="text"] {
   width: 100%;
   padding: 10px;
   font-size: 1.2em;
 }
+/* line 346, ../../scss/base/_base.scss */
+.pageArtists .usersList li {
+  position: relative;
+  width: 128px;
+  margin: 0 20px 20px 0;
+}
+/* line 352, ../../scss/base/_base.scss */
+.pageArtists .usersList .userThumb {
+  display: block;
+  margin-bottom: 4px;
+}
+/* line 356, ../../scss/base/_base.scss */
+.pageArtists .usersList .userName {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 20px;
+  font-size: 0.8em;
+}
+/* line 364, ../../scss/base/_base.scss */
+.pageArtists .usersList .bookmarkUser {
+  position: relative;
+  float: right;
+  width: 17px;
+  height: 15px;
+  font-size: 0;
+}
+/* line 370, ../../scss/base/_base.scss */
+.pageArtists .usersList .bookmarkUser:before {
+  position: absolute;
+  display: block;
+  content: "\0020";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("/img/sprite.png") -127px -40px;
+}
+/* line 376, ../../scss/base/_base.scss */
+.pageArtists .usersList .bookmarkUser.bookmarked:before {
+  background-position: -127px -88px;
+}
 
-/* line 363, ../../scss/base/_base.scss */
+/* line 388, ../../scss/base/_base.scss */
 .pageDashboard .listPendingOrders {
   margin-bottom: 60px;
 }
 
-/* line 370, ../../scss/base/_base.scss */
+/* line 395, ../../scss/base/_base.scss */
 .pendingOrder {
   box-sizing: border-box;
   min-height: 84px;
@@ -912,22 +945,22 @@ body, html {
   float: left;
   margin: 0 2% 20px 0;
 }
-/* line 380, ../../scss/base/_base.scss */
+/* line 405, ../../scss/base/_base.scss */
 .pendingOrder:nth-of-type(even) {
   margin-right: 0;
 }
-/* line 381, ../../scss/base/_base.scss */
+/* line 406, ../../scss/base/_base.scss */
 .pendingOrder .userThumb {
   float: left;
   width: 64px;
   height: 64px;
 }
-/* line 386, ../../scss/base/_base.scss */
+/* line 411, ../../scss/base/_base.scss */
 .pendingOrder .orderDetails {
   font-size: 0.8em;
   margin-left: 74px;
 }
-/* line 390, ../../scss/base/_base.scss */
+/* line 415, ../../scss/base/_base.scss */
 .pendingOrder .recentUpdate {
   display: inline-block;
   font-size: 1.1rem;
@@ -936,26 +969,26 @@ body, html {
   margin-left: 5px;
 }
 @media only screen and (max-width: 1020px) {
-  /* line 370, ../../scss/base/_base.scss */
+  /* line 395, ../../scss/base/_base.scss */
   .pendingOrder {
     float: none;
     width: 100%;
   }
 }
 
-/* line 407, ../../scss/base/_base.scss */
+/* line 432, ../../scss/base/_base.scss */
 .biddingContainer {
   box-sizing: border-box;
   background: #efefef;
   border: 1px solid #ccc;
 }
-/* line 416, ../../scss/base/_base.scss */
+/* line 441, ../../scss/base/_base.scss */
 .biddingContainer .userThumb {
   float: left;
   width: 64px;
   height: 64px;
 }
-/* line 423, ../../scss/base/_base.scss */
+/* line 448, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview {
   padding: 10px;
 }
@@ -972,17 +1005,17 @@ body, html {
 .biddingContainer .biddingOverview:after {
   clear: both;
 }
-/* line 429, ../../scss/base/_base.scss */
+/* line 454, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview > div {
   float: left;
   width: 48%;
   min-height: 84px;
 }
-/* line 433, ../../scss/base/_base.scss */
+/* line 458, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview > div:nth-of-type(even) {
   float: right;
 }
-/* line 438, ../../scss/base/_base.scss */
+/* line 463, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview dl {
   margin: 0;
   padding: 0;
@@ -1000,22 +1033,22 @@ body, html {
 .biddingContainer .biddingOverview dl:after {
   clear: both;
 }
-/* line 443, ../../scss/base/_base.scss */
+/* line 468, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview dt, .biddingContainer .biddingOverview dd {
   margin: 0;
   padding: 0;
 }
-/* line 447, ../../scss/base/_base.scss */
+/* line 472, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview dt {
   float: left;
 }
-/* line 448, ../../scss/base/_base.scss */
+/* line 473, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview dd {
   margin-left: 74px;
   display: block;
   font-size: 0.9em;
 }
-/* line 453, ../../scss/base/_base.scss */
+/* line 478, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview .btn {
   display: block;
   width: 100%;
@@ -1024,11 +1057,11 @@ body, html {
   padding: 0.5em 0.3em;
   font-size: 1.5em;
 }
-/* line 460, ../../scss/base/_base.scss */
+/* line 485, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview .btn.btnAgree {
   background: #ff4e00;
 }
-/* line 465, ../../scss/base/_base.scss */
+/* line 490, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview input[type="text"] {
   width: 100%;
   text-align: center;
@@ -1037,22 +1070,22 @@ body, html {
   padding: 0.5em 0;
   margin-top: 5px;
 }
-/* line 472, ../../scss/base/_base.scss */
+/* line 497, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview input[type="text"]:disabled {
   background: #ddd;
 }
-/* line 478, ../../scss/base/_base.scss */
+/* line 503, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview .youno input {
   font-size: 1.7em;
   padding: 0.4em 0;
   color: #000;
 }
-/* line 488, ../../scss/base/_base.scss */
+/* line 513, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory {
   position: relative;
   margin: 20px 0;
 }
-/* line 493, ../../scss/base/_base.scss */
+/* line 518, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory > h4 {
   position: relative;
   text-align: center;
@@ -1060,14 +1093,14 @@ body, html {
   font-size: 0.7em;
   text-transform: uppercase;
 }
-/* line 499, ../../scss/base/_base.scss */
+/* line 524, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory > h4 > span {
   position: relative;
   z-index: 1;
   padding: 0 20px;
   background: #efefef;
 }
-/* line 505, ../../scss/base/_base.scss */
+/* line 530, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory > h4:before {
   position: absolute;
   display: block;
@@ -1077,13 +1110,13 @@ body, html {
   top: 50%;
   background: #ccc;
 }
-/* line 512, ../../scss/base/_base.scss */
+/* line 537, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 517, ../../scss/base/_base.scss */
+/* line 542, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li {
   position: relative;
   display: block;
@@ -1092,11 +1125,11 @@ body, html {
   padding-right: 50%;
   font-size: 0.8em;
 }
-/* line 524, ../../scss/base/_base.scss */
+/* line 549, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li > div {
   padding: 10px;
 }
-/* line 527, ../../scss/base/_base.scss */
+/* line 552, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li:before {
   position: absolute;
   display: block;
@@ -1107,7 +1140,7 @@ body, html {
   right: 50%;
   background: #ccc;
 }
-/* line 533, ../../scss/base/_base.scss */
+/* line 558, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li:after {
   position: absolute;
   display: block;
@@ -1118,34 +1151,34 @@ body, html {
   right: 50%;
   background: #ccc;
 }
-/* line 539, ../../scss/base/_base.scss */
+/* line 564, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li.youno {
   text-align: right;
   padding-right: 0;
   padding-left: 50%;
 }
-/* line 543, ../../scss/base/_base.scss */
+/* line 568, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li.youno:after {
   right: 47%;
 }
-/* line 547, ../../scss/base/_base.scss */
+/* line 572, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li .recentUpdate {
   font-size: 1.1em;
   display: block;
   margin-top: 3px;
 }
-/* line 551, ../../scss/base/_base.scss */
+/* line 576, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li .recentUpdate img {
   display: block;
   border: 1px solid #ccc;
   width: 100%;
   margin: 5px 0;
 }
-/* line 561, ../../scss/base/_base.scss */
+/* line 586, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory:not(.expand) ul:not(first-child) {
   display: none;
 }
-/* line 564, ../../scss/base/_base.scss */
+/* line 589, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory:not(.expand) .expandHistory span {
   width: 0;
   height: 0;
@@ -1157,7 +1190,7 @@ body, html {
   border-top: 0.5rem solid #ccc;
   top: 10px;
 }
-/* line 570, ../../scss/base/_base.scss */
+/* line 595, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory.expand .expandHistory span {
   width: 0;
   height: 0;
@@ -1169,7 +1202,7 @@ body, html {
   border-bottom: 0.5rem solid #ccc;
   bottom: 10px;
 }
-/* line 578, ../../scss/base/_base.scss */
+/* line 603, ../../scss/base/_base.scss */
 .biddingContainer .expandHistory {
   position: absolute;
   cursor: pointer;
@@ -1185,26 +1218,26 @@ body, html {
   border-top: 0;
   text-align: center;
 }
-/* line 592, ../../scss/base/_base.scss */
+/* line 617, ../../scss/base/_base.scss */
 .biddingContainer .expandHistory span {
   position: relative;
 }
 
-/* line 600, ../../scss/base/_base.scss */
+/* line 625, ../../scss/base/_base.scss */
 .acceptOrder {
   margin-bottom: 40px;
   text-align: center;
 }
-/* line 605, ../../scss/base/_base.scss */
+/* line 630, ../../scss/base/_base.scss */
 .acceptOrder .photoToAccept {
   border: 1px solid #ccc;
   text-align: center;
 }
-/* line 608, ../../scss/base/_base.scss */
+/* line 633, ../../scss/base/_base.scss */
 .acceptOrder .photoToAccept img {
   max-height: 300px;
 }
-/* line 611, ../../scss/base/_base.scss */
+/* line 636, ../../scss/base/_base.scss */
 .acceptOrder .otherPhotos {
   list-style: none;
   padding: 0;
@@ -1215,20 +1248,20 @@ body, html {
 .acceptOrder .otherPhotos li {
   display: inline-block;
 }
-/* line 615, ../../scss/base/_base.scss */
+/* line 640, ../../scss/base/_base.scss */
 .acceptOrder .otherPhotos li {
   margin-top: 5px;
 }
-/* line 616, ../../scss/base/_base.scss */
+/* line 641, ../../scss/base/_base.scss */
 .acceptOrder .otherPhotos .photoThumb img {
   width: auto;
   height: 64px;
 }
-/* line 622, ../../scss/base/_base.scss */
+/* line 647, ../../scss/base/_base.scss */
 .acceptOrder .acceptPrice {
   margin: 40px 0 20px 0;
 }
-/* line 625, ../../scss/base/_base.scss */
+/* line 650, ../../scss/base/_base.scss */
 .acceptOrder .btn {
   font-size: 1.6em;
   padding-left: 2em;
@@ -1237,30 +1270,30 @@ body, html {
   margin: 20px 0;
 }
 
-/* line 643, ../../scss/base/_base.scss */
+/* line 668, ../../scss/base/_base.scss */
 .chatContainer .userThumb {
   float: left;
   width: 24px;
   height: 24px;
 }
-/* line 649, ../../scss/base/_base.scss */
+/* line 674, ../../scss/base/_base.scss */
 .chatContainer .sendMessage {
   text-align: right;
   margin-bottom: 30px;
 }
-/* line 652, ../../scss/base/_base.scss */
+/* line 677, ../../scss/base/_base.scss */
 .chatContainer .sendMessage textarea {
   display: block;
   width: 100% !important;
   min-height: 100px;
   margin-bottom: 10px;
 }
-/* line 658, ../../scss/base/_base.scss */
+/* line 683, ../../scss/base/_base.scss */
 .chatContainer .sendMessage .btn {
   background: #ff4e00;
   padding: 5px 20px;
 }
-/* line 664, ../../scss/base/_base.scss */
+/* line 689, ../../scss/base/_base.scss */
 .chatContainer dl {
   margin: 0 0 7px;
   padding: 0;
@@ -1278,17 +1311,17 @@ body, html {
 .chatContainer dl:after {
   clear: both;
 }
-/* line 669, ../../scss/base/_base.scss */
+/* line 694, ../../scss/base/_base.scss */
 .chatContainer dt, .chatContainer dd {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-/* line 674, ../../scss/base/_base.scss */
+/* line 699, ../../scss/base/_base.scss */
 .chatContainer dt {
   float: left;
 }
-/* line 675, ../../scss/base/_base.scss */
+/* line 700, ../../scss/base/_base.scss */
 .chatContainer dd {
   margin-left: 34px;
   margin-right: 10px;
@@ -1298,16 +1331,16 @@ body, html {
   padding: 3px 5px;
   margin-bottom: 3px;
 }
-/* line 685, ../../scss/base/_base.scss */
+/* line 710, ../../scss/base/_base.scss */
 .chatContainer dl.you dt {
   float: right;
 }
-/* line 686, ../../scss/base/_base.scss */
+/* line 711, ../../scss/base/_base.scss */
 .chatContainer dl.you dd {
   margin-right: 34px;
   margin-left: 10px;
 }
-/* line 691, ../../scss/base/_base.scss */
+/* line 716, ../../scss/base/_base.scss */
 .chatContainer .timeStamp {
   display: block;
 }
@@ -1325,15 +1358,15 @@ body, html {
 .userDetails:after {
   clear: both;
 }
-/* line 706, ../../scss/base/_base.scss */
+/* line 731, ../../scss/base/_base.scss */
 .userDetails > .fLt {
   width: 60%;
 }
-/* line 707, ../../scss/base/_base.scss */
+/* line 732, ../../scss/base/_base.scss */
 .userDetails > .fRt {
   width: 36%;
 }
-/* line 709, ../../scss/base/_base.scss */
+/* line 734, ../../scss/base/_base.scss */
 .userDetails > .fRt .btn {
   display: block;
   margin-bottom: 10px;
@@ -1342,23 +1375,23 @@ body, html {
   padding: 0.5em 5px;
   font-size: 1.1em;
 }
-/* line 716, ../../scss/base/_base.scss */
+/* line 741, ../../scss/base/_base.scss */
 .userDetails > .fRt .btn.btnSendRequest {
   background: #ff4e00;
   font-size: 1.4em;
 }
-/* line 723, ../../scss/base/_base.scss */
+/* line 748, ../../scss/base/_base.scss */
 .userDetails .userSlogan {
   font-style: italic;
   font-size: 0.9em;
 }
-/* line 730, ../../scss/base/_base.scss */
+/* line 755, ../../scss/base/_base.scss */
 .userDetails .userThumb {
   float: left;
   width: 48px;
   height: 48px;
 }
-/* line 736, ../../scss/base/_base.scss */
+/* line 761, ../../scss/base/_base.scss */
 .userDetails dl {
   margin: 0 0 7px;
   padding: 0;
@@ -1376,17 +1409,17 @@ body, html {
 .userDetails dl:after {
   clear: both;
 }
-/* line 741, ../../scss/base/_base.scss */
+/* line 766, ../../scss/base/_base.scss */
 .userDetails dt, .userDetails dd {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-/* line 746, ../../scss/base/_base.scss */
+/* line 771, ../../scss/base/_base.scss */
 .userDetails dt {
   float: left;
 }
-/* line 747, ../../scss/base/_base.scss */
+/* line 772, ../../scss/base/_base.scss */
 .userDetails dd {
   margin-left: 58px;
   margin-right: 10px;
@@ -1394,7 +1427,7 @@ body, html {
   font-size: 0.9em;
 }
 
-/* line 757, ../../scss/base/_base.scss */
+/* line 782, ../../scss/base/_base.scss */
 .artistPrefs {
   margin-top: 20px;
   padding-top: 20px;
@@ -1413,7 +1446,7 @@ body, html {
 .artistPrefs:after {
   clear: both;
 }
-/* line 765, ../../scss/base/_base.scss */
+/* line 790, ../../scss/base/_base.scss */
 .artistPrefs > ul {
   float: left;
   display: block;
@@ -1422,38 +1455,38 @@ body, html {
   margin: 0;
   padding: 0;
 }
-/* line 772, ../../scss/base/_base.scss */
+/* line 797, ../../scss/base/_base.scss */
 .artistPrefs > ul:nth-of-type(even) {
   float: right;
 }
-/* line 775, ../../scss/base/_base.scss */
+/* line 800, ../../scss/base/_base.scss */
 .artistPrefs > ul li {
   margin: 0;
   padding: 0 0 3px;
   list-style-position: inside;
 }
-/* line 781, ../../scss/base/_base.scss */
+/* line 806, ../../scss/base/_base.scss */
 .artistPrefs .prefTitle {
   list-style: none;
   font-size: 1.1em;
   margin-bottom: 10px;
 }
 
-/* line 791, ../../scss/base/_base.scss */
+/* line 816, ../../scss/base/_base.scss */
 .artistPorfolio {
   margin-bottom: 40px;
   text-align: center;
 }
-/* line 796, ../../scss/base/_base.scss */
+/* line 821, ../../scss/base/_base.scss */
 .artistPorfolio .userPhoto {
   border: 1px solid #ccc;
   text-align: center;
 }
-/* line 799, ../../scss/base/_base.scss */
+/* line 824, ../../scss/base/_base.scss */
 .artistPorfolio .userPhoto img {
   max-height: 300px;
 }
-/* line 802, ../../scss/base/_base.scss */
+/* line 827, ../../scss/base/_base.scss */
 .artistPorfolio .otherPhotos {
   list-style: none;
   padding: 0;
@@ -1464,11 +1497,11 @@ body, html {
 .artistPorfolio .otherPhotos li {
   display: inline-block;
 }
-/* line 806, ../../scss/base/_base.scss */
+/* line 831, ../../scss/base/_base.scss */
 .artistPorfolio .otherPhotos li {
   margin-top: 5px;
 }
-/* line 807, ../../scss/base/_base.scss */
+/* line 832, ../../scss/base/_base.scss */
 .artistPorfolio .otherPhotos .photoThumb img {
   width: auto;
   height: 64px;
@@ -1494,29 +1527,123 @@ textarea {
   border-color: #ccc;
 }
 
-/* line 2, ../../scss/pages/_home.scss */
-.pageHome .pageContent {
-  background: #cfd9e9;
-  height: 360px;
-}
-/* line 8, ../../scss/pages/_home.scss */
-.pageHome .welcomeBox {
-  text-align: center;
-  padding: 40px 0 0;
+/* line 1, ../../scss/pages/_home.scss */
+.pageHome {
+  background: url("/img/homepage_img1.png") top center no-repeat;
 }
 /* line 11, ../../scss/pages/_home.scss */
+.pageHome .pageHeader {
+  background: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0;
+}
+/* line 16, ../../scss/pages/_home.scss */
+.pageHome .loginSignup {
+  padding-top: 15px;
+}
+/* line 18, ../../scss/pages/_home.scss */
+.pageHome .loginSignup .btn {
+  font-size: 1.1em;
+  padding: 0.3em 1.2em;
+  background: transparent;
+  color: #003780;
+}
+/* line 23, ../../scss/pages/_home.scss */
+.pageHome .loginSignup .btn.btnSignup {
+  background: #003780;
+  color: #fff;
+}
+/* line 31, ../../scss/pages/_home.scss */
+.pageHome .welcomeBox {
+  box-sizing: border-box;
+  background: rgba(95, 119, 158, 0.5);
+  height: 350px;
+  text-align: center;
+  padding: 60px 0 0;
+}
+/* line 37, ../../scss/pages/_home.scss */
 .pageHome .welcomeBox h1 {
   font-size: 3em;
   color: #fff;
+  min-height: 100px;
 }
-/* line 15, ../../scss/pages/_home.scss */
+/* line 42, ../../scss/pages/_home.scss */
 .pageHome .welcomeBox .btn {
   display: inline-block;
   margin: 0 40px;
-  font-size: 1.4em;
+  font-size: 1.2em;
+  min-width: 280px;
+  font-size: 1.2em;
+  padding: 15px 10px;
+  border: 2px solid #003780;
+  background: rgba(255, 255, 255, 0.8);
+  color: #003780;
 }
-/* line 24, ../../scss/pages/_home.scss */
+/* line 52, ../../scss/pages/_home.scss */
+.pageHome .welcomeBox .btn.btnFB {
+  background: #3a638d;
+  border-color: #fff;
+  color: #fff;
+}
+/* line 62, ../../scss/pages/_home.scss */
+.pageHome .recentUsersBox {
+  background: #afaeb6 url("/img/homepage_recent_users_bcgr.png") center -100px no-repeat;
+  text-align: center;
+  padding-bottom: 20px;
+}
+/* line 69, ../../scss/pages/_home.scss */
+.pageHome .recentUsersBox .intoTitles {
+  min-height: 220px;
+  padding: 40px 0 0;
+  width: 500px;
+  margin: 0 auto;
+}
+/* line 74, ../../scss/pages/_home.scss */
+.pageHome .recentUsersBox .intoTitles > span {
+  display: block;
+  text-align: left;
+  font-size: 1.6em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+/* line 80, ../../scss/pages/_home.scss */
+.pageHome .recentUsersBox .intoTitles > span b {
+  font-weight: normal;
+  font-size: 1.2em;
+}
+/* line 84, ../../scss/pages/_home.scss */
+.pageHome .recentUsersBox .intoTitles > span:nth-of-type(even) {
+  text-align: right;
+}
+/* line 90, ../../scss/pages/_home.scss */
+.pageHome .recentUsersBox h2 {
+  margin: 0;
+}
+/* line 95, ../../scss/pages/_home.scss */
+.pageHome .recentUsersBox ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  font-size: 0;
+  line-height: 0;
+}
+/* line 11, ../../scss/helpers/mixins/_inline-list.scss */
+.pageHome .recentUsersBox ul li {
+  display: inline-block;
+}
+/* line 101, ../../scss/pages/_home.scss */
 .pageHome .recentUsersBox li {
-  width: 48px;
-  height: 48px;
+  margin: 0 5px 10px;
+  display: inline-block;
+  background: #fff;
+}
+/* line 105, ../../scss/pages/_home.scss */
+.pageHome .recentUsersBox li:nth-of-type(8n) {
+  margin-right: 0;
+}
+/* line 109, ../../scss/pages/_home.scss */
+.pageHome .recentUsersBox .userThumb {
+  display: block;
+  width: 112px;
+  height: 112px;
 }

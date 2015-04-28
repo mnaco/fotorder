@@ -89,7 +89,10 @@ body, html {
 	margin-bottom: 40px;
 	border-bottom: 1px solid $borderColor;
 	
-	.logo { float: left; }
+	.logo { 
+		float: left;
+		
+	}
 
 	.userMenu { 
 		float: right;
@@ -126,11 +129,22 @@ body, html {
 
 // page footer
 // -----------------------------------------------------------
-.pageBottom { background: #eee; } // #687990; }
+.pageBottom { background: #687990; }
 .pageFooter {
+	font-size: 0.7em;
 	text-align: center;
 	padding: 0;
-	nav { padding-top: 20px; }
+	.mainNav { 
+		padding-top: 25px;
+		li { 
+			margin-bottom: 5px;
+			font-size: 0.8rem;
+		}
+	}
+	a { 
+		color: #d8d8d8;
+		&:hover { color: #fff; }
+	}
 }
 
 
@@ -190,34 +204,6 @@ body, html {
 .timeStamp { 
 	color: $textGrey; 
 	font-size: 0.8em;
-}
-
-
-// usersList 
-// users thumbs size needs to be adgusted to parent container
-// -----------------------------------------------------------
-.usersList {
-	@extend %inlineList;
-	li {
-		position: relative;
-		// default width
-		width: 128px;
-		margin: 0 20px 20px 0;
-	}
-	.userThumb {
-		margin-bottom: 5px;
-	}
-	.userName {
-		display: block;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-		margin-right: 20px;
-		font-size: 0.8em;
-	}
-	.bookmarkUser {
-		float: right;
-	}
 }
 
 
@@ -351,6 +337,45 @@ body, html {
 			width: 100%;
 			padding: 10px;
 			font-size: 1.2em;
+		}
+	}
+
+	// usersList 
+	.usersList {
+		@extend %inlineList;
+		li {
+			position: relative;
+			// default width
+			width: 128px;
+			margin: 0 20px 20px 0;
+		}
+		.userThumb {
+			display: block;
+			margin-bottom: 4px;
+		}
+		.userName {
+			display: block;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			margin-right: 20px;
+			font-size: 0.8em;
+		}
+		.bookmarkUser {
+			position: relative;
+			float: right;
+			width: 17px;
+			height: 15px;
+			font-size: 0;
+			&:before {
+				@include make-block(100%, 100%);
+				top: 0;
+				left: 0;
+				background: url('/img/sprite.png') -127px -40px;
+			}
+			&.bookmarked:before {
+				background-position: -127px -88px;
+			}
 		}
 	}
 }

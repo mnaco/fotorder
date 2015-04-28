@@ -1,29 +1,115 @@
 .pageHome {
+
+	background: url('/img/homepage_img1.png') top center no-repeat;
+	// background-size: contain;
+
+
 	.pageContent {
-		background: #cfd9e9;
-		height: 360px;
+		
+	}
+
+	.pageHeader {
+		background: rgba(255,255,255,0.7);
+		margin-bottom: 0;
+	}
+
+	.loginSignup {
+		padding-top: 15px;
+		.btn {
+			font-size: 1.1em;
+			padding: 0.3em 1.2em;
+			background: transparent;
+			color: $blueColor;
+			&.btnSignup {
+				background: $blueColor;
+				color: #fff;
+			}
+		}
 	}
 	
 	// welcome title including register buttons
 	.welcomeBox {
+		@include box-sizing(border-box);
+		background: rgba(95,119,158,0.5);
+		height: 350px;
 		text-align: center;
-		padding: 40px 0 0;
+		padding: 60px 0 0;
 		h1 {
 			font-size: 3em;
 			color: #fff;
+			min-height: 100px;
 		}
 		.btn {
 			display: inline-block;
 			margin: 0 40px;
-			font-size: 1.4em;
+			font-size: 1.2em;
+			min-width: 280px;
+			font-size: 1.2em;
+			padding: 15px 10px;
+			border: 2px solid $blueColor;
+			background: rgba(255, 255, 255, 0.8);
+			color: $blueColor;
+			&.btnFB {
+				background: #3a638d;
+				border-color: #fff;
+				color: #fff;
+			}
 		}
 	}
 	
+
 	// resent users
 	.recentUsersBox {
-		li { 
-			width: 48px;
-			height: 48px;
+
+		background: #afaeb6 url('/img/homepage_recent_users_bcgr.png') center -100px no-repeat;
+		text-align: center;
+		padding-bottom: 20px;
+
+
+		.intoTitles {
+			min-height: 220px;
+			padding: 40px 0 0;
+			width: 500px;
+			margin: 0 auto;
+			> span {
+				display: block;
+				text-align: left;
+				font-size: 1.6em;
+				color: #fff;
+				margin-bottom: 20px;
+				b {
+					font-weight: normal;
+					font-size: 1.2em;
+				}
+				&:nth-of-type(even) {
+					text-align: right;
+				}
+			}
+		}
+
+		h2 {
+			margin: 0;
+		}
+
+		$thumbSize: $thumbSizeXXL;
+		ul { 
+			@include inline-list();
+			margin-top: 20px;
+			font-size: 0;
+			line-height: 0;
+		}
+		li {
+			margin: 0 5px 10px;
+			display: inline-block;
+			background: #fff;
+			&:nth-of-type(8n) {
+				margin-right: 0;
+			}
+		}
+		.userThumb {
+			display: block;
+			width: $thumbSize;
+			height: $thumbSize;
 		}
 	}
 
