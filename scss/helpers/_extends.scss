@@ -2,10 +2,15 @@
 // Extenders
 // ----------------------------------------------------------------------
 
-%clearfix {
+%clearFix {
   @include clearfix();
 }
 
 %hideText {
   @include hide-text();
 }
+
+%inlineList {
+	@include inline-list();
+}
+

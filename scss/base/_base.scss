@@ -3,6 +3,1103 @@
 // base styles
 // ----------------------------------------------------------------------
 
+html {  
+	font-size: 14px;
+	color: $textColor;
+}
 
-html {}
-body {}
+body {
+	
+}
+
+* {
+  @include box-sizing(border-box);
+}
+
+
+// common
+// -----------------------------------------------------------
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+a { 
+	text-decoration: none;
+	color: $linkColor;
+	&:hover { color: $orangeColor; }
+}
+.fLt { float: left; }
+.fRt { float: right; }
+
+// fonts
+* { line-height: 1.3; }
+// fix fonts render issue in FF and Chrome
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+// sticky footer
+// -----------------------------------------------------------
+body, html { 
+	height: 100%; 
+	margin: 0;
+	padding: 0;
+}
+.pageBottom, 
+.pageTop:after {
+    height: $footerHeight - 1;
+}
+.pageTop {
+    min-height: 100%;
+    margin-bottom: -$footerHeight; 
+    &:after {
+		content: "";
+		display: block;
+    }
+}
+
+
+// page wrapper
+// -----------------------------------------------------------
+.pageWrapper {
+	width: ($screenSizeL - 20) + px;
+	margin: 0 auto;
+	padding: 0 10px;
+	@include breakpoint($screenSizeL) {
+		width: 100%;
+	}
+}
+
+
+// page header
+// -----------------------------------------------------------
+.pageHeader {
+	
+	@extend %clearFix;
+
+	padding: 20px 0 10px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid $borderColor;
+	
+	.logo { 
+		float: left;
+	}
+
+	// navigation adjustment
+	.mainNav { 
+		float: right;
+		text-align: right;
+	}
+	.userNav {  
+		padding-bottom: 10px;
+	}
+	.siteNav {
+		a { font-size: 1.2em; }
+	}
+
+	// user pic
+	.userPic { 
+		margin-left: 10px;
+		border: 1px solid $borderColor;
+		padding: 2px;
+		img {
+			width: 32px;
+			height: 32px;
+		}
+	}
+}
+
+// header menu 
+.headerMenu { 
+	float: right;
+	> div {
+		vertical-align: top;
+		display: inline-block;
+	}
+}
+
+
+// page footer
+// -----------------------------------------------------------
+.pageBottom { background: #687990; }
+.pageFooter {
+	font-size: 0.7em;
+	text-align: center;
+	padding: 0;
+	.mainNav { 
+		padding-top: 25px;
+		li { 
+			margin-bottom: 5px;
+			font-size: 0.8rem;
+		}
+	}
+	a { 
+		color: #d8d8d8;
+		&:hover { color: #fff; }
+	}
+}
+
+
+// main navigation
+// -----------------------------------------------------------
+.mainNav {
+	
+	ul { 
+		@extend %inlineList;
+		font-size: 0; 
+	}
+	
+	li {
+		font-size: 0.9rem;
+		line-height: 1;
+		padding: 0 10px;
+		border-right: 1px solid $borderColor;
+	
+		&:last-child { 
+			border: none;
+			padding-right: 0;
+		}
+		&:first-child {
+			padding-left: 0;
+		}
+		a {
+			display: block;
+			text-transform: uppercase;
+		}
+
+		&.active {
+			a {
+				color: #000 !important;
+				cursor: default;
+			}
+		}
+	}
+}
+
+
+// stripe title
+// example: ----- or -------
+// -----------------------------------------------------------
+.stripeTitle {
+	display: block;
+	position: relative;
+	text-align: center;
+	line-height: 1em;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	> span { 
+		position: relative;
+		z-index: 1;
+		padding: 0 20px;
+		background: #fff;
+	}
+	&:before {
+		@include make-block(100%,1px);
+		top: 50%;
+		background: $borderColor;
+	}
+}
+
+
+// userThumb
+// -----------------------------------------------------------
+.userThumb,
+.photoThumb { 
+	img {
+		@include box-sizing(border-box);
+		display: block;
+		width: 100%;
+		height: 100%;
+		border: 1px solid $borderColor; 
+	}
+}
+
+
+// rating
+// -----------------------------------------------------------
+.hRating,
+.hRating:after {
+	display: inline-block;
+	font-size: 0;
+	@include make-block(97px, 16px);
+	background: url('/img/sprite.png') -151px -40px;
+}
+.hRating {
+	&:after { 
+		width: 0;
+		background-position: -151px -59px;
+	}
+	&.rating1:after { width: 20%; }
+	&.rating2:after { width: 40%; }
+	&.rating3:after { width: 60%; }
+	&.rating4:after { width: 80%; }
+	&.rating5:after { width: 100%; }
+}
+
+
+// timeStamp
+// -----------------------------------------------------------
+.timeStamp { 
+	color: $textGrey; 
+	font-size: 0.8em;
+}
+
+
+// small text
+// -----------------------------------------------------------
+.smallText {
+	font-size: 0.8em;
+}
+
+// page sidebar
+// -----------------------------------------------------------
+.pageSidebar {
+	background: #eee;
+	> h2 { 
+		padding: 15px 10px;
+		margin: 0 0 15px;
+		border-bottom: 1px solid #fff;
+	}
+	section {
+		padding: 0 0 10px 10px;
+		border-bottom: 1px solid #fff;
+		margin-bottom: 20px;
+		> h4 {
+			margin: 0 0 1em;
+		}
+	}
+}
+
+
+// input checkbox labels
+// -----------------------------------------------------------
+.checkboxLabel {
+	position: relative;
+	input {
+		position: absolute;
+		z-index: 0;
+		opacity: 0;
+		+ label { 
+			position: relative;
+			z-index: 1;
+			background: #ccc;
+			margin: 0 3px 5px 0 !important;
+			padding: 0.1em 0.5em;
+			line-height: 1;
+		}
+		&:checked {
+			+ label { 
+				background: $blueColor;
+				color: #fff;
+			}
+		}	
+	}
+}
+
+
+// status labels
+// -----------------------------------------------------------
+.statusLabel {
+	background: $greyColor;
+	padding: 0.1em 0.5em;
+	font-size: 0.8em;
+	color: #fff;
+	line-height: 1em;
+	border-radius: $borderRadius;
+	text-transform: uppercase;
+	&.new {
+		background: $orangeColor;
+	}
+}
+
+
+// user messages
+// -----------------------------------------------------------
+.listMessages {
+	$thumbSize: $thumbSizeL;
+	dl {
+		@include box-sizing(border-box);
+		min-height: $thumbSize + 10;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid $borderColor;
+	}
+	dt,dd {
+		margin: 0;
+		padding: 0;
+	}
+	dt {
+		float: left;
+		width: $thumbSize;
+		height: $thumbSize;
+		img { 
+			width: 100%;
+			height: 100%;
+		}
+	}
+	dd {
+		margin-left: $thumbSize + 10;
+		display: block;
+		padding-bottom: .5em;
+	}
+	.message {
+		display: block;
+		font-size: 1em;
+	}
+	.messageDetails {
+		font-size: 0.9em;
+		> span {
+			display: inline-block;
+			margin-right: 5px;
+			padding-right: 10px;
+			border-right: 1px solid $borderColor;
+			&:last-child { border: 0 }
+		}
+	}
+}
+
+
+// page > ARTISTS
+// -----------------------------------------------------------
+.pageArtists {
+	
+	.artistsFilter { 
+		label { 
+			position: relative;
+			display: inline-block;
+			margin: 0 10px 10px 0;
+			font-size: 0.9em;
+			input { margin-right: 5px; }
+		}
+		h1, h3 { margin-top: 0; }
+		h3 {  }
+	}
+
+	.searchArtist {
+		margin-bottom: 20px;
+		input[type="text"] {
+			width: 100%;
+			padding: 10px;
+			font-size: 1.2em;
+		}
+	}
+
+	// usersList 
+	.usersList {
+		@extend %inlineList;
+		li {
+			position: relative;
+			// default width
+			width: 128px;
+			margin: 0 20px 20px 0;
+		}
+		.userThumb {
+			display: block;
+			margin-bottom: 4px;
+		}
+		.userName {
+			display: block;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			margin-right: 20px;
+			font-size: 0.8em;
+		}
+		.bookmarkUser {
+			position: relative;
+			float: right;
+			width: 17px;
+			height: 15px;
+			font-size: 0;
+			&:before {
+				@include make-block(100%, 100%);
+				top: 0;
+				left: 0;
+				background: url('/img/sprite.png') -120px -40px;
+			}
+			&.bookmarked:before {
+				background-position: -120px -88px;
+			}
+		}
+	}
+}
+// END page > ARTISTS
+// -----------------------------------------------------------
+
+
+// page > DASHBOARD
+// -----------------------------------------------------------
+.pageDashboard {
+
+	.listPendingOrders {
+		@extend %clearFix;
+		margin-bottom: 60px;
+	}
+}
+
+// pending orders
+.pendingOrder {
+	@include box-sizing(border-box);
+	$thumbSize: $thumbSizeXL;
+	min-height: $thumbSize + 20;
+	background: $lightGreyColor;
+	border: 1px solid $borderColor;
+	width: 49%;
+	padding: 10px; 
+	float: left;
+	margin: 0 2% 20px 0;
+	&:nth-of-type(even) { margin-right: 0; }
+	.userThumb {
+		float: left;
+		width: $thumbSize;
+		height: $thumbSize;
+	}
+	.orderDetails {
+		font-size: 0.8em;
+		margin-left: $thumbSize + 10;
+	}
+	.recentUpdate {
+		display: inline-block;
+		font-size: 1.1rem;
+		padding-left: 10px;
+		border-left: 1px solid $borderColor;
+		margin-left: 5px;
+	}
+
+	@include breakpoint($screenSizeL) {
+		float: none;
+		width: 100%;
+	}
+}
+// END page > DASHBOARD
+// -----------------------------------------------------------
+
+
+// page > BIDDING, PRICE
+// -----------------------------------------------------------
+.biddingContainer {
+
+	$thumbSize: $thumbSizeXL;
+	@extend %clearFix;
+	@include box-sizing(border-box);
+
+	background: $lightGreyColor;
+	border: 1px solid $borderColor;
+
+	.userThumb {
+		float: left;
+		width: $thumbSize;
+		height: $thumbSize;
+	}
+	
+	// bidding overview container
+	.biddingOverview {
+
+		@include clearfix();
+
+		padding: 10px;
+
+		> div {
+			float: left;
+			width: 48%;
+			min-height: $thumbSize + 20;
+			&:nth-of-type(even) {
+				float: right;
+			}
+		}
+
+		dl {
+			@include clearfix();
+			margin: 0;
+			padding: 0;
+		}
+		dt, dd {
+			margin: 0;
+			padding: 0;
+		}
+		dt { float:  left; }
+		dd {
+			margin-left: $thumbSize + 10;
+			display: block;
+			font-size: 0.9em;
+		}
+		.btn {
+			display: block;
+			width: 100%;
+			margin-top: 10px; 
+			text-align: center; 
+			padding: 0.5em 0.3em;
+			font-size: 1.5em;
+			&.btnAgree {
+				background: $orangeColor;
+			}
+
+		}
+		input[type="text"] {
+			width: 100%;
+			text-align: center;
+			font-size: 1.5em;
+			border: 0;
+			padding: 0.5em 0;
+			margin-top: 5px;
+			&:disabled {
+				background: #ddd;
+			}
+		}
+
+		.youno {
+			input {
+				font-size: 1.7em;
+				padding: 0.4em 0;
+				color: #000;
+			}
+		}
+	}
+
+	// bidding history
+	.biddinHistory {
+
+		position: relative;
+		margin: 20px 0;
+		
+		.stripeTitle {
+			> span { background: $lightGreyColor; }
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		li {
+			position: relative;
+			display: block;
+			margin: 0;
+			padding: 0;
+			padding-right: 50%;
+			font-size: 0.8em;
+			> div {
+				padding: 10px;
+			}
+			&:before {
+				@include make-block(1px,100%);
+				top: 0;
+				right: 50%;
+				background: $borderColor;
+			}
+			&:after {
+				@include make-block(3%,1px);
+				top: 15px;
+				right: 50%;
+				background: $borderColor;
+			}
+			&.youno {
+				text-align: right;
+				padding-right: 0;
+				padding-left: 50%;
+				&:after {
+					right: 47%;
+				}
+			}
+			.recentUpdate {
+				font-size: 1.1em;
+				display: block;
+				margin-top: 3px;
+				img {
+					display: block;
+					border: 1px solid $borderColor;
+					width: 100%;
+					margin: 5px 0;
+				}
+			}
+		}
+
+		&:not(.expand) {
+			ul:not(first-child) {
+				display: none;
+			}
+			.expandHistory span {
+				@include arrow("down", $borderColor, 5);
+				top: 10px;
+			}
+		}
+		&.expand {
+			.expandHistory span {
+				@include arrow("up", $borderColor, 5);
+				bottom: 10px;
+			}
+		} 
+	}
+
+	// expand history
+	.expandHistory {
+		position: absolute;
+		cursor: pointer; 
+		bottom: -30px;
+		left: 50%;
+		margin-left: -20px;
+		display: block;
+		width: 40px;
+		height: 20px;
+		background: $lightGreyColor;
+		border: 1px solid $borderColor;
+		border-radius: 0 0 $borderRadius $borderRadius;
+		border-top: 0;
+		text-align: center;
+		span {
+			position: relative;
+		}
+	}
+}
+
+// accept order
+.acceptOrder {
+
+	margin-bottom: 40px;
+	text-align: center;
+
+	.photoToAccept {
+		border: 1px solid $borderColor;
+		text-align: center;
+		img { max-height: 300px; }
+	}
+
+	.otherPhotos {
+		@include inline-list();
+		$thumbSize: $thumbSizeXL;
+		text-align: center;
+		li { margin-top: 5px; }
+		.photoThumb img {
+			width: auto; 
+			height: $thumbSize;
+		}
+	}
+
+	.acceptPrice {
+		margin: 10px 0 0;
+	}
+	.btn {
+		font-size: 2em;
+		padding-left: 2em;
+		padding-right: 2em; 
+		background: $orangeColor;
+		margin: 20px 0;
+	}
+}
+
+// END page > BIDDING
+// -----------------------------------------------------------
+
+
+
+// chat
+// -----------------------------------------------------------
+.chatContainer {
+	
+	$thumbSize: $thumbSizeS;
+
+	.userThumb {
+		float: left;
+		width: $thumbSize;
+		height: $thumbSize;
+	}
+
+	.sendMessage {
+		text-align: right;
+		margin-bottom: 30px;
+		textarea {
+			display: block;
+			width: 100% !important;
+			min-height: 100px;
+			margin-bottom: 10px;
+		}
+		.btn {
+			background: $orangeColor;
+			padding: 5px 20px;
+		}
+	}
+
+	dl {
+		@include clearfix();
+		margin: 0 0 7px;
+		padding: 0;
+	}
+	dt, dd {
+		@include box-sizing(border-box);
+		margin: 0;
+		padding: 0;
+	}
+	dt { float:  left; }
+	dd {
+		margin-left: $thumbSize + 10;
+		margin-right: 10px;
+		display: block;
+		font-size: 0.9em;
+		background: $lightGreyColor;
+		padding: 3px 5px;
+		margin-bottom: 3px;
+	}
+	dl.you {
+		dt { float: right; }
+		dd {
+			margin-right: $thumbSize + 10;
+			margin-left: 10px;
+		}
+	}
+	.timeStamp {
+		display: block;
+	}
+}
+
+// END chat
+// -----------------------------------------------------------
+
+
+// -----------------------------------------------------------
+// page > PROFILE
+
+
+// user details
+.userDetails {
+
+	 @include clearfix();
+
+	> .fLt { width: 60%; }
+	> .fRt {
+		width: 36%;
+		.btn {
+			display: block;
+			margin-bottom: 10px;
+			width: 100%;
+			text-align: center;
+			padding: 0.5em 5px;
+			font-size: 1.1em;
+			&.btnSendRequest {
+				background: $orangeColor;
+				font-size: 1.4em;
+			}
+		}
+	}
+
+	.userSlogan {
+		font-style: italic;
+		font-size: 0.9em;
+	}
+
+	$thumbSize: $thumbSizeL;
+
+	.userThumb {
+		float: left;
+		width: $thumbSize;
+		height: $thumbSize;
+	}
+
+	dl {
+		@include clearfix();
+		margin: 0 0 7px;
+		padding: 0;
+	}
+	dt, dd {
+		@include box-sizing(border-box);
+		margin: 0;
+		padding: 0;
+	}
+	dt { float:  left; }
+	dd {
+		margin-left: $thumbSize + 10;
+		margin-right: 10px;
+		display: block;
+		font-size: 0.9em;
+	}
+
+	// modal send request
+}
+
+
+// artistProfile
+.artistPrefs {
+
+	@include clearfix();
+
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid $borderColor;
+
+	> ul {
+		float: left;
+		display: block;
+		@include box-sizing(border-box);
+		width: 50%;
+		margin: 0;
+		padding: 0;
+		&:nth-of-type(even) {
+			float: right;
+		}
+		li {
+			margin: 0;
+			padding: 0 0 3px;
+			list-style-position: inside;
+		}
+	}
+	.prefTitle {
+		list-style: none;
+		font-size: 1.1em;
+		margin-bottom: 10px;
+	}
+
+}
+
+// artist porfolio (photos)
+.artistPorfolio {
+
+	margin-bottom: 40px;
+	text-align: center;
+
+	.userPhoto {
+		border: 1px solid $borderColor;
+		text-align: center;
+		img { max-height: 300px; }
+	}
+
+	.otherPhotos {
+		@include inline-list();
+		$thumbSize: $thumbSizeXL;
+		text-align: center;
+		li { margin-top: 5px; }
+		.photoThumb img {
+			width: auto; 
+			height: $thumbSize;
+		}
+	}
+}
+
+// modal -> send a request
+.modalSendRequest {
+	text-align: center;
+	textarea {
+		display: inline-block;
+		width: 100%;
+		min-height: 140px;
+		margin-bottom: 20px;
+	}
+	.userThumb {
+		display: inline-block;
+		margin: 0; 
+		width: $thumbSizeXL;
+		height: $thumbSizeXL;
+	}
+	.btnAction { margin-top: 10px; }
+}
+
+// END page > PROFILE
+// -----------------------------------------------------------
+
+
+
+// modal dialog [common]
+// -----------------------------------------------------------
+
+.modalDialog {
+  
+	// modal background
+	&:before {
+		content: ""; 
+		display: none;
+		background: rgba(0,0,0,.6);
+		position: fixed;
+		top: 0; left: 0; right: 0; bottom: 0; 
+		z-index: 10;
+	}
+  
+	&:target {
+		// Active animate in modal
+		&:before{
+		  display: block;
+		}  
+		.modalInsider {
+		  // .translate(0, 0); 
+		  display: block;
+		  top: 20%;  
+		}
+	 
+	}
+}
+
+// modal dialog insider
+.modalInsider {
+
+	$spacing: 40px;
+
+	display: none;
+	background: $lightGreyColor;
+	border: $borderColor solid 1px;
+	border-radius: $borderRadius;
+	margin-left: -180px;
+	position: fixed; 
+	left: 50%; 
+	top: -100%;  
+	z-index: 11; 
+	width: 360px;
+	// .translate(0, -500%);
+	// .transition-transform(~"0.3s ease-out");
+
+	.modalBody {
+		padding: $spacing/2;
+	}
+
+	.modalHeader,
+	.modalFooter {
+		padding: $spacing/4 $spacing/2;
+	}
+
+	.modalHeader {
+		border-bottom: $greyColor solid 1px;
+	  	// h2 { font-size: 20px; }
+	}
+  
+	.modalFooter {
+		border-top: $greyColor solid 1px;
+		text-align: right;
+	}
+	
+	.modalBtnClose {
+		@include make-block(30px,30px);
+		position: absolute; 
+		z-index: 5;
+		text-align: center;
+		right: -15px; 
+		top: -15px;
+		text-decoration: none;
+		color: #fff;
+		background: #444;
+		border: 1px solid #fff;
+		border-radius: $borderRadius;
+		line-height: 1;
+		padding: 0;
+		font-size: 24px;
+		&:hover {
+			background: $blueColor;
+		}
+	}
+}
+
+// END modal dialog [common]
+// -----------------------------------------------------------
+
+
+// modal -> Register/Login
+// -----------------------------------------------------------
+.modalRegisterLogin {
+	
+	// tabs 
+	$tabContentWidth: 400px;
+	$tabContentHeight: 420px;
+	$topOuter: 60px;
+
+	.modalInsider {
+		width: $tabContentWidth;
+		margin-left: -$tabContentWidth / 2;
+		padding-bottom: $topOuter;
+	}
+	
+	.radioTabs {
+		@include clearfix();
+		position: relative;
+		top: $topOuter;   
+		@include box-sizing(border-box);
+		height: $tabContentHeight;
+		width: 100%;
+		border-radius: 5px;
+	}
+	  
+	.tabContainer {
+		
+		float: left;
+		
+		label {
+			@include box-sizing(border-box);
+			position: relative;
+			height: $topOuter;
+			width: $tabContentWidth / 2 - 1px;
+			top: -$topOuter;
+			left: 0;
+			display: block;
+			background: #eee; 
+			padding: 1em 0 0; 
+			background: #ccc;
+			line-height: 1;
+			cursor: pointer;
+			font-size: 1.4em;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		&:first-of-type label { border-top-left-radius: 5px; }
+		&:last-of-type label { border-top-right-radius: 5px; }
+		
+		> [type=radio] {
+			display: none;   
+		}
+		
+		// selected tab (radio)
+		> [type=radio]:checked ~ label {
+			background: #fff;
+			z-index: 2;
+			color: $blueColor;
+			font-style: normal;
+			cursor: default;
+			~ .tabContent {
+				z-index: 1;
+			}
+		}
+		
+		// tab content
+		.tabContent {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: #fff;
+			border-radius: 0 0 5px 5px;
+			text-align: center;
+			.wrapper {
+				padding: 0 20px;
+			}
+		}
+	}
+
+	.loginWithFacebook {
+		padding: 30px 0 10px;
+	}
+
+	.stripeTitle {
+		margin: 10px 0 20px;
+		> span { background: #fff; }
+	}
+
+	input[type="text"] {
+		display: block;
+		width: 100%;
+		font-size: .9em;
+		padding: 1em 0.5em;
+		margin-bottom: 10px;
+		&:last-of-type { margin-bottom: 20px; }
+	}
+
+	.tc {
+		font-size: 0.7em;
+		padding: 0 20px;
+	}
+
+	.btnAction {
+		margin: 10px 0;
+	}
+	
+	// login tab
+	.tabLogin {
+		.stripeTitle { margin-bottom: 40px; }
+		.tc { margin-top: 40px; }
+	}
+
+}
+// END modal -> Register/Login
+// -----------------------------------------------------------

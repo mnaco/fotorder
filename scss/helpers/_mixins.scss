@@ -14,8 +14,10 @@
 // Helpers
 // ----------------------------------------------------------------------
 @import "mixins/hide-text";
-@import "mixins/create-block";
+@import "mixins/make-block";
 @import "mixins/multiline-ellipses";
+@import "mixins/triangles";
+@import "mixins/inline-list";
 
 // ----------------------------------------------------------------------
 // Gradients

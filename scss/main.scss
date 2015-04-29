@@ -5,16 +5,19 @@
 @import "helpers/mixins";
 @import "helpers/extends";
 @import "helpers/normalize";
+@import "helpers/grids";
 
 
-// import base
+// import base and media queris
 // ----------------------------------------------------------------------
 @import "base/base";
+@import "base/media_queries";
 
 
-// import components (fonts, buttons etc)
+// import components (fonts, ui etc)
 // ----------------------------------------------------------------------
 @import "base/components/fonts";
+@import "base/components/ui";
 
 
 // import modules
@@ -26,4 +29,4 @@
 
 // import pages
 // ----------------------------------------------------------------------
-// @import "base/pages/...";
+@import "pages/home";

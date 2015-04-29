@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	
+	<title>Document</title>
+	<meta name="description" content="... photos">
+	<meta name="author" content="Fotorder">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/main.css?v=1.0">
+
+	<script src="/js/jquery-2.1.3.min.js"></script><script src="/js/fotorder.js"></script>
+
+</head>
+<body class="pageProfile">
+	
+	<div class="pageTop">
+		
+
+		<!-- page header -->
+		<header class="pageHeader responsive">
+			<div class="pageWrapper">
+			
+				<div class="logo"><a href="/"><img src="/img/fotorder_logo.png" alt="Fotorder logo" ></a></div>
+			
+				<div class="headerMenu" data-class-setter-on-click = '{"classname":"show", "method":"toggle"}'>
+					
+					<!-- page navigation -->
+					<div class="userMenuContainer">
+						<nav class="mainNav">
+							<ul class="userNav">
+								<li class="welcomeMe"><span>Welcome Alex</span></li>
+								<li><a href="/profile">Your profile</a></li>
+								<li><a href="/orders">Your orders</a></li>
+								<li><a href="/">Logout</a></li>
+							</ul>
+							<ul class="siteNav">
+								<li><a href="/dashboard.html">Dashboard</a></li>
+								<li><a href="/artists.html">Artists</a></li>
+								<li><a href="/bookmarks">Bookmarks</a></li>
+							</ul>
+						</nav>
+					</div>
+					<!-- END page navigation -->
+
+					<div class="userPic"><a href="/profile"><img src="/img/dummy_user_male.png" alt=""></a></div>
+					
+				</div>
+
+			</div>
+		</header> 
+		<!-- END page header -->
+
+
+		<!-- page content -->
+		<div class="pageContent">
+			<div class="pageWrapper">
+				
+				<div class="grid">
+					
+					<div class="col-50">
+						
+						<!-- artist portfolio -->
+						<div class="artistPorfolio">
+							<div class="userPhoto">
+								<img src="/img/dummy_user_female.png" alt="">
+							</div>
+							<ul class="otherPhotos">
+								<li><a href="/" class="photoThumb"><img src="/img/dummy_user_female.png" alt=""></a></li>
+								<li><a href="/" class="photoThumb"><img src="/img/dummy_user_female.png" alt=""></a></li>
+								<li><a href="/" class="photoThumb"><img src="/img/dummy_user_female.png" alt=""></a></li>
+							</ul>
+						</div>
+						<!-- END artist portfolio -->
+
+					</div>
+
+					<div class="col-50">
+		
+						<!-- user details -->
+						<div class="userDetails">
+							<div class="fRt">
+								<a href="#modal-send-request" class="btn btnSendRequest">Send a request</a>
+								<a href="/" class="btn">Send a message</a>
+							</div>
+							<div class="fLt">
+								<dl>
+									<dt><span class="userThumb"><img src="/img/dummy_user_female.png" alt=""></span></dt>
+									<dd class="messageDetails">
+										<span class="userName"><a href="/">userNameWithLongNameForTesting</a></span>
+										<span class="userRating" data-user-rating="25">25%</span>
+									</dd>
+								</dl>
+								<div class="userSlogan">
+									Evil doesn’t happen in a vacuum but rather incubates amid the silence of bystanders. As Edmund Burke famously said, “The only thing necessary for the triumph of evil is for good men to do nothing.” 
+								</div>
+							</div>
+						</div>
+						<!-- END user details -->
+
+						<!-- user preferences -->
+						<div class="artistPrefs">
+							<ul>
+								<li class="prefTitle">Ready for photos</li>
+								<li>topless</li>
+								<li>studio</li>
+								<li>professional</li>
+								<li>sexy</li>
+							</ul>
+							<ul>
+								<li class="prefTitle">Exclude:</li>
+								<li>face</li>
+							</ul>
+						</div>
+						<!-- END user preferences -->
+					</div>
+
+				</div>
+
+			</div>	
+		</div>
+		<!-- END page content -->
+
+	</div>
+	
+	<div class="pageBottom">
+		<!-- page footer -->
+		<footer class="pageFooter">
+			<nav class="mainNav">
+				<ul class="siteNav">
+					<li><a href="/dashboard.html">Dashboard</a></li>
+					<li><a href="/artists.html">Artists</a></li>
+					<li><a href="/bookmarks">Bookmarks</a></li>
+				</ul>
+				<ul class="footerLinks">
+					<li><a href="">Terms and conditions</a></li>
+					<li><a href="">Support</a></li>
+					<li><a href="">&copy; Fotorder 2015</a></li>
+				</ul>
+			</nav>
+		</footer>
+		<!-- END page footer -->
+	</div>
+
+
+
+	<!-- send reqiest modal -->
+	<div class="modalDialog modalSendRequest" id="modal-send-request">
+		<div class="modalInsider">
+			<a href="#close" class="modalBtnClose" aria-hidden="true">×</a>
+				<div class="modalHeader">
+					<h2>Send a photo request to</h2>
+					<div class="userThumb"><img src="/img/dummy_user_female.png" alt=""></div>
+					<div>username</div>
+				</div>
+				<div class="modalBody">
+					<form>
+						<textarea placeholder="Type your message here"></textarea>
+						<div class="smallText">By clicking 'Register' you agree with our <a href="/">terms and conditions</a> ...</div>
+						<span class="btn btnAction">Send a photo request</span>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END send reqiest modal -->
+
+</body>
+</html>
