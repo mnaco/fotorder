@@ -14,10 +14,10 @@
 	}
 
 	.loginSignup {
-		padding-top: 15px;
+		padding-top: 5px;
 		.btn {
-			font-size: 1.1em;
-			padding: 0.3em 1.2em;
+			font-size: 1.2em;
+			padding: 0.7em 1.8em;
 			background: transparent;
 			color: $blueColor;
 			&.btnSignup {
@@ -38,14 +38,17 @@
 			font-size: 3em;
 			color: #fff;
 			min-height: 100px;
+			@include breakpoint($screenSizeL) {
+				min-height: 50px;
+				font-size: 2em;
+			}
 		}
 		.btn {
 			display: inline-block;
-			margin: 0 40px;
-			font-size: 1.2em;
-			min-width: 280px;
-			font-size: 1.2em;
-			padding: 15px 10px;
+			margin: 0 20px 20px;
+			min-width: 300px;
+			font-size: 1.6em;
+			padding: 20px 10px;
 			border: 2px solid $blueColor;
 			background: rgba(255, 255, 255, 0.8);
 			color: $blueColor;

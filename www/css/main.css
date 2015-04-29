@@ -537,195 +537,196 @@ th {
   }
 }
 
-/* line 7, ../../scss/base/_base.scss */
+/* line 6, ../../scss/base/_base.scss */
 html {
   font-size: 14px;
   color: #777;
 }
 
-/* line 24, ../../scss/base/_base.scss */
+/* line 15, ../../scss/base/_base.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 31, ../../scss/base/_base.scss */
+/* line 22, ../../scss/base/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-/* line 32, ../../scss/base/_base.scss */
+/* line 23, ../../scss/base/_base.scss */
 a {
   text-decoration: none;
   color: #3161a1;
 }
-/* line 35, ../../scss/base/_base.scss */
+/* line 26, ../../scss/base/_base.scss */
 a:hover {
   color: #ff4e00;
 }
 
-/* line 37, ../../scss/base/_base.scss */
+/* line 28, ../../scss/base/_base.scss */
 .fLt {
   float: left;
 }
 
-/* line 38, ../../scss/base/_base.scss */
+/* line 29, ../../scss/base/_base.scss */
 .fRt {
   float: right;
 }
 
-/* line 41, ../../scss/base/_base.scss */
+/* line 32, ../../scss/base/_base.scss */
 * {
   line-height: 1.3;
 }
 
-/* line 43, ../../scss/base/_base.scss */
+/* line 34, ../../scss/base/_base.scss */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 51, ../../scss/base/_base.scss */
+/* line 42, ../../scss/base/_base.scss */
 body, html {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* line 56, ../../scss/base/_base.scss */
+/* line 47, ../../scss/base/_base.scss */
 .pageBottom,
 .pageTop:after {
   height: 79px;
 }
 
-/* line 60, ../../scss/base/_base.scss */
+/* line 51, ../../scss/base/_base.scss */
 .pageTop {
   min-height: 100%;
   margin-bottom: -80px;
 }
-/* line 63, ../../scss/base/_base.scss */
+/* line 54, ../../scss/base/_base.scss */
 .pageTop:after {
   content: "";
   display: block;
 }
 
-/* line 72, ../../scss/base/_base.scss */
+/* line 63, ../../scss/base/_base.scss */
 .pageWrapper {
   width: 1000px;
   margin: 0 auto;
   padding: 0 10px;
 }
 @media only screen and (max-width: 1020px) {
-  /* line 72, ../../scss/base/_base.scss */
+  /* line 63, ../../scss/base/_base.scss */
   .pageWrapper {
     width: 100%;
   }
 }
 
-/* line 84, ../../scss/base/_base.scss */
+/* line 75, ../../scss/base/_base.scss */
 .pageHeader {
   padding: 20px 0 10px;
   margin-bottom: 40px;
   border-bottom: 1px solid #ccc;
 }
-/* line 92, ../../scss/base/_base.scss */
+/* line 83, ../../scss/base/_base.scss */
 .pageHeader .logo {
   float: left;
 }
-/* line 97, ../../scss/base/_base.scss */
-.pageHeader .userMenu {
-  float: right;
-}
-/* line 99, ../../scss/base/_base.scss */
-.pageHeader .userMenu > div {
-  vertical-align: top;
-  display: inline-block;
-}
-/* line 106, ../../scss/base/_base.scss */
+/* line 88, ../../scss/base/_base.scss */
 .pageHeader .mainNav {
   float: right;
   text-align: right;
 }
-/* line 110, ../../scss/base/_base.scss */
+/* line 92, ../../scss/base/_base.scss */
 .pageHeader .userNav {
   padding-bottom: 10px;
 }
-/* line 114, ../../scss/base/_base.scss */
+/* line 96, ../../scss/base/_base.scss */
 .pageHeader .siteNav a {
   font-size: 1.2em;
 }
-/* line 118, ../../scss/base/_base.scss */
-.pageHeader .usrPic {
+/* line 100, ../../scss/base/_base.scss */
+.pageHeader .userPic {
   margin-left: 10px;
   border: 1px solid #ccc;
   padding: 2px;
 }
-/* line 122, ../../scss/base/_base.scss */
-.pageHeader .usrPic img {
+/* line 104, ../../scss/base/_base.scss */
+.pageHeader .userPic img {
   width: 32px;
   height: 32px;
 }
 
-/* line 132, ../../scss/base/_base.scss */
+/* line 112, ../../scss/base/_base.scss */
+.headerMenu {
+  float: right;
+}
+/* line 114, ../../scss/base/_base.scss */
+.headerMenu > div {
+  vertical-align: top;
+  display: inline-block;
+}
+
+/* line 123, ../../scss/base/_base.scss */
 .pageBottom {
   background: #687990;
 }
 
-/* line 133, ../../scss/base/_base.scss */
+/* line 124, ../../scss/base/_base.scss */
 .pageFooter {
   font-size: 0.7em;
   text-align: center;
   padding: 0;
 }
-/* line 137, ../../scss/base/_base.scss */
+/* line 128, ../../scss/base/_base.scss */
 .pageFooter .mainNav {
   padding-top: 25px;
 }
-/* line 139, ../../scss/base/_base.scss */
+/* line 130, ../../scss/base/_base.scss */
 .pageFooter .mainNav li {
   margin-bottom: 5px;
   font-size: 0.8rem;
 }
-/* line 144, ../../scss/base/_base.scss */
+/* line 135, ../../scss/base/_base.scss */
 .pageFooter a {
   color: #d8d8d8;
 }
-/* line 146, ../../scss/base/_base.scss */
+/* line 137, ../../scss/base/_base.scss */
 .pageFooter a:hover {
   color: #fff;
 }
 
-/* line 155, ../../scss/base/_base.scss */
+/* line 146, ../../scss/base/_base.scss */
 .mainNav ul {
   font-size: 0;
 }
-/* line 160, ../../scss/base/_base.scss */
+/* line 151, ../../scss/base/_base.scss */
 .mainNav li {
-  font-size: .9rem;
+  font-size: 0.9rem;
   line-height: 1;
   padding: 0 10px;
   border-right: 1px solid #ccc;
 }
-/* line 166, ../../scss/base/_base.scss */
+/* line 157, ../../scss/base/_base.scss */
 .mainNav li:last-child {
   border: none;
   padding-right: 0;
 }
-/* line 170, ../../scss/base/_base.scss */
+/* line 161, ../../scss/base/_base.scss */
 .mainNav li:first-child {
   padding-left: 0;
 }
-/* line 173, ../../scss/base/_base.scss */
+/* line 164, ../../scss/base/_base.scss */
 .mainNav li a {
   display: block;
   text-transform: uppercase;
 }
-/* line 179, ../../scss/base/_base.scss */
+/* line 170, ../../scss/base/_base.scss */
 .mainNav li.active a {
   color: #000 !important;
   cursor: default;
 }
 
-/* line 191, ../../scss/base/_base.scss */
+/* line 182, ../../scss/base/_base.scss */
 .stripeTitle {
   display: block;
   position: relative;
@@ -734,14 +735,14 @@ body, html {
   font-size: 0.7em;
   text-transform: uppercase;
 }
-/* line 198, ../../scss/base/_base.scss */
+/* line 189, ../../scss/base/_base.scss */
 .stripeTitle > span {
   position: relative;
   z-index: 1;
   padding: 0 20px;
   background: #fff;
 }
-/* line 204, ../../scss/base/_base.scss */
+/* line 195, ../../scss/base/_base.scss */
 .stripeTitle:before {
   position: absolute;
   display: block;
@@ -752,7 +753,7 @@ body, html {
   background: #ccc;
 }
 
-/* line 216, ../../scss/base/_base.scss */
+/* line 207, ../../scss/base/_base.scss */
 .userThumb img,
 .photoThumb img {
   box-sizing: border-box;
@@ -762,7 +763,7 @@ body, html {
   border: 1px solid #ccc;
 }
 
-/* line 228, ../../scss/base/_base.scss */
+/* line 219, ../../scss/base/_base.scss */
 .hRating,
 .hRating:after {
   display: inline-block;
@@ -775,75 +776,75 @@ body, html {
   background: url("/img/sprite.png") -151px -40px;
 }
 
-/* line 236, ../../scss/base/_base.scss */
+/* line 227, ../../scss/base/_base.scss */
 .hRating:after {
   width: 0;
   background-position: -151px -59px;
 }
-/* line 240, ../../scss/base/_base.scss */
+/* line 231, ../../scss/base/_base.scss */
 .hRating.rating1:after {
   width: 20%;
 }
-/* line 241, ../../scss/base/_base.scss */
+/* line 232, ../../scss/base/_base.scss */
 .hRating.rating2:after {
   width: 40%;
 }
-/* line 242, ../../scss/base/_base.scss */
+/* line 233, ../../scss/base/_base.scss */
 .hRating.rating3:after {
   width: 60%;
 }
-/* line 243, ../../scss/base/_base.scss */
+/* line 234, ../../scss/base/_base.scss */
 .hRating.rating4:after {
   width: 80%;
 }
-/* line 244, ../../scss/base/_base.scss */
+/* line 235, ../../scss/base/_base.scss */
 .hRating.rating5:after {
   width: 100%;
 }
 
-/* line 250, ../../scss/base/_base.scss */
+/* line 241, ../../scss/base/_base.scss */
 .timeStamp {
   color: #999;
   font-size: 0.8em;
 }
 
-/* line 258, ../../scss/base/_base.scss */
+/* line 249, ../../scss/base/_base.scss */
 .smallText {
   font-size: 0.8em;
 }
 
-/* line 264, ../../scss/base/_base.scss */
+/* line 255, ../../scss/base/_base.scss */
 .pageSidebar {
   background: #eee;
 }
-/* line 266, ../../scss/base/_base.scss */
+/* line 257, ../../scss/base/_base.scss */
 .pageSidebar > h2 {
   padding: 15px 10px;
   margin: 0 0 15px;
   border-bottom: 1px solid #fff;
 }
-/* line 271, ../../scss/base/_base.scss */
+/* line 262, ../../scss/base/_base.scss */
 .pageSidebar section {
   padding: 0 0 10px 10px;
   border-bottom: 1px solid #fff;
   margin-bottom: 20px;
 }
-/* line 275, ../../scss/base/_base.scss */
+/* line 266, ../../scss/base/_base.scss */
 .pageSidebar section > h4 {
   margin: 0 0 1em;
 }
 
-/* line 284, ../../scss/base/_base.scss */
+/* line 275, ../../scss/base/_base.scss */
 .checkboxLabel {
   position: relative;
 }
-/* line 286, ../../scss/base/_base.scss */
+/* line 277, ../../scss/base/_base.scss */
 .checkboxLabel input {
   position: absolute;
   z-index: 0;
   opacity: 0;
 }
-/* line 290, ../../scss/base/_base.scss */
+/* line 281, ../../scss/base/_base.scss */
 .checkboxLabel input + label {
   position: relative;
   z-index: 1;
@@ -852,13 +853,13 @@ body, html {
   padding: 0.1em 0.5em;
   line-height: 1;
 }
-/* line 299, ../../scss/base/_base.scss */
+/* line 290, ../../scss/base/_base.scss */
 .checkboxLabel input:checked + label {
   background: #003780;
   color: #fff;
 }
 
-/* line 310, ../../scss/base/_base.scss */
+/* line 301, ../../scss/base/_base.scss */
 .statusLabel {
   background: #999;
   padding: 0.1em 0.5em;
@@ -868,12 +869,12 @@ body, html {
   border-radius: 3px;
   text-transform: uppercase;
 }
-/* line 318, ../../scss/base/_base.scss */
+/* line 309, ../../scss/base/_base.scss */
 .statusLabel.new {
   background: #ff4e00;
 }
 
-/* line 328, ../../scss/base/_base.scss */
+/* line 319, ../../scss/base/_base.scss */
 .listMessages dl {
   box-sizing: border-box;
   min-height: 58px;
@@ -881,86 +882,86 @@ body, html {
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
-/* line 335, ../../scss/base/_base.scss */
+/* line 326, ../../scss/base/_base.scss */
 .listMessages dt, .listMessages dd {
   margin: 0;
   padding: 0;
 }
-/* line 339, ../../scss/base/_base.scss */
+/* line 330, ../../scss/base/_base.scss */
 .listMessages dt {
   float: left;
   width: 48px;
   height: 48px;
 }
-/* line 343, ../../scss/base/_base.scss */
+/* line 334, ../../scss/base/_base.scss */
 .listMessages dt img {
   width: 100%;
   height: 100%;
 }
-/* line 348, ../../scss/base/_base.scss */
+/* line 339, ../../scss/base/_base.scss */
 .listMessages dd {
   margin-left: 58px;
   display: block;
   padding-bottom: .5em;
 }
-/* line 353, ../../scss/base/_base.scss */
+/* line 344, ../../scss/base/_base.scss */
 .listMessages .message {
   display: block;
   font-size: 1em;
 }
-/* line 357, ../../scss/base/_base.scss */
+/* line 348, ../../scss/base/_base.scss */
 .listMessages .messageDetails {
   font-size: 0.9em;
 }
-/* line 359, ../../scss/base/_base.scss */
+/* line 350, ../../scss/base/_base.scss */
 .listMessages .messageDetails > span {
   display: inline-block;
   margin-right: 5px;
   padding-right: 10px;
   border-right: 1px solid #ccc;
 }
-/* line 364, ../../scss/base/_base.scss */
+/* line 355, ../../scss/base/_base.scss */
 .listMessages .messageDetails > span:last-child {
   border: 0;
 }
 
-/* line 375, ../../scss/base/_base.scss */
+/* line 366, ../../scss/base/_base.scss */
 .pageArtists .artistsFilter label {
   position: relative;
   display: inline-block;
   margin: 0 10px 10px 0;
   font-size: 0.9em;
 }
-/* line 380, ../../scss/base/_base.scss */
+/* line 371, ../../scss/base/_base.scss */
 .pageArtists .artistsFilter label input {
   margin-right: 5px;
 }
-/* line 382, ../../scss/base/_base.scss */
+/* line 373, ../../scss/base/_base.scss */
 .pageArtists .artistsFilter h1, .pageArtists .artistsFilter h3 {
   margin-top: 0;
 }
-/* line 386, ../../scss/base/_base.scss */
+/* line 377, ../../scss/base/_base.scss */
 .pageArtists .searchArtist {
   margin-bottom: 20px;
 }
-/* line 388, ../../scss/base/_base.scss */
+/* line 379, ../../scss/base/_base.scss */
 .pageArtists .searchArtist input[type="text"] {
   width: 100%;
   padding: 10px;
   font-size: 1.2em;
 }
-/* line 398, ../../scss/base/_base.scss */
+/* line 389, ../../scss/base/_base.scss */
 .pageArtists .usersList li {
   position: relative;
   width: 128px;
   margin: 0 20px 20px 0;
 }
-/* line 404, ../../scss/base/_base.scss */
+/* line 395, ../../scss/base/_base.scss */
 .pageArtists .usersList .userThumb {
   display: block;
   margin-bottom: 4px;
 }
-/* line 408, ../../scss/base/_base.scss */
+/* line 399, ../../scss/base/_base.scss */
 .pageArtists .usersList .userName {
   display: block;
   overflow: hidden;
@@ -969,7 +970,7 @@ body, html {
   margin-right: 20px;
   font-size: 0.8em;
 }
-/* line 416, ../../scss/base/_base.scss */
+/* line 407, ../../scss/base/_base.scss */
 .pageArtists .usersList .bookmarkUser {
   position: relative;
   float: right;
@@ -977,7 +978,7 @@ body, html {
   height: 15px;
   font-size: 0;
 }
-/* line 422, ../../scss/base/_base.scss */
+/* line 413, ../../scss/base/_base.scss */
 .pageArtists .usersList .bookmarkUser:before {
   position: absolute;
   display: block;
@@ -988,17 +989,17 @@ body, html {
   left: 0;
   background: url("/img/sprite.png") -120px -40px;
 }
-/* line 428, ../../scss/base/_base.scss */
+/* line 419, ../../scss/base/_base.scss */
 .pageArtists .usersList .bookmarkUser.bookmarked:before {
   background-position: -120px -88px;
 }
 
-/* line 442, ../../scss/base/_base.scss */
+/* line 433, ../../scss/base/_base.scss */
 .pageDashboard .listPendingOrders {
   margin-bottom: 60px;
 }
 
-/* line 449, ../../scss/base/_base.scss */
+/* line 440, ../../scss/base/_base.scss */
 .pendingOrder {
   box-sizing: border-box;
   min-height: 84px;
@@ -1009,22 +1010,22 @@ body, html {
   float: left;
   margin: 0 2% 20px 0;
 }
-/* line 459, ../../scss/base/_base.scss */
+/* line 450, ../../scss/base/_base.scss */
 .pendingOrder:nth-of-type(even) {
   margin-right: 0;
 }
-/* line 460, ../../scss/base/_base.scss */
+/* line 451, ../../scss/base/_base.scss */
 .pendingOrder .userThumb {
   float: left;
   width: 64px;
   height: 64px;
 }
-/* line 465, ../../scss/base/_base.scss */
+/* line 456, ../../scss/base/_base.scss */
 .pendingOrder .orderDetails {
   font-size: 0.8em;
   margin-left: 74px;
 }
-/* line 469, ../../scss/base/_base.scss */
+/* line 460, ../../scss/base/_base.scss */
 .pendingOrder .recentUpdate {
   display: inline-block;
   font-size: 1.1rem;
@@ -1033,26 +1034,26 @@ body, html {
   margin-left: 5px;
 }
 @media only screen and (max-width: 1020px) {
-  /* line 449, ../../scss/base/_base.scss */
+  /* line 440, ../../scss/base/_base.scss */
   .pendingOrder {
     float: none;
     width: 100%;
   }
 }
 
-/* line 488, ../../scss/base/_base.scss */
+/* line 479, ../../scss/base/_base.scss */
 .biddingContainer {
   box-sizing: border-box;
   background: #efefef;
   border: 1px solid #ccc;
 }
-/* line 497, ../../scss/base/_base.scss */
+/* line 488, ../../scss/base/_base.scss */
 .biddingContainer .userThumb {
   float: left;
   width: 64px;
   height: 64px;
 }
-/* line 504, ../../scss/base/_base.scss */
+/* line 495, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview {
   padding: 10px;
 }
@@ -1069,17 +1070,17 @@ body, html {
 .biddingContainer .biddingOverview:after {
   clear: both;
 }
-/* line 510, ../../scss/base/_base.scss */
+/* line 501, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview > div {
   float: left;
   width: 48%;
   min-height: 84px;
 }
-/* line 514, ../../scss/base/_base.scss */
+/* line 505, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview > div:nth-of-type(even) {
   float: right;
 }
-/* line 519, ../../scss/base/_base.scss */
+/* line 510, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview dl {
   margin: 0;
   padding: 0;
@@ -1097,22 +1098,22 @@ body, html {
 .biddingContainer .biddingOverview dl:after {
   clear: both;
 }
-/* line 524, ../../scss/base/_base.scss */
+/* line 515, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview dt, .biddingContainer .biddingOverview dd {
   margin: 0;
   padding: 0;
 }
-/* line 528, ../../scss/base/_base.scss */
+/* line 519, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview dt {
   float: left;
 }
-/* line 529, ../../scss/base/_base.scss */
+/* line 520, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview dd {
   margin-left: 74px;
   display: block;
   font-size: 0.9em;
 }
-/* line 534, ../../scss/base/_base.scss */
+/* line 525, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview .btn {
   display: block;
   width: 100%;
@@ -1121,11 +1122,11 @@ body, html {
   padding: 0.5em 0.3em;
   font-size: 1.5em;
 }
-/* line 541, ../../scss/base/_base.scss */
+/* line 532, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview .btn.btnAgree {
   background: #ff4e00;
 }
-/* line 546, ../../scss/base/_base.scss */
+/* line 537, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview input[type="text"] {
   width: 100%;
   text-align: center;
@@ -1134,32 +1135,32 @@ body, html {
   padding: 0.5em 0;
   margin-top: 5px;
 }
-/* line 553, ../../scss/base/_base.scss */
+/* line 544, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview input[type="text"]:disabled {
   background: #ddd;
 }
-/* line 559, ../../scss/base/_base.scss */
+/* line 550, ../../scss/base/_base.scss */
 .biddingContainer .biddingOverview .youno input {
   font-size: 1.7em;
   padding: 0.4em 0;
   color: #000;
 }
-/* line 568, ../../scss/base/_base.scss */
+/* line 559, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory {
   position: relative;
   margin: 20px 0;
 }
-/* line 574, ../../scss/base/_base.scss */
+/* line 565, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory .stripeTitle > span {
   background: #efefef;
 }
-/* line 577, ../../scss/base/_base.scss */
+/* line 568, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 582, ../../scss/base/_base.scss */
+/* line 573, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li {
   position: relative;
   display: block;
@@ -1168,11 +1169,11 @@ body, html {
   padding-right: 50%;
   font-size: 0.8em;
 }
-/* line 589, ../../scss/base/_base.scss */
+/* line 580, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li > div {
   padding: 10px;
 }
-/* line 592, ../../scss/base/_base.scss */
+/* line 583, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li:before {
   position: absolute;
   display: block;
@@ -1183,7 +1184,7 @@ body, html {
   right: 50%;
   background: #ccc;
 }
-/* line 598, ../../scss/base/_base.scss */
+/* line 589, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li:after {
   position: absolute;
   display: block;
@@ -1194,34 +1195,34 @@ body, html {
   right: 50%;
   background: #ccc;
 }
-/* line 604, ../../scss/base/_base.scss */
+/* line 595, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li.youno {
   text-align: right;
   padding-right: 0;
   padding-left: 50%;
 }
-/* line 608, ../../scss/base/_base.scss */
+/* line 599, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li.youno:after {
   right: 47%;
 }
-/* line 612, ../../scss/base/_base.scss */
+/* line 603, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li .recentUpdate {
   font-size: 1.1em;
   display: block;
   margin-top: 3px;
 }
-/* line 616, ../../scss/base/_base.scss */
+/* line 607, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory li .recentUpdate img {
   display: block;
   border: 1px solid #ccc;
   width: 100%;
   margin: 5px 0;
 }
-/* line 626, ../../scss/base/_base.scss */
+/* line 617, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory:not(.expand) ul:not(first-child) {
   display: none;
 }
-/* line 629, ../../scss/base/_base.scss */
+/* line 620, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory:not(.expand) .expandHistory span {
   width: 0;
   height: 0;
@@ -1233,7 +1234,7 @@ body, html {
   border-top: 0.5rem solid #ccc;
   top: 10px;
 }
-/* line 635, ../../scss/base/_base.scss */
+/* line 626, ../../scss/base/_base.scss */
 .biddingContainer .biddinHistory.expand .expandHistory span {
   width: 0;
   height: 0;
@@ -1245,7 +1246,7 @@ body, html {
   border-bottom: 0.5rem solid #ccc;
   bottom: 10px;
 }
-/* line 643, ../../scss/base/_base.scss */
+/* line 634, ../../scss/base/_base.scss */
 .biddingContainer .expandHistory {
   position: absolute;
   cursor: pointer;
@@ -1261,26 +1262,26 @@ body, html {
   border-top: 0;
   text-align: center;
 }
-/* line 657, ../../scss/base/_base.scss */
+/* line 648, ../../scss/base/_base.scss */
 .biddingContainer .expandHistory span {
   position: relative;
 }
 
-/* line 664, ../../scss/base/_base.scss */
+/* line 655, ../../scss/base/_base.scss */
 .acceptOrder {
   margin-bottom: 40px;
   text-align: center;
 }
-/* line 669, ../../scss/base/_base.scss */
+/* line 660, ../../scss/base/_base.scss */
 .acceptOrder .photoToAccept {
   border: 1px solid #ccc;
   text-align: center;
 }
-/* line 672, ../../scss/base/_base.scss */
+/* line 663, ../../scss/base/_base.scss */
 .acceptOrder .photoToAccept img {
   max-height: 300px;
 }
-/* line 675, ../../scss/base/_base.scss */
+/* line 666, ../../scss/base/_base.scss */
 .acceptOrder .otherPhotos {
   list-style: none;
   padding: 0;
@@ -1291,20 +1292,20 @@ body, html {
 .acceptOrder .otherPhotos li {
   display: inline-block;
 }
-/* line 679, ../../scss/base/_base.scss */
+/* line 670, ../../scss/base/_base.scss */
 .acceptOrder .otherPhotos li {
   margin-top: 5px;
 }
-/* line 680, ../../scss/base/_base.scss */
+/* line 671, ../../scss/base/_base.scss */
 .acceptOrder .otherPhotos .photoThumb img {
   width: auto;
   height: 64px;
 }
-/* line 686, ../../scss/base/_base.scss */
+/* line 677, ../../scss/base/_base.scss */
 .acceptOrder .acceptPrice {
   margin: 10px 0 0;
 }
-/* line 689, ../../scss/base/_base.scss */
+/* line 680, ../../scss/base/_base.scss */
 .acceptOrder .btn {
   font-size: 2em;
   padding-left: 2em;
@@ -1313,30 +1314,30 @@ body, html {
   margin: 20px 0;
 }
 
-/* line 709, ../../scss/base/_base.scss */
+/* line 700, ../../scss/base/_base.scss */
 .chatContainer .userThumb {
   float: left;
   width: 24px;
   height: 24px;
 }
-/* line 715, ../../scss/base/_base.scss */
+/* line 706, ../../scss/base/_base.scss */
 .chatContainer .sendMessage {
   text-align: right;
   margin-bottom: 30px;
 }
-/* line 718, ../../scss/base/_base.scss */
+/* line 709, ../../scss/base/_base.scss */
 .chatContainer .sendMessage textarea {
   display: block;
   width: 100% !important;
   min-height: 100px;
   margin-bottom: 10px;
 }
-/* line 724, ../../scss/base/_base.scss */
+/* line 715, ../../scss/base/_base.scss */
 .chatContainer .sendMessage .btn {
   background: #ff4e00;
   padding: 5px 20px;
 }
-/* line 730, ../../scss/base/_base.scss */
+/* line 721, ../../scss/base/_base.scss */
 .chatContainer dl {
   margin: 0 0 7px;
   padding: 0;
@@ -1354,17 +1355,17 @@ body, html {
 .chatContainer dl:after {
   clear: both;
 }
-/* line 735, ../../scss/base/_base.scss */
+/* line 726, ../../scss/base/_base.scss */
 .chatContainer dt, .chatContainer dd {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-/* line 740, ../../scss/base/_base.scss */
+/* line 731, ../../scss/base/_base.scss */
 .chatContainer dt {
   float: left;
 }
-/* line 741, ../../scss/base/_base.scss */
+/* line 732, ../../scss/base/_base.scss */
 .chatContainer dd {
   margin-left: 34px;
   margin-right: 10px;
@@ -1374,16 +1375,16 @@ body, html {
   padding: 3px 5px;
   margin-bottom: 3px;
 }
-/* line 751, ../../scss/base/_base.scss */
+/* line 742, ../../scss/base/_base.scss */
 .chatContainer dl.you dt {
   float: right;
 }
-/* line 752, ../../scss/base/_base.scss */
+/* line 743, ../../scss/base/_base.scss */
 .chatContainer dl.you dd {
   margin-right: 34px;
   margin-left: 10px;
 }
-/* line 757, ../../scss/base/_base.scss */
+/* line 748, ../../scss/base/_base.scss */
 .chatContainer .timeStamp {
   display: block;
 }
@@ -1401,15 +1402,15 @@ body, html {
 .userDetails:after {
   clear: both;
 }
-/* line 775, ../../scss/base/_base.scss */
+/* line 766, ../../scss/base/_base.scss */
 .userDetails > .fLt {
   width: 60%;
 }
-/* line 776, ../../scss/base/_base.scss */
+/* line 767, ../../scss/base/_base.scss */
 .userDetails > .fRt {
   width: 36%;
 }
-/* line 778, ../../scss/base/_base.scss */
+/* line 769, ../../scss/base/_base.scss */
 .userDetails > .fRt .btn {
   display: block;
   margin-bottom: 10px;
@@ -1418,23 +1419,23 @@ body, html {
   padding: 0.5em 5px;
   font-size: 1.1em;
 }
-/* line 785, ../../scss/base/_base.scss */
+/* line 776, ../../scss/base/_base.scss */
 .userDetails > .fRt .btn.btnSendRequest {
   background: #ff4e00;
   font-size: 1.4em;
 }
-/* line 792, ../../scss/base/_base.scss */
+/* line 783, ../../scss/base/_base.scss */
 .userDetails .userSlogan {
   font-style: italic;
   font-size: 0.9em;
 }
-/* line 799, ../../scss/base/_base.scss */
+/* line 790, ../../scss/base/_base.scss */
 .userDetails .userThumb {
   float: left;
   width: 48px;
   height: 48px;
 }
-/* line 805, ../../scss/base/_base.scss */
+/* line 796, ../../scss/base/_base.scss */
 .userDetails dl {
   margin: 0 0 7px;
   padding: 0;
@@ -1452,17 +1453,17 @@ body, html {
 .userDetails dl:after {
   clear: both;
 }
-/* line 810, ../../scss/base/_base.scss */
+/* line 801, ../../scss/base/_base.scss */
 .userDetails dt, .userDetails dd {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-/* line 815, ../../scss/base/_base.scss */
+/* line 806, ../../scss/base/_base.scss */
 .userDetails dt {
   float: left;
 }
-/* line 816, ../../scss/base/_base.scss */
+/* line 807, ../../scss/base/_base.scss */
 .userDetails dd {
   margin-left: 58px;
   margin-right: 10px;
@@ -1470,7 +1471,7 @@ body, html {
   font-size: 0.9em;
 }
 
-/* line 828, ../../scss/base/_base.scss */
+/* line 819, ../../scss/base/_base.scss */
 .artistPrefs {
   margin-top: 20px;
   padding-top: 20px;
@@ -1489,7 +1490,7 @@ body, html {
 .artistPrefs:after {
   clear: both;
 }
-/* line 836, ../../scss/base/_base.scss */
+/* line 827, ../../scss/base/_base.scss */
 .artistPrefs > ul {
   float: left;
   display: block;
@@ -1498,38 +1499,38 @@ body, html {
   margin: 0;
   padding: 0;
 }
-/* line 843, ../../scss/base/_base.scss */
+/* line 834, ../../scss/base/_base.scss */
 .artistPrefs > ul:nth-of-type(even) {
   float: right;
 }
-/* line 846, ../../scss/base/_base.scss */
+/* line 837, ../../scss/base/_base.scss */
 .artistPrefs > ul li {
   margin: 0;
   padding: 0 0 3px;
   list-style-position: inside;
 }
-/* line 852, ../../scss/base/_base.scss */
+/* line 843, ../../scss/base/_base.scss */
 .artistPrefs .prefTitle {
   list-style: none;
   font-size: 1.1em;
   margin-bottom: 10px;
 }
 
-/* line 861, ../../scss/base/_base.scss */
+/* line 852, ../../scss/base/_base.scss */
 .artistPorfolio {
   margin-bottom: 40px;
   text-align: center;
 }
-/* line 866, ../../scss/base/_base.scss */
+/* line 857, ../../scss/base/_base.scss */
 .artistPorfolio .userPhoto {
   border: 1px solid #ccc;
   text-align: center;
 }
-/* line 869, ../../scss/base/_base.scss */
+/* line 860, ../../scss/base/_base.scss */
 .artistPorfolio .userPhoto img {
   max-height: 300px;
 }
-/* line 872, ../../scss/base/_base.scss */
+/* line 863, ../../scss/base/_base.scss */
 .artistPorfolio .otherPhotos {
   list-style: none;
   padding: 0;
@@ -1540,40 +1541,40 @@ body, html {
 .artistPorfolio .otherPhotos li {
   display: inline-block;
 }
-/* line 876, ../../scss/base/_base.scss */
+/* line 867, ../../scss/base/_base.scss */
 .artistPorfolio .otherPhotos li {
   margin-top: 5px;
 }
-/* line 877, ../../scss/base/_base.scss */
+/* line 868, ../../scss/base/_base.scss */
 .artistPorfolio .otherPhotos .photoThumb img {
   width: auto;
   height: 64px;
 }
 
-/* line 885, ../../scss/base/_base.scss */
+/* line 876, ../../scss/base/_base.scss */
 .modalSendRequest {
   text-align: center;
 }
-/* line 887, ../../scss/base/_base.scss */
+/* line 878, ../../scss/base/_base.scss */
 .modalSendRequest textarea {
   display: inline-block;
   width: 100%;
   min-height: 140px;
   margin-bottom: 20px;
 }
-/* line 893, ../../scss/base/_base.scss */
+/* line 884, ../../scss/base/_base.scss */
 .modalSendRequest .userThumb {
   display: inline-block;
   margin: 0;
   width: 64px;
   height: 64px;
 }
-/* line 899, ../../scss/base/_base.scss */
+/* line 890, ../../scss/base/_base.scss */
 .modalSendRequest .btnAction {
   margin-top: 10px;
 }
 
-/* line 913, ../../scss/base/_base.scss */
+/* line 904, ../../scss/base/_base.scss */
 .modalDialog:before {
   content: "";
   display: none;
@@ -1585,17 +1586,19 @@ body, html {
   bottom: 0;
   z-index: 10;
 }
-/* line 924, ../../scss/base/_base.scss */
+/* line 915, ../../scss/base/_base.scss */
 .modalDialog:target:before {
   display: block;
 }
-/* line 927, ../../scss/base/_base.scss */
+/* line 918, ../../scss/base/_base.scss */
 .modalDialog:target .modalInsider {
+  display: block;
   top: 20%;
 }
 
-/* line 936, ../../scss/base/_base.scss */
+/* line 928, ../../scss/base/_base.scss */
 .modalInsider {
+  display: none;
   background: #efefef;
   border: #ccc solid 1px;
   border-radius: 3px;
@@ -1606,25 +1609,25 @@ body, html {
   z-index: 11;
   width: 360px;
 }
-/* line 952, ../../scss/base/_base.scss */
+/* line 945, ../../scss/base/_base.scss */
 .modalInsider .modalBody {
   padding: 20px;
 }
-/* line 956, ../../scss/base/_base.scss */
+/* line 949, ../../scss/base/_base.scss */
 .modalInsider .modalHeader,
 .modalInsider .modalFooter {
   padding: 10px 20px;
 }
-/* line 961, ../../scss/base/_base.scss */
+/* line 954, ../../scss/base/_base.scss */
 .modalInsider .modalHeader {
   border-bottom: #999 solid 1px;
 }
-/* line 966, ../../scss/base/_base.scss */
+/* line 959, ../../scss/base/_base.scss */
 .modalInsider .modalFooter {
   border-top: #999 solid 1px;
   text-align: right;
 }
-/* line 971, ../../scss/base/_base.scss */
+/* line 964, ../../scss/base/_base.scss */
 .modalInsider .modalBtnClose {
   position: absolute;
   display: block;
@@ -1645,18 +1648,18 @@ body, html {
   padding: 0;
   font-size: 24px;
 }
-/* line 986, ../../scss/base/_base.scss */
+/* line 979, ../../scss/base/_base.scss */
 .modalInsider .modalBtnClose:hover {
   background: #003780;
 }
 
-/* line 1005, ../../scss/base/_base.scss */
+/* line 998, ../../scss/base/_base.scss */
 .modalRegisterLogin .modalInsider {
   width: 400px;
   margin-left: -200px;
   padding-bottom: 60px;
 }
-/* line 1011, ../../scss/base/_base.scss */
+/* line 1004, ../../scss/base/_base.scss */
 .modalRegisterLogin .radioTabs {
   position: relative;
   top: 60px;
@@ -1678,11 +1681,11 @@ body, html {
 .modalRegisterLogin .radioTabs:after {
   clear: both;
 }
-/* line 1021, ../../scss/base/_base.scss */
+/* line 1014, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabContainer {
   float: left;
 }
-/* line 1025, ../../scss/base/_base.scss */
+/* line 1018, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabContainer label {
   box-sizing: border-box;
   position: relative;
@@ -1700,19 +1703,19 @@ body, html {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 1042, ../../scss/base/_base.scss */
+/* line 1035, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabContainer:first-of-type label {
   border-top-left-radius: 5px;
 }
-/* line 1043, ../../scss/base/_base.scss */
+/* line 1036, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabContainer:last-of-type label {
   border-top-right-radius: 5px;
 }
-/* line 1045, ../../scss/base/_base.scss */
+/* line 1038, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabContainer > [type=radio] {
   display: none;
 }
-/* line 1050, ../../scss/base/_base.scss */
+/* line 1043, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabContainer > [type=radio]:checked ~ label {
   background: #fff;
   z-index: 2;
@@ -1720,11 +1723,11 @@ body, html {
   font-style: normal;
   cursor: default;
 }
-/* line 1056, ../../scss/base/_base.scss */
+/* line 1049, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabContainer > [type=radio]:checked ~ label ~ .tabContent {
   z-index: 1;
 }
-/* line 1062, ../../scss/base/_base.scss */
+/* line 1055, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabContainer .tabContent {
   position: absolute;
   top: 0;
@@ -1735,23 +1738,23 @@ body, html {
   border-radius: 0 0 5px 5px;
   text-align: center;
 }
-/* line 1071, ../../scss/base/_base.scss */
+/* line 1064, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabContainer .tabContent .wrapper {
   padding: 0 20px;
 }
-/* line 1077, ../../scss/base/_base.scss */
+/* line 1070, ../../scss/base/_base.scss */
 .modalRegisterLogin .loginWithFacebook {
   padding: 30px 0 10px;
 }
-/* line 1081, ../../scss/base/_base.scss */
+/* line 1074, ../../scss/base/_base.scss */
 .modalRegisterLogin .stripeTitle {
   margin: 10px 0 20px;
 }
-/* line 1083, ../../scss/base/_base.scss */
+/* line 1076, ../../scss/base/_base.scss */
 .modalRegisterLogin .stripeTitle > span {
   background: #fff;
 }
-/* line 1086, ../../scss/base/_base.scss */
+/* line 1079, ../../scss/base/_base.scss */
 .modalRegisterLogin input[type="text"] {
   display: block;
   width: 100%;
@@ -1759,32 +1762,139 @@ body, html {
   padding: 1em 0.5em;
   margin-bottom: 10px;
 }
-/* line 1092, ../../scss/base/_base.scss */
+/* line 1085, ../../scss/base/_base.scss */
 .modalRegisterLogin input[type="text"]:last-of-type {
   margin-bottom: 20px;
 }
-/* line 1095, ../../scss/base/_base.scss */
+/* line 1088, ../../scss/base/_base.scss */
 .modalRegisterLogin .tc {
   font-size: 0.7em;
   padding: 0 20px;
 }
-/* line 1100, ../../scss/base/_base.scss */
+/* line 1093, ../../scss/base/_base.scss */
 .modalRegisterLogin .btnAction {
   margin: 10px 0;
 }
-/* line 1106, ../../scss/base/_base.scss */
+/* line 1099, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabLogin .stripeTitle {
   margin-bottom: 40px;
 }
-/* line 1107, ../../scss/base/_base.scss */
+/* line 1100, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabLogin .tc {
   margin-top: 40px;
 }
 
-@media screen and (max-width: 1020px) {
-  /* line 2, ../../scss/base/_media_queries.scss */
+@media only screen and (max-width: 1020px) {
+  /* line 4, ../../scss/base/_media_queries.scss */
   html {
     font-size: 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 16, ../../scss/base/_media_queries.scss */
+  .responsive.pageHeader {
+    padding: 10px 0;
+  }
+
+  /* line 20, ../../scss/base/_media_queries.scss */
+  .responsive .headerMenu {
+    transition: right 0.5s ease-in-out 0s;
+    float: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 0 0 0 10px;
+  }
+  /* line 25, ../../scss/base/_media_queries.scss */
+  .responsive .headerMenu.show {
+    right: 0;
+  }
+  /* line 37, ../../scss/base/_media_queries.scss */
+  .responsive .headerMenu:after {
+    position: absolute;
+    display: block;
+    content: "\0020";
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 0 5px 5px 0;
+    position: absolute;
+    top: 8px;
+    left: -52px;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px 0 0 10px;
+    border-right: 0;
+  }
+  /* line 49, ../../scss/base/_media_queries.scss */
+  .responsive .headerMenu:before {
+    position: absolute;
+    display: block;
+    content: "\0020";
+    width: 20px;
+    height: 16px;
+    z-index: 1;
+    top: 27px;
+    left: -34px;
+    background: url("/img/sprite.png") -60px -40px;
+  }
+  /* line 57, ../../scss/base/_media_queries.scss */
+  .responsive .headerMenu > div {
+    display: block;
+  }
+  /* line 59, ../../scss/base/_media_queries.scss */
+  .responsive .headerMenu .userPic {
+    display: none;
+  }
+  /* line 60, ../../scss/base/_media_queries.scss */
+  .responsive .headerMenu .mainNav {
+    float: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    -moz-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  /* line 64, ../../scss/base/_media_queries.scss */
+  .responsive .headerMenu .mainNav ul {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  /* line 69, ../../scss/base/_media_queries.scss */
+  .responsive .headerMenu .mainNav ul.siteNav {
+    padding-top: 60px;
+  }
+  /* line 73, ../../scss/base/_media_queries.scss */
+  .responsive .headerMenu .mainNav li {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  /* line 79, ../../scss/base/_media_queries.scss */
+  .responsive .headerMenu .mainNav li:last-child {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 83, ../../scss/base/_media_queries.scss */
+  .responsive .headerMenu .mainNav li a {
+    padding: 15px 20px;
+  }
+  /* line 84, ../../scss/base/_media_queries.scss */
+  .responsive .headerMenu .mainNav li.welcomeMe {
+    position: absolute;
+    top: 26px;
+    left: 20px;
+    border: 0;
   }
 }
 /* line 4, ../../scss/base/components/_ui.scss */
@@ -1825,12 +1935,12 @@ textarea {
 }
 /* line 16, ../../scss/pages/_home.scss */
 .pageHome .loginSignup {
-  padding-top: 15px;
+  padding-top: 5px;
 }
 /* line 18, ../../scss/pages/_home.scss */
 .pageHome .loginSignup .btn {
-  font-size: 1.1em;
-  padding: 0.3em 1.2em;
+  font-size: 1.2em;
+  padding: 0.7em 1.8em;
   background: transparent;
   color: #003780;
 }
@@ -1853,38 +1963,44 @@ textarea {
   color: #fff;
   min-height: 100px;
 }
-/* line 42, ../../scss/pages/_home.scss */
+@media only screen and (max-width: 1020px) {
+  /* line 37, ../../scss/pages/_home.scss */
+  .pageHome .welcomeBox h1 {
+    min-height: 50px;
+    font-size: 2em;
+  }
+}
+/* line 46, ../../scss/pages/_home.scss */
 .pageHome .welcomeBox .btn {
   display: inline-block;
-  margin: 0 40px;
-  font-size: 1.2em;
-  min-width: 280px;
-  font-size: 1.2em;
-  padding: 15px 10px;
+  margin: 0 20px 20px;
+  min-width: 300px;
+  font-size: 1.6em;
+  padding: 20px 10px;
   border: 2px solid #003780;
   background: rgba(255, 255, 255, 0.8);
   color: #003780;
 }
-/* line 52, ../../scss/pages/_home.scss */
+/* line 55, ../../scss/pages/_home.scss */
 .pageHome .welcomeBox .btn.btnFB {
   background: #3a638d;
   border-color: #fff;
   color: #fff;
 }
-/* line 62, ../../scss/pages/_home.scss */
+/* line 65, ../../scss/pages/_home.scss */
 .pageHome .recentUsersBox {
   background: #afaeb6 url("/img/homepage_recent_users_bcgr.png") center -100px no-repeat;
   text-align: center;
   padding-bottom: 20px;
 }
-/* line 69, ../../scss/pages/_home.scss */
+/* line 72, ../../scss/pages/_home.scss */
 .pageHome .recentUsersBox .intoTitles {
   min-height: 220px;
   padding: 40px 0 0;
   width: 500px;
   margin: 0 auto;
 }
-/* line 74, ../../scss/pages/_home.scss */
+/* line 77, ../../scss/pages/_home.scss */
 .pageHome .recentUsersBox .intoTitles > span {
   display: block;
   text-align: left;
@@ -1892,20 +2008,20 @@ textarea {
   color: #fff;
   margin-bottom: 20px;
 }
-/* line 80, ../../scss/pages/_home.scss */
+/* line 83, ../../scss/pages/_home.scss */
 .pageHome .recentUsersBox .intoTitles > span b {
   font-weight: normal;
   font-size: 1.2em;
 }
-/* line 84, ../../scss/pages/_home.scss */
+/* line 87, ../../scss/pages/_home.scss */
 .pageHome .recentUsersBox .intoTitles > span:nth-of-type(even) {
   text-align: right;
 }
-/* line 90, ../../scss/pages/_home.scss */
+/* line 93, ../../scss/pages/_home.scss */
 .pageHome .recentUsersBox h2 {
   margin: 0;
 }
-/* line 95, ../../scss/pages/_home.scss */
+/* line 98, ../../scss/pages/_home.scss */
 .pageHome .recentUsersBox ul {
   list-style: none;
   padding: 0;
@@ -1918,17 +2034,17 @@ textarea {
 .pageHome .recentUsersBox ul li {
   display: inline-block;
 }
-/* line 101, ../../scss/pages/_home.scss */
+/* line 104, ../../scss/pages/_home.scss */
 .pageHome .recentUsersBox li {
   margin: 0 5px 10px;
   display: inline-block;
   background: #fff;
 }
-/* line 105, ../../scss/pages/_home.scss */
+/* line 108, ../../scss/pages/_home.scss */
 .pageHome .recentUsersBox li:nth-of-type(8n) {
   margin-right: 0;
 }
-/* line 109, ../../scss/pages/_home.scss */
+/* line 112, ../../scss/pages/_home.scss */
 .pageHome .recentUsersBox .userThumb {
   display: block;
   width: 112px;

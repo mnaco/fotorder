@@ -1,5 +1,93 @@
-@media screen and (max-width: $screenSizeL + px) {
+// screen size L
+// ---------------------------------------------------------
+@media only screen and (max-width: $screenSizeL + px) {
 	html {
 		font-size: 16px; 
+	}
+}
+
+
+// screen size M
+// ---------------------------------------------------------
+@media only screen and (max-width: $screenSizeM + px) {
+	
+	html { }
+
+	.responsive.pageHeader {
+		padding: 10px 0;
+	}
+
+	.responsive .headerMenu {
+		
+		$headerMenuWidth: 300px;
+		$slideLabelHeight: 50px;
+
+		&.show { right: 0; }
+		@include single-transition( right, 0.5s, ease-in-out, 0s);
+
+		float: none;
+		position: fixed;
+		z-index: 10;
+		top: 0;
+		right: -$headerMenuWidth;
+		width: $headerMenuWidth;
+		background: #fff;
+		border: 2px solid $borderColor;
+		border-radius: 0 0 0 10px;
+		&:after {
+			@include make-block(50px, $slideLabelHeight);
+			background: #fff;
+			border-radius: 0 5px 5px 0;
+			position: absolute;
+			top: 8px;
+			left: -52px;
+			background: #fff;
+			border: 2px solid $borderColor;
+			border-radius: 10px 0 0 10px;
+			border-right: 0;
+		}
+		&:before {
+			@include make-block(20px, 16px);
+			z-index: 1;
+			top: 27px;
+			left: -34px;
+			background: url('/img/sprite.png') -60px -40px;
+		}
+
+		> div { display: block; }
+		
+		.userPic { display: none; }
+		.mainNav {
+			float: none;
+			@include display-flex();
+			@include flex-direction(column-reverse);
+			ul {
+				padding: 0;
+				margin: 0;
+				text-align: left;
+				&:last-child { }
+				&.siteNav { 
+					padding-top: $slideLabelHeight + 10;
+				}
+			}
+			li {
+				display: block;
+				padding: 0;
+				margin: 0;
+				border: none;
+				border-top: 1px solid $borderColor;
+				&:last-child {
+					margin: 0;
+					padding: 0;
+				}
+				a { padding: 15px 20px; }
+				&.welcomeMe { 
+					position: absolute;
+					top: 26px;
+					left: 20px;
+					border: 0;
+				}
+			}	
+		}
 	}
 }

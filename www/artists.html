@@ -21,18 +21,18 @@
 		
 
 		<!-- page header -->
-		<header class="pageHeader">
+		<header class="pageHeader responsive">
 			<div class="pageWrapper">
 			
 				<div class="logo"><a href="/"><img src="/img/fotorder_logo.png" alt="Fotorder logo" ></a></div>
 			
-				<div class="userMenu">
+				<div class="headerMenu" data-class-setter-on-click='{"classname":"show", "method":"toggle"}'>
 					
 					<!-- page navigation -->
-					<div>
+					<div class="userMenuContainer">
 						<nav class="mainNav">
 							<ul class="userNav">
-								<li><span>Welcome Alex</span></li>
+								<li class="welcomeMe"><span>Welcome Alex</span></li>
 								<li><a href="/profile">Your profile</a></li>
 								<li><a href="/orders">Your orders</a></li>
 								<li><a href="/dashboard">Logout</a></li>
@@ -46,7 +46,7 @@
 					</div>
 					<!-- END page navigation -->
 
-					<div class="usrPic"><a href="/profile"><img src="/img/dummy_user_male.png" alt=""></a></div>
+					<div class="userPic"><a href="/profile"><img src="/img/dummy_user_male.png" alt=""></a></div>
 					
 				</div>
 
