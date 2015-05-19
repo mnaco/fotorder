@@ -8,16 +8,16 @@
 @import "helpers/grids";
 
 
-// import base and media queris
-// ----------------------------------------------------------------------
-@import "base/base";
-@import "base/media_queries";
-
-
 // import components (fonts, ui etc)
 // ----------------------------------------------------------------------
 @import "base/components/fonts";
 @import "base/components/ui";
+
+
+// import base and media queris
+// ----------------------------------------------------------------------
+@import "base/base";
+@import "base/media_queries";
 
 
 // import modules
@@ -30,3 +30,8 @@
 // import pages
 // ----------------------------------------------------------------------
 @import "pages/home";
+
+
+// import pages
+// ----------------------------------------------------------------------
+@import "base/plaincss";
