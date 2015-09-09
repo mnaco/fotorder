@@ -16,203 +16,207 @@
 	<script src="/js/fotorder.js"></script>
 
 </head>
-<body class="pageBidding">
+<body>
+
+	<div class="bodyWrapper pageBidding">
 	
-	<div class="pageTop">
-		
-
-		<!-- page header -->
-		<header class="pageHeader responsive">
-			<div class="pageWrapper">
+		<div class="pageTop">
 			
-				<div class="logo"><a href="/"><img src="/img/fotorder_logo.png" alt="Fotorder logo" ></a></div>
-			
-				<div class="headerMenu" data-class-setter-on-click = '{"classname":"show", "method":"toggle"}'>
-					
-					<!-- page navigation -->
-					<div class="userMenuContainer">
-						<nav class="mainNav">
-							<ul class="userNav">
-								<li class="welcomeMe"><span>Welcome Alex</span></li>
-								<li><a href="/profile">Your profile</a></li>
-								<li><a href="/orders">Your orders</a></li>
-								<li><a href="/">Logout</a></li>
-							</ul>
-							<ul class="siteNav">
-								<li><a href="/dashboard.html">Dashboard</a></li>
-								<li><a href="/artists.html">Artists</a></li>
-								<li><a href="/bookmarks">Bookmarks</a></li>
-							</ul>
-						</nav>
-					</div>
-					<!-- END page navigation -->
 
-					<div class="userPic"><a href="/profile"><img src="/img/dummy_user_male.png" alt=""></a></div>
-					
-				</div>
-
-			</div>
-		</header> 
-		<!-- END page header -->
-
-
-		<!-- page content -->
-		<div class="pageContent">
-			<div class="pageWrapper">
+			<!-- page header -->
+			<header class="pageHeader responsive">
+				<div class="pageWrapper">
 				
-				<div class="grid">
-					
-					<div class="col-50">
-						<h2 class="subTitle">Status</h2>
-
-						<!-- bidding -->
-						<div class="biddingContainer">
-
-							<!-- bidding overview -->
-							<div class="biddingOverview">
-								<div class="you">
-									<dl>
-										<dt><a href="/" class="userThumb"><img src="/img/dummy_user_male.png" alt=""></a></dt>
-										<dd>Your price</dd>
-										<dd class="bidPrice"><input type="text" name="yourprice" value="$10.00"></dd>
-									</dl>
-									<a class="btn btnUpdate">Update price</a>
-								</div>
-								<div class="youno">
-									<dl>
-										<dt><a href="/artist_profile.html" class="userThumb"><img src="/img/dummy_user_female.png" alt=""></a></dt>
-										<dd>Recent bid</dd>
-										<dd class="bidPrice"><input type="text" name="" disabled value="$15.00"></dd>
-									</dl>
-									<a href="/pay.html" class="btn btnAgree">Agree</a>
-								</div>
-							</div>
-							<!-- END bidding overview -->
-
-							<!-- bidding history -->
-							<div class="biddinHistory">
-								<h4 class="stripeTitle"><span>Activity</span></h4>
-								<ul>
-									<li class="youno">
-										<div>
-											<span class="statusLabel new">new</span>
-											<span class="timeStamp">01.01.15 | 15:33</span>
-											<span class="recentUpdate">Price updated: <b>$10.00</b></span>
-										</div>
-									</li>
+					<div class="logo"><a href="/"><img src="/view/templates/default/img/fotorder_logo.png" alt="Fotorder logo" ></a></div>
+				
+					<div class="headerMenu" data-class-setter-on-click = '{"classname":"show", "method":"toggle"}'>
+						
+						<!-- page navigation -->
+						<div class="userMenuContainer">
+							<nav class="mainNav">
+								<ul class="userNav">
+									<li class="welcomeMe"><span>Welcome Alex</span></li>
+									<li><a href="/profile">Your profile</a></li>
+									<li><a href="/orders">Your orders</a></li>
+									<li><a href="/">Logout</a></li>
 								</ul>
-								<ul>
-									<li class="youno">
-										<div>
-											<span class="timeStamp">01.01.15 | 15:33</span>
-											<span class="recentUpdate">Price updated: <b>$15.00</b></span>
-										</div>
-									</li>
-									<li class="you">
-										<div>
-											<span class="timeStamp">01.01.15 | 15:33</span>
-											<span class="recentUpdate">Sent photo back</span>
-										</div>
-									</li>
-									<li class="you">
-										<div>
-											<span class="timeStamp">01.01.15 | 15:33</span>
-											<span class="recentUpdate">
-												Received photo:
-												<a href="/"><img src="/img/dummy_user_female.png" alt=""></a>
-											</span>
-
-										</div>
-									</li>
-									<li class="youno">
-										<div>
-											<span class="timeStamp">01.01.15 | 15:33</span>
-											<span class="recentUpdate">Ser price: <b>$30.00</b></span>
-										</div>
-									</li>
-									<li class="you">
-										<div>
-											<span class="timeStamp">01.01.15 | 15:33</span>
-											<span class="recentUpdate">Sent photo request</span>
-										</div>
-									</li>
+								<ul class="siteNav">
+									<li><a href="/dashboard.html">Dashboard</a></li>
+									<li><a href="/artists.html">Artists</a></li>
+									<li><a href="/bookmarks">Bookmarks</a></li>
 								</ul>
-								<div class="expandHistory" data-class-setter-on-click = '{"classname":"expand", "method":"toggle", "target":".biddinHistory"}'><span></span></div>
-							</div>
-							<!-- END bidding history -->
-
+							</nav>
 						</div>
-						<!-- END bidding -->
+						<!-- END page navigation -->
 
-					</div>
-
-					<div class="col-50">
-						<h2 class="subTitle">Messageboard</h2>
-
-						<!-- chat -->
-						<div class="chatContainer">
-
-							<div class="sendMessage">
-								<textarea placeholder="Type you message here"></textarea>
-								<span class="btn">Send</span>
-							</div>
-							
-							<dl class="you">
-								<dt><a href="/" class="userThumb"><img src="/img/dummy_user_male.png" alt=""></a></dt>
-								<dd>
-									<span class="timeStamp"><span class="statusLabel new">new</span> 01.01.15 | 15:33</span> 
-									Hello World
-								</dd>
-								<dd>
-									<span class="timeStamp">01.01.15 | 15:33</span>
-									Whatever you think about the morality of using mass surveillance to catch evildoers, the technology only works if people can use it -- just ask the CIA
-								</dd>
-							</dl>
-							<dl>
-								<dt><a href="/artist_profile.html" class="userThumb"><img src="/img/dummy_user_female.png" alt=""></a></dt>
-								<dd>
-									<span class="timeStamp">01.01.15 | 15:33</span>
-									What are you talking abour?
-								</dd>
-							</dl>
-							<dl class="you">
-								<dt><a href="/" class="userThumb"><img src="/img/dummy_user_male.png" alt=""></a></dt>
-								<dd>
-									<span class="timeStamp">01.01.15 | 15:33</span>
-									Russian hackers scooped up the President's unclassified email ...
-								</dd>
-							</dl>
-						</div>
-						<!-- END chat -->
+						<div class="userPic"><a href="/profile"><img src="/view/templates/default/img/dummy_user_male.png" alt=""></a></div>
+						
 					</div>
 
 				</div>
+			</header> 
+			<!-- END page header -->
 
-			</div>	
+
+			<!-- page content -->
+			<div class="pageContent">
+				<div class="pageWrapper">
+					
+					<div class="grid">
+						
+						<div class="col-50">
+							<h2 class="subTitle">Status</h2>
+
+							<!-- bidding -->
+							<div class="biddingContainer">
+
+								<!-- bidding overview -->
+								<div class="biddingOverview">
+									<div class="you">
+										<dl>
+											<dt><a href="/" class="userThumb"><img src="/view/templates/default/img/dummy_user_male.png" alt=""></a></dt>
+											<dd>Your price</dd>
+											<dd class="bidPrice"><input type="text" name="yourprice" value="$10.00"></dd>
+										</dl>
+										<a class="btn btnUpdate">Update price</a>
+									</div>
+									<div class="youno">
+										<dl>
+											<dt><a href="/artist_profile.html" class="userThumb"><img src="/view/templates/default/img/dummy_user_female.png" alt=""></a></dt>
+											<dd>Recent bid</dd>
+											<dd class="bidPrice"><input type="text" name="" disabled value="$15.00"></dd>
+										</dl>
+										<a href="/pay.html" class="btn btnAgree">Agree</a>
+									</div>
+								</div>
+								<!-- END bidding overview -->
+
+								<!-- bidding history -->
+								<div class="biddinHistory">
+									<h4 class="stripeTitle"><span>Activity</span></h4>
+									<ul>
+										<li class="youno">
+											<div>
+												<span class="statusLabel new">new</span>
+												<span class="timeStamp">01.01.15 | 15:33</span>
+												<span class="recentUpdate">Price updated: <b>$10.00</b></span>
+											</div>
+										</li>
+									</ul>
+									<ul>
+										<li class="youno">
+											<div>
+												<span class="timeStamp">01.01.15 | 15:33</span>
+												<span class="recentUpdate">Price updated: <b>$15.00</b></span>
+											</div>
+										</li>
+										<li class="you">
+											<div>
+												<span class="timeStamp">01.01.15 | 15:33</span>
+												<span class="recentUpdate">Sent photo back</span>
+											</div>
+										</li>
+										<li class="you">
+											<div>
+												<span class="timeStamp">01.01.15 | 15:33</span>
+												<span class="recentUpdate">
+													Received photo:
+													<a href="/"><img src="/view/templates/default/img/dummy_user_female.png" alt=""></a>
+												</span>
+
+											</div>
+										</li>
+										<li class="youno">
+											<div>
+												<span class="timeStamp">01.01.15 | 15:33</span>
+												<span class="recentUpdate">Ser price: <b>$30.00</b></span>
+											</div>
+										</li>
+										<li class="you">
+											<div>
+												<span class="timeStamp">01.01.15 | 15:33</span>
+												<span class="recentUpdate">Sent photo request</span>
+											</div>
+										</li>
+									</ul>
+									<div class="expandHistory" data-class-setter-on-click = '{"classname":"expand", "method":"toggle", "target":".biddinHistory"}'><span></span></div>
+								</div>
+								<!-- END bidding history -->
+
+							</div>
+							<!-- END bidding -->
+
+						</div>
+
+						<div class="col-50">
+							<h2 class="subTitle">Messageboard</h2>
+
+							<!-- chat -->
+							<div class="chatContainer">
+
+								<div class="sendMessage">
+									<textarea placeholder="Type you message here"></textarea>
+									<span class="btn">Send</span>
+								</div>
+								
+								<dl class="you">
+									<dt><a href="/" class="userThumb"><img src="/view/templates/default/img/dummy_user_male.png" alt=""></a></dt>
+									<dd>
+										<span class="timeStamp"><span class="statusLabel new">new</span> 01.01.15 | 15:33</span> 
+										Hello World
+									</dd>
+									<dd>
+										<span class="timeStamp">01.01.15 | 15:33</span>
+										Whatever you think about the morality of using mass surveillance to catch evildoers, the technology only works if people can use it -- just ask the CIA
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="/artist_profile.html" class="userThumb"><img src="/view/templates/default/img/dummy_user_female.png" alt=""></a></dt>
+									<dd>
+										<span class="timeStamp">01.01.15 | 15:33</span>
+										What are you talking abour?
+									</dd>
+								</dl>
+								<dl class="you">
+									<dt><a href="/" class="userThumb"><img src="/view/templates/default/img/dummy_user_male.png" alt=""></a></dt>
+									<dd>
+										<span class="timeStamp">01.01.15 | 15:33</span>
+										Russian hackers scooped up the President's unclassified email ...
+									</dd>
+								</dl>
+							</div>
+							<!-- END chat -->
+						</div>
+
+					</div>
+
+				</div>	
+			</div>
+			<!-- END page content -->
+
 		</div>
-		<!-- END page content -->
+		
+		<div class="pageBottom">
+			<!-- page footer -->
+			<footer class="pageFooter">
+				<nav class="mainNav">
+					<ul class="siteNav">
+						<li><a href="/dashboard.html">Dashboard</a></li>
+						<li><a href="/artists.html">Artists</a></li>
+						<li><a href="/bookmarks">Bookmarks</a></li>
+					</ul>
+					<ul class="footerLinks">
+						<li><a href="">Terms and conditions</a></li>
+						<li><a href="">Support</a></li>
+						<li><a href="">&copy; Fotorder 2015</a></li>
+					</ul>
+				</nav>
+			</footer>
+			<!-- END page footer -->
+		</div>
 
 	</div>
-	
-	<div class="pageBottom">
-		<!-- page footer -->
-		<footer class="pageFooter">
-			<nav class="mainNav">
-				<ul class="siteNav">
-					<li><a href="/dashboard.html">Dashboard</a></li>
-					<li><a href="/artists.html">Artists</a></li>
-					<li><a href="/bookmarks">Bookmarks</a></li>
-				</ul>
-				<ul class="footerLinks">
-					<li><a href="">Terms and conditions</a></li>
-					<li><a href="">Support</a></li>
-					<li><a href="">&copy; Fotorder 2015</a></li>
-				</ul>
-			</nav>
-		</footer>
-		<!-- END page footer -->
-	</div>
-
+	<!-- END body wrapper -->
 
 </body>
 </html>

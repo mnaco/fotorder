@@ -1,6 +1,6 @@
 .pageHome {
 
-	background: url('/img/homepage_img1.png') top center no-repeat;
+	background: url('#{$imgPath}/img/homepage_img1.png') top center no-repeat;
 	// background-size: contain;
 
 
@@ -64,7 +64,7 @@
 	// resent users
 	.recentUsersBox {
 
-		background: #afaeb6 url('/img/homepage_recent_users_bcgr.png') center -100px no-repeat;
+		background: #afaeb6 url('#{$imgPath}/img/homepage_recent_users_bcgr.png') center -100px no-repeat;
 		text-align: center;
 		padding-bottom: 20px;
 

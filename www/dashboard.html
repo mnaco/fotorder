@@ -15,162 +15,166 @@
 	<script src="/js/jquery-2.1.3.min.js"></script><script src="/js/fotorder.js"></script>
 
 </head>
-<body class="pageDashboard">
+<body>
 	
-	<div class="pageTop">
-		
-
-		<!-- page header -->
-		<header class="pageHeader responsive">
-			<div class="pageWrapper">
+	<div class="bodyWrapper pageDashboard">
+	
+		<div class="pageTop">
 			
-				<div class="logo"><a href="/"><img src="/img/fotorder_logo.png" alt="Fotorder logo" ></a></div>
-			
-				<div class="headerMenu" data-class-setter-on-click = '{"classname":"show", "method":"toggle"}'>
-					
-					<!-- page navigation -->
-					<div class="userMenuContainer">
-						<nav class="mainNav">
-							<ul class="userNav">
-								<li class="welcomeMe"><span>Welcome Alex</span></li>
-								<li><a href="/profile">Your profile</a></li>
-								<li><a href="/orders">Your orders</a></li>
-								<li><a href="/">Logout</a></li>
-							</ul>
-							<ul class="siteNav">
-								<li class="active"><a href="/dashboard.html">Dashboard</a></li>
-								<li><a href="/artists.html">Artists</a></li>
-								<li><a href="/bookmarks">Bookmarks</a></li>
-							</ul>
-						</nav>
-					</div>
-					<!-- END page navigation -->
 
-					<div class="userPic"><a href="/profile"><img src="/img/dummy_user_male.png" alt=""></a></div>
-					
-				</div>
-
-			</div>
-		</header> 
-		<!-- END page header -->
-
-
-		<!-- page content -->
-		<div class="pageContent">
-			<div class="pageWrapper">
+			<!-- page header -->
+			<header class="pageHeader responsive">
+				<div class="pageWrapper">
 				
-				<!-- pending orders -->
-				<h2 class="subTitle">Pending Orders</h2>
-				<div class="listPendingOrders">
+					<div class="logo"><a href="/"><img src="/view/templates/default/img/fotorder_logo.png" alt="Fotorder logo" ></a></div>
+				
+					<div class="headerMenu" data-class-setter-on-click = '{"classname":"show", "method":"toggle"}'>
+						
+						<!-- page navigation -->
+						<div class="userMenuContainer">
+							<nav class="mainNav">
+								<ul class="userNav">
+									<li class="welcomeMe"><span>Welcome Alex</span></li>
+									<li><a href="/profile">Your profile</a></li>
+									<li><a href="/orders">Your orders</a></li>
+									<li><a href="/">Logout</a></li>
+								</ul>
+								<ul class="siteNav">
+									<li class="active"><a href="/dashboard.html">Dashboard</a></li>
+									<li><a href="/artists.html">Artists</a></li>
+									<li><a href="/bookmarks">Bookmarks</a></li>
+								</ul>
+							</nav>
+						</div>
+						<!-- END page navigation -->
+
+						<div class="userPic"><a href="/profile"><img src="/view/templates/default/img/dummy_user_male.png" alt=""></a></div>
+						
+					</div>
+
+				</div>
+			</header> 
+			<!-- END page header -->
+
+
+			<!-- page content -->
+			<div class="pageContent">
+				<div class="pageWrapper">
 					
-					<div class="pendingOrder">
-						<a href="/artist_profile.html" class="userThumb"><img src="/img/dummy_user_female.png" alt=""></a>
-						<div class="orderDetails">
-							<div><span class="userName"><a href="/">username</a></span></div>
-							<div>
-								<span class="statusLabel new">new</span>
-								<span class="timeStamp">01.01.15 | 15:33</span>
-								<span class="recentUpdate">Price updated: <b>$15.00</b></span>
+					<!-- pending orders -->
+					<h2 class="subTitle">Pending Orders</h2>
+					<div class="listPendingOrders">
+						
+						<div class="pendingOrder">
+							<a href="/artist_profile.html" class="userThumb"><img src="/view/templates/default/img/dummy_user_female.png" alt=""></a>
+							<div class="orderDetails">
+								<div><span class="userName"><a href="/">username</a></span></div>
+								<div>
+									<span class="statusLabel new">new</span>
+									<span class="timeStamp">01.01.15 | 15:33</span>
+									<span class="recentUpdate">Price updated: <b>$15.00</b></span>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="pendingOrder">
-						<a href="/artist_profile.html" class="userThumb"><img src="/img/dummy_user_female.png" alt=""></a>
-						<div class="orderDetails">
-							<div><span class="userName"><a href="/">username</a></span></div>
-							<div>
-								<span class="timeStamp">01.01.15 | 15:33</span>
-								<span class="recentUpdate">Price updated: <b>$15.00</b></span>
+						<div class="pendingOrder">
+							<a href="/artist_profile.html" class="userThumb"><img src="/view/templates/default/img/dummy_user_female.png" alt=""></a>
+							<div class="orderDetails">
+								<div><span class="userName"><a href="/">username</a></span></div>
+								<div>
+									<span class="timeStamp">01.01.15 | 15:33</span>
+									<span class="recentUpdate">Price updated: <b>$15.00</b></span>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="pendingOrder">
-						<a href="/artist_profile.html" class="userThumb"><img src="/img/dummy_user_female.png" alt=""></a>
-						<div class="orderDetails">
-							<div><span class="userName"><a href="/">username</a></span></div>
-							<div>
-								<span class="timeStamp">01.01.15 | 15:33</span>
-								<span class="recentUpdate">Price updated: <b>$15.00</b></span>
+						<div class="pendingOrder">
+							<a href="/artist_profile.html" class="userThumb"><img src="/view/templates/default/img/dummy_user_female.png" alt=""></a>
+							<div class="orderDetails">
+								<div><span class="userName"><a href="/">username</a></span></div>
+								<div>
+									<span class="timeStamp">01.01.15 | 15:33</span>
+									<span class="recentUpdate">Price updated: <b>$15.00</b></span>
+								</div>
 							</div>
 						</div>
+
 					</div>
+					<!-- END pending orders -->
 
-				</div>
-				<!-- END pending orders -->
+					<!-- messages -->
+					<h2 class="subTitle">Latest Message</h2>
+					<div class="listMessages">
+						<dl>
+							<dt><a href="/artist_profile.html" class="userThumb"><img src="/view/templates/default/img/dummy_user_female.png" alt=""></a></dt>
+							<dd class="messageDetails">
+								<span class="userName"><a href="/">userNameWithLongNameForTesting</a></span>
+								<span>
+									<span class="statusLabel new">new</span>
+									<span class="timeStamp">01.01.15 | 15:33</span>
+								</span>
+								
+							</dd>
+							<dd class="message">
+								Evil doesn’t happen in a vacuum but rather incubates amid the silence of bystanders. As Edmund Burke famously said, “The only thing necessary for the triumph of evil is for good men to do nothing.” 
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="/artist_profile.html" class="userThumb"><img src="/view/templates/default/img/dummy_user_female.png" alt=""></a></dt>
+							<dd class="messageDetails">
+								<span class="userName"><a href="/">anotheruser</a></span>
+								<span>
+									<span class="timeStamp">01.01.15 | 15:33</span>
+								</span>
+								
+							</dd>
+							<dd class="message">
+								How do you stand out if you're a fledgling smartphone maker that can't compete on specs alone? If you're Turing Robotic Industries, you pour your energy into clever design -- both inside and out. The newly unveiled Turing Phone puts an emphasis on security, with its own server-free encrypted communication between owners and a fingerprint reader that encourages you to lock down your device. There's also an Apple-like magnetic charging system, so you won't send your phone flying. However, the real star of the show is the frame. It's built from "liquidmorphium," a metal alloy that's reportedly stronger than steel or titanium. While there's also aluminum, ceramic and plastic on the body, that exotic structure should reduce the chances that you'll wreck your handset through a nasty drop.
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="/artist_profile.html" class="userThumb"><img src="/view/templates/default/img/dummy_user_female.png" alt=""></a></dt>
+							<dd class="messageDetails">
+								<span class="userName"><a href="/">user</a></span>
+								<span>
+									<span class="timeStamp">01.01.15 | 15:33</span>
+								</span>
+								
+							</dd>
+							<dd class="message">
+								Hello ...
+							</dd>
+						</dl>
+					</div>
+					<!-- END messages -->
 
-				<!-- messages -->
-				<h2 class="subTitle">Latest Message</h2>
-				<div class="listMessages">
-					<dl>
-						<dt><a href="/artist_profile.html" class="userThumb"><img src="/img/dummy_user_female.png" alt=""></a></dt>
-						<dd class="messageDetails">
-							<span class="userName"><a href="/">userNameWithLongNameForTesting</a></span>
-							<span>
-								<span class="statusLabel new">new</span>
-								<span class="timeStamp">01.01.15 | 15:33</span>
-							</span>
-							
-						</dd>
-						<dd class="message">
-							Evil doesn’t happen in a vacuum but rather incubates amid the silence of bystanders. As Edmund Burke famously said, “The only thing necessary for the triumph of evil is for good men to do nothing.” 
-						</dd>
-					</dl>
-					<dl>
-						<dt><a href="/artist_profile.html" class="userThumb"><img src="/img/dummy_user_female.png" alt=""></a></dt>
-						<dd class="messageDetails">
-							<span class="userName"><a href="/">anotheruser</a></span>
-							<span>
-								<span class="timeStamp">01.01.15 | 15:33</span>
-							</span>
-							
-						</dd>
-						<dd class="message">
-							How do you stand out if you're a fledgling smartphone maker that can't compete on specs alone? If you're Turing Robotic Industries, you pour your energy into clever design -- both inside and out. The newly unveiled Turing Phone puts an emphasis on security, with its own server-free encrypted communication between owners and a fingerprint reader that encourages you to lock down your device. There's also an Apple-like magnetic charging system, so you won't send your phone flying. However, the real star of the show is the frame. It's built from "liquidmorphium," a metal alloy that's reportedly stronger than steel or titanium. While there's also aluminum, ceramic and plastic on the body, that exotic structure should reduce the chances that you'll wreck your handset through a nasty drop.
-						</dd>
-					</dl>
-					<dl>
-						<dt><a href="/artist_profile.html" class="userThumb"><img src="/img/dummy_user_female.png" alt=""></a></dt>
-						<dd class="messageDetails">
-							<span class="userName"><a href="/">user</a></span>
-							<span>
-								<span class="timeStamp">01.01.15 | 15:33</span>
-							</span>
-							
-						</dd>
-						<dd class="message">
-							Hello ...
-						</dd>
-					</dl>
-				</div>
-				<!-- END messages -->
+				</div>	
+			</div>
+			<!-- END page content -->
 
-			</div>	
 		</div>
-		<!-- END page content -->
+		
+		<div class="pageBottom">
+			<!-- page footer -->
+			<footer class="pageFooter">
+				<nav class="mainNav">
+					<ul class="siteNav">
+						<li><a href="/dashboard.html">Dashboard</a></li>
+						<li><a href="/artists.html">Artists</a></li>
+						<li><a href="/bookmarks">Bookmarks</a></li>
+					</ul>
+					<ul class="footerLinks">
+						<li><a href="">Terms and conditions</a></li>
+						<li><a href="">Support</a></li>
+						<li><a href="">&copy; Fotorder 2015</a></li>
+					</ul>
+				</nav>
+			</footer>
+			<!-- END page footer -->
+		</div>
 
 	</div>
-	
-	<div class="pageBottom">
-		<!-- page footer -->
-		<footer class="pageFooter">
-			<nav class="mainNav">
-				<ul class="siteNav">
-					<li><a href="/dashboard.html">Dashboard</a></li>
-					<li><a href="/artists.html">Artists</a></li>
-					<li><a href="/bookmarks">Bookmarks</a></li>
-				</ul>
-				<ul class="footerLinks">
-					<li><a href="">Terms and conditions</a></li>
-					<li><a href="">Support</a></li>
-					<li><a href="">&copy; Fotorder 2015</a></li>
-				</ul>
-			</nav>
-		</footer>
-		<!-- END page footer -->
-	</div>
-
+	<!-- END body wrapper -->
 
 </body>
 </html>

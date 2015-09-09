@@ -1932,7 +1932,7 @@ body, html {
 }
 /* line 1, ../../scss/pages/_home.scss */
 .pageHome {
-  background: url("/img/homepage_img1.png") top center no-repeat;
+  background: url("/view/templates/default/img/homepage_img1.png") top center no-repeat;
 }
 /* line 11, ../../scss/pages/_home.scss */
 .pageHome .pageHeader {
@@ -1995,7 +1995,7 @@ body, html {
 }
 /* line 65, ../../scss/pages/_home.scss */
 .pageHome .recentUsersBox {
-  background: #afaeb6 url("/img/homepage_recent_users_bcgr.png") center -100px no-repeat;
+  background: #afaeb6 url("/view/templates/default/img/homepage_recent_users_bcgr.png") center -100px no-repeat;
   text-align: center;
   padding-bottom: 20px;
 }
