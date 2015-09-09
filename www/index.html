@@ -108,7 +108,7 @@
 	
 	</div>
 	<!-- END body wrapper -->
-	
+
 	
 	<!-- login/register modal -->
 	<div class="modalDialog modalRegisterLogin" id="modal-login-register">
@@ -118,33 +118,52 @@
 			<div class="radioTabs">
 				<div class="tabContainer tabRegister">
 					<input type="radio" id="TabRegister" name="reglog" checked>
-					<label for="TabRegister">Register</label>
+					<label class="tabLabel" for="TabRegister">Register</label>
 					<div class="tabContent register">
 						<div class="loginWithFacebook"><a href="/"><img src="/view/templates/default/img/facebook_connect_btn.png" alt="Conntect with Facebook" /></a></div>
 						<h4 class="stripeTitle"><span>or</span></h4>
 						<div class="wrapper">
 							<form>
-								<input type="text" placeholder="Email" />
-								<input type="text" placeholder="Repeat Email" />
-								<input type="text" placeholder="Password" />
+								<div class="inputLine">
+									<input type="text" placeholder="Username" />
+									<label id="" class="error" for="username">Please enter a valid username</label>
+								</div>
+								<div class="inputLine">
+									<input type="text" placeholder="Email" />
+									<label id="email-error" class="error" for="email">Please enter a valid email address</label>
+								</div>
+								<div class="inputLine">
+									<input type="text" placeholder="Password" />
+									<label id="password-error" class="error" for="password">Please provide a password</label>
+								</div>
+								<div class="inputLine">
+									<input type="text" placeholder="Repeat Password" />
+									<label id="password2-error" class="error" for="password2">Password doesn't match</label>
+								</div>
 								<div class="tc">You agree to our <a href="/">terms and conditions</a> and confirm you have read our <a href="/">privacy policy</a>.</div>
-								<span class="btn btnAction">Register your account</span>
+								<input type="submit" class="btn btnAction" value="Register your account">
 							</form>
 						</div>
 					</div> 
 				</div>
 				<div class="tabContainer tabLogin">
 					<input type="radio" id="TabLogin" name="reglog">
-					<label for="TabLogin">Login</label>
+					<label class="tabLabel" for="TabLogin">Login</label>
 					<div class="tabContent login">
 						<div class="loginWithFacebook"><a href="/"><img src="/view/templates/default/img/facebook_login_btn.png" alt="Login with Facebook" /></a></div>
 						<h4 class="stripeTitle"><span>or</span></h4>
 						<div class="wrapper">
 							<form>
-								<input type="text" placeholder="Email or username" />
-								<input type="text" placeholder="Password" />
+								<div class="inputLine">
+									<input type="text" placeholder="Email or username" />
+									<label id="username-error" class="error" for="username">Please enter username or email</label>
+								</div>
+								<div class="inputLine">
+									<input type="text" placeholder="Password" />
+									<label id="password-error" class="error" for="password">Please provide your password</label>
+								</div>
 								<div class="tc"><a href="/">Forgot password?</a></div>
-								<span class="btn btnAction">Login</span>
+								<input type="submit" class="btn btnAction" value="Login">
 							</form>
 						</div>
 					</div> 

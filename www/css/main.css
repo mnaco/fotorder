@@ -557,9 +557,10 @@ th {
   font-size: 1.5em;
   background: #ff4e00;
   padding: 0.5em 1.5em;
+  border: 0;
 }
 
-/* line 23, ../../scss/base/components/_ui.scss */
+/* line 24, ../../scss/base/components/_ui.scss */
 input type[text],
 textarea {
   border-color: #ccc;
@@ -806,7 +807,7 @@ body, html {
   content: "\0020";
   width: 97px;
   height: 16px;
-  background: url("/img/sprite.png") -151px -40px;
+  background: url("/view/templates/default/img/sprite.png") -151px -40px;
 }
 
 /* line 227, ../../scss/base/_base.scss */
@@ -1020,7 +1021,7 @@ body, html {
   height: 100%;
   top: 0;
   left: 0;
-  background: url("/img/sprite.png") -120px -40px;
+  background: url("/view/templates/default/img/sprite.png") -120px -40px;
 }
 /* line 419, ../../scss/base/_base.scss */
 .pageArtists .usersList .bookmarkUser.bookmarked:before {
@@ -1697,7 +1698,7 @@ body, html {
   position: relative;
   top: 60px;
   box-sizing: border-box;
-  height: 420px;
+  height: 500px;
   width: 100%;
   border-radius: 5px;
 }
@@ -1719,7 +1720,7 @@ body, html {
   float: left;
 }
 /* line 1018, ../../scss/base/_base.scss */
-.modalRegisterLogin .tabContainer label {
+.modalRegisterLogin .tabContainer label.tabLabel {
   box-sizing: border-box;
   position: relative;
   height: 60px;
@@ -1737,11 +1738,11 @@ body, html {
   text-transform: uppercase;
 }
 /* line 1035, ../../scss/base/_base.scss */
-.modalRegisterLogin .tabContainer:first-of-type label {
+.modalRegisterLogin .tabContainer:first-of-type label.tabLabel {
   border-top-left-radius: 5px;
 }
 /* line 1036, ../../scss/base/_base.scss */
-.modalRegisterLogin .tabContainer:last-of-type label {
+.modalRegisterLogin .tabContainer:last-of-type label.tabLabel {
   border-top-right-radius: 5px;
 }
 /* line 1038, ../../scss/base/_base.scss */
@@ -1749,7 +1750,7 @@ body, html {
   display: none;
 }
 /* line 1043, ../../scss/base/_base.scss */
-.modalRegisterLogin .tabContainer > [type=radio]:checked ~ label {
+.modalRegisterLogin .tabContainer > [type=radio]:checked ~ label.tabLabel {
   background: #fff;
   z-index: 2;
   color: #003780;
@@ -1757,7 +1758,7 @@ body, html {
   cursor: default;
 }
 /* line 1049, ../../scss/base/_base.scss */
-.modalRegisterLogin .tabContainer > [type=radio]:checked ~ label ~ .tabContent {
+.modalRegisterLogin .tabContainer > [type=radio]:checked ~ label.tabLabel ~ .tabContent {
   z-index: 1;
 }
 /* line 1055, ../../scss/base/_base.scss */
@@ -1772,22 +1773,30 @@ body, html {
   text-align: center;
 }
 /* line 1064, ../../scss/base/_base.scss */
+.modalRegisterLogin .tabContainer .tabContent.login {
+  padding-top: 60px;
+}
+/* line 1067, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabContainer .tabContent .wrapper {
   padding: 0 20px;
 }
-/* line 1070, ../../scss/base/_base.scss */
+/* line 1073, ../../scss/base/_base.scss */
 .modalRegisterLogin .loginWithFacebook {
   padding: 30px 0 10px;
 }
-/* line 1074, ../../scss/base/_base.scss */
+/* line 1077, ../../scss/base/_base.scss */
 .modalRegisterLogin .stripeTitle {
   margin: 10px 0 20px;
 }
-/* line 1076, ../../scss/base/_base.scss */
+/* line 1079, ../../scss/base/_base.scss */
 .modalRegisterLogin .stripeTitle > span {
   background: #fff;
 }
-/* line 1079, ../../scss/base/_base.scss */
+/* line 1082, ../../scss/base/_base.scss */
+.modalRegisterLogin .inputLine {
+  position: relative;
+}
+/* line 1086, ../../scss/base/_base.scss */
 .modalRegisterLogin input[type="text"] {
   display: block;
   width: 100%;
@@ -1795,26 +1804,33 @@ body, html {
   padding: 1em 0.5em;
   margin-bottom: 10px;
 }
-/* line 1085, ../../scss/base/_base.scss */
+/* line 1092, ../../scss/base/_base.scss */
 .modalRegisterLogin input[type="text"]:last-of-type {
   margin-bottom: 20px;
 }
-/* line 1088, ../../scss/base/_base.scss */
+/* line 1095, ../../scss/base/_base.scss */
 .modalRegisterLogin .tc {
   font-size: 0.7em;
   padding: 0 20px;
 }
-/* line 1093, ../../scss/base/_base.scss */
+/* line 1100, ../../scss/base/_base.scss */
 .modalRegisterLogin .btnAction {
   margin: 10px 0;
 }
-/* line 1099, ../../scss/base/_base.scss */
+/* line 1106, ../../scss/base/_base.scss */
 .modalRegisterLogin .tabLogin .stripeTitle {
   margin-bottom: 40px;
 }
-/* line 1100, ../../scss/base/_base.scss */
-.modalRegisterLogin .tabLogin .tc {
-  margin-top: 40px;
+/* line 1111, ../../scss/base/_base.scss */
+.modalRegisterLogin label.error {
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  display: inline-block;
+  background: #fff;
+  color: #900;
+  font-size: .8em;
+  padding: 0 .5em;
 }
 
 @media only screen and (max-width: 1020px) {

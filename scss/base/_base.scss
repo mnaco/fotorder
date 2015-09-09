@@ -221,7 +221,7 @@ body, html {
 	display: inline-block;
 	font-size: 0;
 	@include make-block(97px, 16px);
-	background: url('/img/sprite.png') -151px -40px;
+	background: url('#{$imgPath}/img/sprite.png') -151px -40px;
 }
 .hRating {
 	&:after { 
@@ -414,7 +414,7 @@ body, html {
 				@include make-block(100%, 100%);
 				top: 0;
 				left: 0;
-				background: url('/img/sprite.png') -120px -40px;
+				background: url('#{$imgPath}/img/sprite.png') -120px -40px;
 			}
 			&.bookmarked:before {
 				background-position: -120px -88px;
@@ -992,7 +992,7 @@ body, html {
 	
 	// tabs 
 	$tabContentWidth: 400px;
-	$tabContentHeight: 420px;
+	$tabContentHeight: 500px;
 	$topOuter: 60px;
 
 	.modalInsider {
@@ -1014,8 +1014,8 @@ body, html {
 	.tabContainer {
 		
 		float: left;
-		
-		label {
+	
+		label.tabLabel {
 			@include box-sizing(border-box);
 			position: relative;
 			height: $topOuter;
@@ -1032,15 +1032,15 @@ body, html {
 			text-align: center;
 			text-transform: uppercase;
 		}
-		&:first-of-type label { border-top-left-radius: 5px; }
-		&:last-of-type label { border-top-right-radius: 5px; }
+		&:first-of-type label.tabLabel { border-top-left-radius: 5px; }
+		&:last-of-type label.tabLabel { border-top-right-radius: 5px; }
 		
 		> [type=radio] {
 			display: none;   
 		}
 		
 		// selected tab (radio)
-		> [type=radio]:checked ~ label {
+		> [type=radio]:checked ~ label.tabLabel {
 			background: #fff;
 			z-index: 2;
 			color: $blueColor;
@@ -1061,6 +1061,9 @@ body, html {
 			background: #fff;
 			border-radius: 0 0 5px 5px;
 			text-align: center;
+			&.login {
+				padding-top: 60px;
+			}
 			.wrapper {
 				padding: 0 20px;
 			}
@@ -1074,6 +1077,10 @@ body, html {
 	.stripeTitle {
 		margin: 10px 0 20px;
 		> span { background: #fff; }
+	}
+
+	.inputLine {
+		position: relative;
 	}
 
 	input[type="text"] {
@@ -1097,7 +1104,19 @@ body, html {
 	// login tab
 	.tabLogin {
 		.stripeTitle { margin-bottom: 40px; }
-		.tc { margin-top: 40px; }
+		// .tc { margin-top: 40px; }
+	}
+
+	// error labels
+	label.error { 
+		position: absolute;
+		top: -5px;
+		left: 5px;
+		display: inline-block;
+		background: #fff;
+		color: #900;
+		font-size: .8em;
+		padding: 0 .5em;
 	}
 
 }
